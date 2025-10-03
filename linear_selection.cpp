@@ -1,118 +1,117 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <string>
 #include <vector>
+#include <string>
+#include <algorithm>
 #include <chrono>
-#include <iomanip>
+#include <cstdlib>
 using namespace std;
-using namespace std::chrono;
 
-// -------------------- Data Structures --------------------
 struct Job {
     string title;
-    vector<string> skills;
+    string skills;
 };
 
-struct Resume {
-    vector<string> skills;
-};
-
-// -------------------- Utility --------------------
-vector<string> splitSkills(const string &line) {
-    vector<string> skills;
-    stringstream ss(line);
-    string skill;
-    while (getline(ss, skill, ',')) {
-        // remove leading/trailing spaces
-        while (!skill.empty() && skill.front() == ' ') skill.erase(skill.begin());
-        while (!skill.empty() && skill.back() == ' ') skill.pop_back();
-        skills.push_back(skill);
-    }
-    return skills;
-}
-
-// -------------------- Weighted Scoring --------------------
-int calculateScore(const Resume &r, const Job &j) {
-    int score = 0;
-    for (auto &jobSkill : j.skills) {
-        // Linear Search for matching skill
-        for (auto &resumeSkill : r.skills) {
-            if (resumeSkill == jobSkill) {
-                score++;
-                break;
-            }
-        }
-    }
-    return score;
-}
-
-// -------------------- Selection Sort --------------------
-void selectionSort(vector<pair<int, string>> &arr) {
-    int n = arr.size();
-    for (int i = 0; i < n - 1; i++) {
-        int maxIdx = i;
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j].first > arr[maxIdx].first) {
-                maxIdx = j;
-            }
-        }
-        swap(arr[i], arr[maxIdx]);
-    }
-}
-
-// -------------------- Main --------------------
-int main() {
+// Load CSV into array
+vector<Job> loadJobs(const string &filename) {
     vector<Job> jobs;
-    vector<Resume> resumes;
-
-    // Load job data
-    ifstream jobFile("job_description_cleaned.csv");
+    ifstream file(filename);
     string line;
-    getline(jobFile, line); // skip header
-    while (getline(jobFile, line)) {
+    getline(file, line); // skip header
+
+    while (getline(file, line)) {
         stringstream ss(line);
-        string jobTitle, skillStr;
+        string jobTitle, skills;
+
         getline(ss, jobTitle, ',');
-        getline(ss, skillStr, '\n');
-        jobs.push_back({jobTitle, splitSkills(skillStr)});
-    }
-    jobFile.close();
+        getline(ss, skills);
 
-    // Load resume data
-    ifstream resumeFile("resume_cleaned.csv");
-    getline(resumeFile, line); // skip header
-    while (getline(resumeFile, line)) {
-        resumes.push_back({splitSkills(line)});
-    }
-    resumeFile.close();
-
-    // Start timer
-    auto start = high_resolution_clock::now();
-
-    // Calculate weighted scores (using Linear Search)
-    vector<pair<int, string>> results; // (score, jobTitle)
-    for (auto &resume : resumes) {
-        for (auto &job : jobs) {
-            int score = calculateScore(resume, job);
-            results.push_back({score, job.title});
+        if (!jobTitle.empty() && !skills.empty()) {
+            jobs.push_back({jobTitle, skills});
         }
     }
+    return jobs;
+}
 
-    // Sort results (using Selection Sort)
-    selectionSort(results);
+// Linear search by keyword with runtime + memory
+void linearSearch(const vector<Job> &jobs, const string &keyword) {
+    auto start = chrono::high_resolution_clock::now();
 
-    // Stop timer
-    auto stop = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(stop - start);
-
-    // Print results
-    cout << "=== Results (Linear Search + Selection Sort) ===\n";
-    for (auto &r : results) {
-        cout << setw(15) << r.second << " | Score: " << r.first << "\n";
+    size_t memoryUsed = 0;
+    bool found = false;
+    cout << "\n[Linear Search Results for \"" << keyword << "\"]\n";
+    for (const auto &job : jobs) {
+        memoryUsed += sizeof(job) + job.title.capacity() + job.skills.capacity();
+        if (job.skills.find(keyword) != string::npos) {
+            cout << "Job: " << job.title << " | Skills: " << job.skills << endl;
+            found = true;
+        }
     }
-    cout << "Execution Time: " << duration.count() << " ms\n";
-    cout << "Approx Memory Used: " << results.size() * sizeof(pair<int,string>) << " bytes\n";
+    if (!found) cout << "No matches found.\n";
+
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+    cout << "Search Runtime: " << duration.count() << " microseconds\n";
+    cout << "Estimated Memory Used: " << memoryUsed << " bytes\n";
+}
+
+// Selection sort (by Job Title) with runtime + memory
+void selectionSort(vector<Job> &jobs) {
+    auto start = chrono::high_resolution_clock::now();
+
+    size_t memoryUsed = 0;
+    int n = jobs.size();
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            memoryUsed += sizeof(jobs[j]) + jobs[j].title.capacity() + jobs[j].skills.capacity();
+            if (jobs[j].title < jobs[minIndex].title)
+                minIndex = j;
+        }
+        swap(jobs[i], jobs[minIndex]);
+    }
+
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+    cout << "Sort Runtime: " << duration.count() << " microseconds\n";
+    cout << "Estimated Memory Used: " << memoryUsed << " bytes\n";
+}
+
+void displayJobs(const vector<Job> &jobs) {
+    for (const auto &job : jobs) {
+        cout << "Job: " << job.title << " | Skills: " << job.skills << endl;
+    }
+}
+
+int main() {
+    vector<Job> jobs = loadJobs("job_description_cleaned.csv");
+
+    if (jobs.empty()) {
+        cout << "No jobs loaded. Please check the CSV file.\n";
+        return 0;
+    }
+
+    int choice;
+    do {
+        cout << "\n--- Array Implementation (Set 1: Linear Search + Selection Sort) ---\n";
+        cout << "1. Display Jobs\n2. Linear Search\n3. Selection Sort\n0. Exit\nChoice: ";
+        cin >> choice;
+        cin.ignore();
+
+        if (choice == 1) {
+            displayJobs(jobs);
+        } else if (choice == 2) {
+            string keyword;
+            cout << "Enter skill to search: ";
+            getline(cin, keyword);
+            linearSearch(jobs, keyword);
+        } else if (choice == 3) {
+            cout << "Jobs sorted by title (Selection Sort).\n";
+            displayJobs(jobs);
+            selectionSort(jobs);
+        }
+    } while (choice != 0);
 
     return 0;
 }
