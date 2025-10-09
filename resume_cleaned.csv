@@ -1,5 +1,5 @@
-Skills
-
+"Skills"
+""
 "SQL, Power BI, Excel, Tableau"
 "Python, Deep Learning, Mr, NLP, Machine Learning, Pandas"
 "Git, System Design, Java, Spring Boot, REST APIs, Docker"
@@ -46,7 +46,7 @@ Skills
 "Deep Learning, Machine Learning, NLP, Python, Congress"
 "System Design, Git, Java, Spring Boot, Docker, Agile"
 "Power BI, SQL, Data Cleaning, Excel"
-Computer Vision
+"Computer Vision"
 "Python, Cloud, PyTorch, MLOps, Computer Vision"
 "Statistics, Machine Learning, SQL, NLP"
 "Pandas, SQL, Python, NLP, Deep Learning"
@@ -98,7 +98,7 @@ Computer Vision
 "SQL, Python, NLP, Statistics, Pandas, Machine Learning"
 "Java, Docker, System Design"
 "SQL, Deep Learning, NLP, Pandas, Python, Statistics"
-Statistics
+"Statistics"
 "Machine Learning, NLP, Pandas, TV, Python"
 "PyTorch, Python, Keras, Computer Vision, TensorFlow, MLOps"
 "Java, Docker"
@@ -110,7 +110,7 @@ Statistics
 "Cloud, Keras, PyTorch, TensorFlow, Computer Vision, MLOps"
 "Power BI, Data Cleaning, Reporting, Excel, Tableau, SQL"
 "Docker, System Design"
-Computer Vision
+"Computer Vision"
 "MLOps, Keras"
 "System Design, REST APIs, Java, Spring Boot, Docker"
 "PyTorch, Cloud"
@@ -162,9 +162,9 @@ Computer Vision
 "Excel, Power BI, SQL, Data Cleaning, Reporting, Tableau"
 "Python, Statistics, SQL, NLP, Pandas"
 "Cloud, Keras, Computer Vision, Python"
-Deep Learning
+"Deep Learning"
 "System Design, Spring Boot, REST APIs, Agile, Docker"
-Stakeholder Management
+"Stakeholder Management"
 "Deep Learning, Machine Learning, SQL, NLP"
 "PM, Product Roadmap, Stakeholder Management, Scrum, User Stories, Agile"
 "Data Cleaning, Excel, SQL"
@@ -209,7 +209,7 @@ Stakeholder Management
 "Keras, PyTorch, Cloud"
 "Agile, Stakeholder Management"
 "SQL, Statistics, Deep Learning, Machine Learning, Python"
-Python
+"Python"
 "Reporting, Data Cleaning, Power BI, SQL"
 "Statistics, Pandas, SQL"
 "User Stories, Scrum, Agile"
@@ -220,7 +220,7 @@ Python
 "Python, Machine Learning, Statistics"
 "System Design, Java, REST APIs"
 "Statistics, Deep Learning, Machine Learning"
-Agile
+"Agile"
 "Python, Pandas, NLP, Deep Learning, Statistics"
 "Excel, Data Cleaning, Tableau, SQL, Reporting"
 "Docker, Agile, Git, System Design, Spring Boot"
@@ -233,7 +233,7 @@ Agile
 "Deep Learning, Statistics, Pandas"
 "TensorFlow, Cloud, Computer Vision, PyTorch"
 "Computer Vision, Cloud, Keras, TensorFlow, PyTorch"
-SQL
+"SQL"
 "Statistics, NLP"
 "Cloud, MLOps, Computer Vision"
 "Excel, SQL, Tableau"
@@ -256,7 +256,7 @@ SQL
 "REST APIs, Spring Boot, Docker, System Design, Git"
 "Power BI, Tableau, Excel, Data Cleaning, SQL"
 "User Stories, Stakeholder Management, Agile, Scrum"
-Python
+"Python"
 "Tableau, Excel, SQL, Reporting, Power BI"
 "Power BI, SQL, Tableau, Reporting, Excel"
 "Machine Learning, NLP, SQL, Deep Learning"
@@ -265,7 +265,7 @@ Python
 "Pandas, Python"
 "Tableau, Data Cleaning, Reporting, SQL, Excel, Power BI"
 "System Design, Java, Git"
-Tableau
+"Tableau"
 "Product Roadmap, Stakeholder Management, Agile"
 "User Stories, Scrum, Product Roadmap"
 "Agile, User Stories"
@@ -276,7 +276,7 @@ Tableau
 "Keras, TensorFlow, Computer Vision, Python, Cloud"
 "REST APIs, Java, Docker"
 "MLOps, PyTorch, Keras, TensorFlow, Python"
-SQL
+"SQL"
 "Data Cleaning, SQL, Excel"
 "Cloud, Keras, TensorFlow, MLOps"
 "Stakeholder Management, Product Roadmap, Agile"
@@ -315,7 +315,7 @@ SQL
 "Scrum, User Stories, Stakeholder Management, Product Roadmap"
 "System Design, Java, Docker, Spring Boot, Agile"
 "Deep Learning, Statistics, Machine Learning, Python, Pandas, SQL"
-Machine Learning
+"Machine Learning"
 "Stakeholder Management, Scrum"
 "MLOps, PyTorch, Python, Cloud"
 "Python, Cloud, MLOps"
@@ -344,7 +344,7 @@ Machine Learning
 "Git, REST APIs"
 "Keras, Computer Vision, TensorFlow, Cloud, PyTorch, Python"
 "Cloud, Keras, TensorFlow, Computer Vision, MLOps, PyTorch"
-Python
+"Python"
 "Python, Pandas, NLP, Statistics, SQL"
 "PyTorch, Python"
 "User Stories, Agile, Product Roadmap"
@@ -355,7 +355,7 @@ Python
 "Excel, SQL, Data Cleaning, Power BI, Reporting"
 "Docker, REST APIs, System Design, Java, Agile"
 "NLP, Statistics, Machine Learning, Pandas"
-REST APIs
+"REST APIs"
 "TV, REST APIs, Agile, Spring Boot, Java, System Design, Docker"
 "Agile, Spring Boot, Git, Java"
 "Power BI, Reporting, SQL, Excel"
@@ -447,7 +447,7 @@ REST APIs
 "System Design, Git, REST APIs, Docker, Java, Agile"
 "TensorFlow, Cloud, PyTorch"
 "SQL, Reporting, Excel"
-NLP
+"NLP"
 "System Design, REST APIs, Git"
 "Tableau, Power BI, Excel, Reporting"
 "Power BI, Tableau, Excel"
@@ -465,7 +465,7 @@ NLP
 "Reporting, SQL, Power BI, Data Cleaning, Excel"
 "Stakeholder Management, Scrum"
 "Data Cleaning, Reporting, Excel, Tableau, Power BI, SQL"
-Scrum
+"Scrum"
 "Python, Deep Learning, Pandas, Statistics, SQL"
 "Stakeholder Management, User Stories, Product Roadmap"
 "REST APIs, Git, Agile, Java, System Design"
@@ -476,9 +476,9 @@ Scrum
 "Docker, Java"
 "Keras, TensorFlow, Cloud"
 "Stakeholder Management, Agile, Scrum, Product Roadmap"
-MLOps
+"MLOps"
 "Tableau, Power BI, SQL"
-Agile
+"Agile"
 "Scrum, Agile, Product Roadmap, Stakeholder Management, User Stories"
 "SQL, Python, Deep Learning, Machine Learning, NLP"
 "MLOps, Keras, Computer Vision, PyTorch, Cloud, Python"
@@ -486,13 +486,13 @@ Agile
 "PyTorch, TensorFlow, MLOps"
 "SQL, Tableau, Data Cleaning, Power BI"
 "Agile, Stakeholder Management, Scrum, User Stories, Product Roadmap"
-Data Cleaning
+"Data Cleaning"
 "MLOps, Python, Cloud, TensorFlow"
 "Computer Vision, Python, Cloud, PyTorch, TensorFlow, Keras"
 "Keras, Computer Vision, Python, PyTorch"
 "SQL, Statistics, NLP, Pandas"
 "Statistics, SQL, NLP, Deep Learning, Pandas"
-Data Cleaning
+"Data Cleaning"
 "Agile, Scrum"
 "Keras, Python, TensorFlow"
 "System Design, Agile, REST APIs"
@@ -515,7 +515,7 @@ Data Cleaning
 "Deep Learning, Python, SQL, Pandas"
 "Power BI, Reporting, Data Cleaning, SQL"
 "Statistics, Python, Machine Learning, Pandas, NLP"
-Scrum
+"Scrum"
 "SQL, Statistics, NLP, Pandas, Deep Learning"
 "TensorFlow, Keras, Computer Vision, MLOps, Cloud"
 "Cloud, MLOps, Computer Vision, PyTorch, TensorFlow"
@@ -547,7 +547,7 @@ Scrum
 "Spring Boot, Agile, Docker, REST APIs"
 "Keras, Computer Vision, Python"
 "Excel, Reporting, SQL"
-Stakeholder Management
+"Stakeholder Management"
 "Spring Boot, REST APIs, Docker, Agile"
 "SQL, NLP, Statistics"
 "SQL, Machine Learning, Pandas, Deep Learning, Statistics, NLP"
@@ -562,13 +562,13 @@ Stakeholder Management
 "Deep Learning, NLP, Python"
 "Java, REST APIs, Docker"
 "Agile, Git, Java, System Design, Docker"
-Product Roadmap
+"Product Roadmap"
 "Git, Agile, REST APIs, Java, Spring Boot"
 "Cloud, TensorFlow, MLOps, Computer Vision, Keras, Python"
 "Spring Boot, REST APIs"
 "Tableau, Power BI, Reporting"
 "Power BI, Data Cleaning, Tableau, Reporting"
-SQL
+"SQL"
 "MLOps, Cloud, PyTorch, TensorFlow, Computer Vision, Keras"
 "Reporting, Power BI, Excel, Data Cleaning, Tableau, SQL"
 "Docker, REST APIs, System Design, Spring Boot"
@@ -581,7 +581,7 @@ SQL
 "Deep Learning, NLP, Machine Learning, Statistics, Python"
 "Agile, Git, Docker, Spring Boot, System Design"
 "Pandas, Deep Learning, SQL, Machine Learning"
-Reporting
+"Reporting"
 "Stakeholder Management, User Stories, Agile, Product Roadmap, Scrum"
 "Python, Cloud"
 "Data Cleaning, Excel, Tableau"
@@ -592,14 +592,14 @@ Reporting
 "Keras, MLOps, Computer Vision, PyTorch, Cloud"
 "System Design, Docker, Java"
 "Keras, TensorFlow, PyTorch, Python"
-Stakeholder Management
-SQL
+"Stakeholder Management"
+"SQL"
 "Agile, Java, Git, REST APIs, Docker"
 "Reporting, SQL, Excel, Data Cleaning"
 "SQL, Statistics"
 "Power BI, Data Cleaning, Reporting, Tableau, SQL"
 "Cloud, PyTorch, MLOps, TensorFlow"
-Cloud
+"Cloud"
 "Git, Agile, Spring Boot"
 "Java, Spring Boot, Agile, Docker, Git"
 "NLP, SQL, Pandas, Statistics"
@@ -609,7 +609,7 @@ Cloud
 "Excel, Tableau, Data Cleaning"
 "Keras, TensorFlow, Cloud"
 "Data Cleaning, Excel, Power BI, Reporting, Tableau, SQL"
-Pandas
+"Pandas"
 "Java, Docker"
 "Product Roadmap, Agile, Scrum"
 "User Stories, Stakeholder Management, Product Roadmap"
@@ -623,7 +623,7 @@ Pandas
 "PyTorch, TensorFlow, Keras, Python"
 "Python, TensorFlow, PyTorch, Keras, MLOps, Cloud"
 "TensorFlow, PyTorch, Keras, Computer Vision"
-Python
+"Python"
 "System Design, Docker, Git"
 "Computer Vision, PyTorch"
 "SQL, Power BI, Reporting"
@@ -656,7 +656,7 @@ Python
 "Machine Learning, Python"
 "SQL, Reporting, Tableau, Power BI, Data Cleaning"
 "Java, System Design, Docker, Git"
-Tableau
+"Tableau"
 "Statistics, SQL, Machine Learning, NLP, Pandas"
 "Agile, Stakeholder Management"
 "Scrum, User Stories, Product Roadmap"
@@ -668,7 +668,7 @@ Tableau
 "Keras, MLOps, Cloud, TensorFlow, PyTorch, Python"
 "Git, Agile"
 "TensorFlow, PyTorch"
-Excel
+"Excel"
 "Computer Vision, PyTorch"
 "Cloud, Keras, MLOps, PyTorch, Python"
 "MLOps, TensorFlow, PyTorch"
@@ -680,7 +680,7 @@ Excel
 "Excel, Data Cleaning, Reporting, Power BI, SQL"
 "Democrat, SQL, Power BI"
 "Agile, Stakeholder Management, Product Roadmap"
-User Stories
+"User Stories"
 "TensorFlow, Python, PyTorch"
 "Python, MLOps, Cloud"
 "Machine Learning, Deep Learning, Pandas, Python"
@@ -695,7 +695,7 @@ User Stories
 "Git, REST APIs, Docker, Agile"
 "Power BI, Data Cleaning, Tableau, Excel, SQL"
 "TensorFlow, Python, MLOps"
-Product Roadmap
+"Product Roadmap"
 "TensorFlow, PyTorch, Computer Vision, Keras, Python"
 "Reporting, Tableau, Excel, Power BI, SQL"
 "Python, NLP, Machine Learning, SQL, Deep Learning"
@@ -780,7 +780,7 @@ Product Roadmap
 "User Stories, Stakeholder Management, Scrum, Product Roadmap"
 "Cloud, PyTorch"
 "MLOps, TensorFlow, Computer Vision"
-Agile
+"Agile"
 "SQL, NLP, Statistics, Python"
 "SQL, Deep Learning, NLP"
 "Git, Java, REST APIs, Agile, Docker, Spring Boot"
@@ -847,7 +847,7 @@ Agile
 "Agile, Product Roadmap, User Stories, Scrum"
 "Pandas, Statistics, PM"
 "PyTorch, TensorFlow, Cloud, Python, Keras, MLOps"
-Excel
+"Excel"
 "Python, Statistics, NLP, Pandas, Machine Learning"
 "System Design, Git"
 "Agile, Product Roadmap, Scrum, User Stories"
@@ -874,7 +874,7 @@ Excel
 "Reporting, Data Cleaning, Excel, SQL, Power BI"
 "Machine Learning, Pandas, NLP"
 "Agile, Stakeholder Management, Scrum, Product Roadmap"
-REST APIs
+"REST APIs"
 "Python, Keras, MLOps, Cloud, PyTorch, TensorFlow"
 "Data Cleaning, Power BI, Excel, SQL"
 "System Design, Agile"
@@ -905,7 +905,7 @@ REST APIs
 "Python, SQL, Machine Learning, Statistics, Pandas"
 "Python, Cloud"
 "Docker, System Design, Spring Boot, Agile, Git, Java"
-Excel
+"Excel"
 "REST APIs, Agile, TV"
 "Machine Learning, Python, Statistics"
 "NLP, Pandas, Python, Deep Learning, Statistics, Machine Learning"
@@ -918,8 +918,8 @@ Excel
 "Excel, Power BI, Tableau"
 "Stakeholder Management, Scrum"
 "Pandas, SQL"
-TensorFlow
-MLOps
+"TensorFlow"
+"MLOps"
 "Machine Learning, Python, Pandas, Statistics"
 "Power BI, Data Cleaning, Excel, SQL"
 "Agile, REST APIs"
@@ -977,7 +977,7 @@ MLOps
 "Scrum, Stakeholder Management"
 "Product Roadmap, User Stories, Agile, Stakeholder Management, Scrum"
 "Java, REST APIs, Agile, Docker, Spring Boot"
-Product Roadmap
+"Product Roadmap"
 "Reporting, Tableau, SQL, Data Cleaning, Power BI, Excel"
 "Statistics, Machine Learning, Python, Pandas"
 "Scrum, Agile, Stakeholder Management"
@@ -1019,7 +1019,7 @@ Product Roadmap
 "Computer Vision, Keras, MLOps, Python, PyTorch"
 "Data Cleaning, Power BI, SQL, Reporting, Tableau"
 "Deep Learning, Machine Learning, SQL, Pandas, Python, Statistics"
-SQL
+"SQL"
 "SQL, Deep Learning, NLP, Statistics, Python, Machine Learning"
 "SQL, Statistics, Python"
 "Statistics, NLP, Python, Pandas, Deep Learning"
@@ -1112,11 +1112,11 @@ SQL
 "NLP, Deep Learning, Pandas"
 "Tableau, Excel, SQL, Reporting, Power BI, Data Cleaning"
 "System Design, Spring Boot, Git"
-Power BI
+"Power BI"
 "Stakeholder Management, Agile, User Stories"
 "Python, MLOps, Cloud, PyTorch, Computer Vision"
 "Spring Boot, Java, Agile, Docker"
-Pandas
+"Pandas"
 "Statistics, SQL, Deep Learning, Python, NLP"
 "Pandas, SQL"
 "Stakeholder Management, User Stories"
@@ -1141,7 +1141,7 @@ Pandas
 "Docker, Git, Agile, Java"
 "Cloud, PyTorch, Computer Vision, Keras, TensorFlow"
 "Reporting, Data Cleaning"
-PyTorch
+"PyTorch"
 "Scrum, Stakeholder Management, Product Roadmap"
 "Python, Statistics, Machine Learning"
 "Reporting, SQL, Tableau"
@@ -1163,11 +1163,11 @@ PyTorch
 "Reporting, SQL"
 "Java, System Design"
 "Cloud, Keras, Computer Vision, PyTorch"
-Statistics
+"Statistics"
 "Agile, Git, System Design, Spring Boot, Java"
 "Python, Machine Learning"
 "SQL, Tableau, Reporting, Power BI"
-Tableau
+"Tableau"
 "SQL, Power BI"
 "Java, Git, Docker, System Design, Agile, REST APIs"
 "SQL, Pandas, Python, Statistics, NLP"
@@ -1198,24 +1198,24 @@ Tableau
 "Data Cleaning, Reporting, Tableau, Excel"
 "Product Roadmap, User Stories"
 "Data Cleaning, Excel, SQL"
-Excel
+"Excel"
 "Machine Learning, Deep Learning, SQL, NLP, Pandas, Statistics"
 "SQL, Statistics, Python"
 "REST APIs, Git, Docker, Java, Spring Boot, System Design"
 "Java, Agile, REST APIs"
 "SQL, Tableau"
-System Design
+"System Design"
 "Excel, Power BI, Data Cleaning, Tableau, SQL"
 "Java, System Design, Docker, REST APIs, Spring Boot"
 "Product Roadmap, Stakeholder Management"
-TensorFlow
+"TensorFlow"
 "Power BI, Data Cleaning, Tableau"
 "MLOps, Cloud, TensorFlow, Computer Vision"
 "Python, Statistics, Machine Learning"
 "Docker, Java, Git, REST APIs, System Design, Spring Boot"
 "Deep Learning, Statistics, Machine Learning, Python"
 "User Stories, Scrum, Agile, Product Roadmap"
-Java
+"Java"
 "SQL, Data Cleaning, Reporting"
 "Git, REST APIs, Java"
 "PyTorch, Computer Vision, Keras, MLOps"
@@ -1277,7 +1277,7 @@ Java
 "SQL, Power BI, Reporting, Data Cleaning"
 "Reporting, Power BI"
 "SQL, Reporting, Power BI"
-Statistics
+"Statistics"
 "System Design, Spring Boot"
 "Python, Statistics, NLP, Deep Learning, SQL, Machine Learning"
 "Spring Boot, System Design, Java, Agile, REST APIs"
@@ -1310,7 +1310,7 @@ Statistics
 "Spring Boot, System Design"
 "Python, Keras, Cloud, Computer Vision"
 "Data Cleaning, Tableau, Power BI"
-Keras
+"Keras"
 "Pandas, SQL, NLP"
 "Stakeholder Management, Agile"
 "Git, Spring Boot, Docker, Agile, System Design, REST APIs"
@@ -1328,7 +1328,7 @@ Keras
 "Agile, Docker"
 "MLOps, Keras"
 "Computer Vision, PyTorch, Cloud, Python, Keras"
-Product Roadmap
+"Product Roadmap"
 "Agile, Stakeholder Management, Product Roadmap"
 "NLP, Python"
 "NLP, Statistics, Pandas, SQL, Python"
@@ -1402,7 +1402,7 @@ Product Roadmap
 "REST APIs, Agile, Docker, Git, Java, System Design"
 "Pandas, SQL, Deep Learning"
 "Deep Learning, Statistics, SQL, Python, Machine Learning"
-Power BI
+"Power BI"
 "Stakeholder Management, Product Roadmap, Agile"
 "NLP, Pandas, Machine Learning"
 "Python, Deep Learning, Pandas, Statistics"
@@ -1428,7 +1428,7 @@ Power BI
 "Machine Learning, NLP, Statistics, Deep Learning, Python, Pandas"
 "Python, TensorFlow, MLOps, PyTorch"
 "Stakeholder Management, User Stories"
-Excel
+"Excel"
 "Python, Keras, Computer Vision"
 "Stakeholder Management, Product Roadmap, Agile, Scrum"
 "Statistics, NLP, Machine Learning, Deep Learning"
@@ -1490,7 +1490,7 @@ Excel
 "SQL, Pandas, NLP, Machine Learning"
 "Python, Pandas"
 "Power BI, Excel, Tableau"
-
+""
 "TensorFlow, Python, PyTorch"
 "SQL, Excel, Reporting, Power BI, Data Cleaning, Tableau"
 "Cloud, Computer Vision"
@@ -1528,7 +1528,7 @@ Excel
 "Spring Boot, Docker, System Design"
 "Python, NLP, Machine Learning, Pandas, Statistics"
 "Agile, Product Roadmap, Stakeholder Management, User Stories"
-Power BI
+"Power BI"
 "TensorFlow, Keras, Cloud, PyTorch"
 "Statistics, Python, Machine Learning, Deep Learning, NLP, Pandas"
 "Product Roadmap, Agile"
@@ -1567,7 +1567,7 @@ Power BI
 "NLP, Python, Deep Learning, SQL"
 "Java, Spring Boot, Git, Docker"
 "Spring Boot, Docker, System Design, Agile, Java"
-Cloud
+"Cloud"
 "Excel, Reporting, Data Cleaning, Tableau, SQL"
 "Statistics, NLP, Pandas, Python"
 "Docker, System Design"
@@ -1593,7 +1593,7 @@ Cloud
 "Reporting, Excel, Data Cleaning, Tableau"
 "Agile, Stakeholder Management"
 "Power BI, SQL"
-Product Roadmap
+"Product Roadmap"
 "Statistics, Pandas"
 "Keras, TensorFlow"
 "Java, Docker, REST APIs, Agile"
@@ -1609,17 +1609,17 @@ Product Roadmap
 "Excel, Tableau"
 "Java, Agile, Git, Docker, Spring Boot, REST APIs"
 "Machine Learning, NLP, Pandas, Deep Learning, SQL"
-Product Roadmap
+"Product Roadmap"
 "TensorFlow, Python, MLOps"
 "PyTorch, Cloud, Python"
 "User Stories, Scrum"
-Tableau
+"Tableau"
 "Data Cleaning, Tableau, Power BI"
 "REST APIs, Agile, Spring Boot"
 "REST APIs, Git, System Design, Agile, Java"
 "User Stories, Product Roadmap, Stakeholder Management"
 "SQL, Deep Learning, Machine Learning"
-Reporting
+"Reporting"
 "Scrum, Agile, User Stories, Stakeholder Management"
 "Cloud, Computer Vision, Keras, TensorFlow"
 "Tableau, Data Cleaning, Excel"
@@ -1649,7 +1649,7 @@ Reporting
 "Machine Learning, SQL, Python"
 "SQL, Tableau, Excel"
 "Keras, Cloud, PyTorch, Computer Vision, TensorFlow"
-SQL
+"SQL"
 "User Stories, Stakeholder Management, Product Roadmap, Agile, Scrum"
 "SQL, Statistics, Machine Learning, Python, NLP, Pandas"
 "Docker, REST APIs, Java, Spring Boot"
@@ -1690,7 +1690,7 @@ SQL
 "Python, SQL, Pandas, Machine Learning, NLP"
 "Scrum, User Stories, Product Roadmap"
 "Agile, REST APIs, Java, Git, Docker"
-Reporting
+"Reporting"
 "Java, Agile"
 "Computer Vision, MLOps"
 "Power BI, Data Cleaning, SQL, Excel"
@@ -1708,7 +1708,7 @@ Reporting
 "Cloud, Keras, PyTorch, Python, TensorFlow"
 "Pandas, Machine Learning, NLP, Deep Learning, SQL, Statistics"
 "Cloud, Python, Computer Vision, TensorFlow"
-Pandas
+"Pandas"
 "User Stories, Product Roadmap, Agile"
 "Reporting, Excel, Tableau, SQL"
 "Statistics, Machine Learning"
@@ -1724,7 +1724,7 @@ Pandas
 "Deep Learning, Pandas, SQL"
 "System Design, Docker, Agile, Java"
 "Product Roadmap, Scrum"
-Scrum
+"Scrum"
 "Product Roadmap, Stakeholder Management, Scrum, User Stories"
 "Python, Keras, TensorFlow, Cloud, Computer Vision, MLOps"
 "Statistics, NLP, Machine Learning, SQL"
@@ -1770,22 +1770,22 @@ Scrum
 "Product Roadmap, Agile"
 "Excel, Data Cleaning, Power BI, Reporting"
 "PyTorch, Keras, Cloud, Python, MLOps"
-Data Cleaning
+"Data Cleaning"
 "Tableau, Reporting, SQL, Excel, Data Cleaning"
-Scrum
+"Scrum"
 "Data Cleaning, Reporting"
 "Stakeholder Management, Scrum, Republican"
 "Spring Boot, Docker, REST APIs, Agile, Git, Java"
 "Agile, System Design, Republican"
 "SQL, Pandas, Statistics, Machine Learning"
-Product Roadmap
+"Product Roadmap"
 "Agile, REST APIs, Docker, Spring Boot"
 "NLP, Machine Learning, Deep Learning, Statistics, Pandas"
 "Reporting, Excel, Tableau"
 "Java, Spring Boot, Docker, REST APIs, System Design"
 "Data Cleaning, Excel, Tableau"
 "Cloud, PyTorch, Computer Vision, Keras, MLOps"
-Reporting
+"Reporting"
 "Reporting, Excel, SQL, Tableau, Data Cleaning"
 "Spring Boot, Java, Git, Agile"
 "Reporting, Excel, Power BI, Tableau, Data Cleaning"
@@ -1833,7 +1833,7 @@ Reporting
 "Python, NLP, Machine Learning, Deep Learning, Pandas, Statistics"
 "Stakeholder Management, User Stories, Product Roadmap, Scrum"
 "REST APIs, System Design"
-PyTorch
+"PyTorch"
 "Excel, Reporting"
 "Agile, User Stories, Product Roadmap, Stakeholder Management"
 "Scrum, Stakeholder Management"
@@ -1863,14 +1863,14 @@ PyTorch
 "Pandas, NLP, Python, Statistics"
 "MLOps, TensorFlow"
 "Data Cleaning, Reporting, SQL, Power BI"
-Cloud
+"Cloud"
 "Git, Docker, System Design"
 "Tableau, Reporting, Data Cleaning, Power BI"
 "System Design, REST APIs, Git"
 "SQL, Reporting, Data Cleaning, Excel, Power BI"
 "Excel, SQL, Tableau"
 "SQL, Excel, Data Cleaning, Reporting"
-Git
+"Git"
 "Agile, Docker, Java, Spring Boot, System Design"
 "System Design, Git, Agile, REST APIs, Docker"
 "Agile, Spring Boot, Java, System Design, Git"
@@ -1919,7 +1919,7 @@ Git
 "Scrum, User Stories, Agile"
 "SQL, Tableau, Excel, Reporting, Data Cleaning"
 "Python, Keras, Computer Vision, Cloud, TensorFlow"
-Tableau
+"Tableau"
 "User Stories, Agile"
 "Excel, Data Cleaning, SQL"
 "SQL, Reporting, Excel"
@@ -1932,7 +1932,7 @@ Tableau
 "Data Cleaning, Excel, Power BI"
 "Python, Statistics, SQL"
 "Python, Cloud, MLOps, Keras"
-
+""
 "Stakeholder Management, User Stories, Product Roadmap, Scrum"
 "Git, REST APIs"
 "Product Roadmap, User Stories, Agile, Scrum"
@@ -1949,7 +1949,7 @@ Tableau
 "System Design, Git, Agile, Spring Boot, Docker"
 "Product Roadmap, Scrum, Agile, Stakeholder Management, User Stories"
 "User Stories, Agile, Stakeholder Management"
-Product Roadmap
+"Product Roadmap"
 "Tableau, SQL, Power BI, Data Cleaning"
 "Agile, Spring Boot, REST APIs"
 "Docker, Spring Boot"
@@ -1983,7 +1983,7 @@ Product Roadmap
 "Spring Boot, System Design, Agile, Docker, Java"
 "TensorFlow, Computer Vision, Keras"
 "NLP, SQL, Deep Learning, Statistics"
-NLP
+"NLP"
 "NLP, Statistics, Machine Learning, Pandas, Deep Learning"
 "Stakeholder Management, Scrum"
 "Power BI, Data Cleaning, SQL, Reporting"
@@ -2007,7 +2007,7 @@ NLP
 "Data Cleaning, Tableau, SQL, Power BI, Excel"
 "Python, TensorFlow, Cloud"
 "REST APIs, Git, Agile, Docker, Spring Boot, Java"
-User Stories
+"User Stories"
 "Product Roadmap, Stakeholder Management, Agile, User Stories"
 "Agile, System Design, Git, Java"
 "Excel, SQL"
@@ -2028,7 +2028,7 @@ User Stories
 "Machine Learning, Pandas, NLP, Statistics, Python, SQL"
 "SQL, Machine Learning, Statistics"
 "Cloud, TensorFlow, Python, PyTorch, Computer Vision"
-Power BI
+"Power BI"
 "Cloud, PyTorch, MLOps, Computer Vision"
 "Python, NLP, SQL, Machine Learning"
 "Statistics, Deep Learning, Pandas, Machine Learning, NLP"
@@ -2036,7 +2036,7 @@ Power BI
 "User Stories, Scrum, Product Roadmap"
 "Machine Learning, Deep Learning, Pandas, Python"
 "Spring Boot, Docker, Git"
-Stakeholder Management
+"Stakeholder Management"
 "Computer Vision, Python, Keras, MLOps, TensorFlow"
 "Python, Machine Learning, SQL"
 "User Stories, Product Roadmap"
@@ -2054,7 +2054,7 @@ Stakeholder Management
 "Stakeholder Management, Product Roadmap, Scrum"
 "Scrum, User Stories"
 "Power BI, Data Cleaning, Reporting"
-Scrum
+"Scrum"
 "Scrum, User Stories, Agile, Stakeholder Management, Product Roadmap"
 "Python, Deep Learning"
 "Product Roadmap, Scrum, Stakeholder Management, User Stories"
@@ -2092,7 +2092,7 @@ Scrum
 "Agile, Product Roadmap, User Stories"
 "Statistics, Python, NLP, SQL, Deep Learning"
 "Docker, System Design, Agile, Spring Boot"
-Statistics
+"Statistics"
 "Stakeholder Management, Product Roadmap, Agile"
 "System Design, Spring Boot, Agile, REST APIs, Java, Git"
 "Agile, Java, Git, Spring Boot, REST APIs, System Design"
@@ -2132,7 +2132,7 @@ Statistics
 "SQL, Reporting, Excel"
 "Java, REST APIs, Spring Boot"
 "Keras, Computer Vision, TensorFlow, Cloud, Python"
-MLOps
+"MLOps"
 "Power BI, SQL, Tableau, Data Cleaning, Reporting"
 "Product Roadmap, Scrum, User Stories, Stakeholder Management"
 "Python, Pandas, Statistics"
@@ -2162,7 +2162,7 @@ MLOps
 "Scrum, Agile, User Stories, Product Roadmap"
 "Java, Spring Boot, REST APIs, Agile, Docker, Git"
 "Scrum, Stakeholder Management, Product Roadmap"
-System Design
+"System Design"
 "Power BI, Data Cleaning, Excel, Reporting, SQL, Tableau"
 "Cloud, TensorFlow, Python, MLOps, Computer Vision, PyTorch, Keras"
 "Excel, Reporting"
@@ -2170,7 +2170,7 @@ System Design
 "Pandas, Statistics"
 "Excel, Power BI, SQL, Data Cleaning, Reporting"
 "Python, NLP, SQL, Deep Learning, Pandas"
-Spring Boot
+"Spring Boot"
 "Python, Computer Vision, Cloud, Keras"
 "Machine Learning, SQL, Pandas, Python, Statistics"
 "Spring Boot, Git"
@@ -2189,7 +2189,7 @@ Spring Boot
 "Machine Learning, Statistics, Deep Learning"
 "Spring Boot, Docker"
 "Power BI, Reporting, Tableau"
-Agile
+"Agile"
 "Reporting, Excel, Data Cleaning, Tableau, SQL, Power BI"
 "Reporting, Data Cleaning, Tableau"
 "MLOps, TensorFlow, Computer Vision, PyTorch, Cloud"
@@ -2199,9 +2199,9 @@ Agile
 "Statistics, Deep Learning, Python, NLP"
 "Reporting, SQL, Excel, Data Cleaning, Tableau"
 "System Design, Docker, Spring Boot"
-Stakeholder Management
+"Stakeholder Management"
 "Python, TensorFlow"
-Python
+"Python"
 "Git, REST APIs, System Design"
 "Power BI, Reporting, SQL, Excel"
 "TensorFlow, Python"
@@ -2210,7 +2210,7 @@ Python
 "Power BI, Tableau, Reporting"
 "User Stories, Agile, Product Roadmap"
 "User Stories, Stakeholder Management, Agile, Product Roadmap, Scrum"
-Scrum
+"Scrum"
 "TensorFlow, PyTorch, Python, Keras, Cloud"
 "Python, NLP, Deep Learning"
 "Agile, System Design, Git, Spring Boot"
@@ -2219,11 +2219,11 @@ Scrum
 "Power BI, SQL, Data Cleaning"
 "Docker, Agile"
 "Deep Learning, NLP"
-Product Roadmap
+"Product Roadmap"
 "Python, SQL, NLP, Statistics"
 "Java, Spring Boot, Git"
 "REST APIs, Agile, Docker, Java"
-Machine Learning
+"Machine Learning"
 "Computer Vision, MLOps, Python, Keras, Cloud"
 "PyTorch, TensorFlow"
 "User Stories, Agile, Stakeholder Management, Scrum"
@@ -2239,11 +2239,11 @@ Machine Learning
 "Data Cleaning, Excel, Tableau, Power BI"
 "SQL, Statistics, Python, Deep Learning, NLP, Pandas"
 "Stakeholder Management, User Stories, Agile, Scrum, Product Roadmap"
-Excel
+"Excel"
 "Computer Vision, PyTorch, Keras, MLOps"
 "Python, TensorFlow, MLOps"
 "Cloud, PyTorch, TensorFlow, Keras"
-PyTorch
+"PyTorch"
 "Tableau, Excel, Reporting, Data Cleaning"
 "PyTorch, Python"
 "Cloud, PyTorch, TensorFlow, Python"
@@ -2328,9 +2328,9 @@ PyTorch
 "Agile, User Stories"
 "Data Cleaning, Tableau, SQL, Reporting, Excel"
 "Git, System Design, Spring Boot"
-PyTorch
+"PyTorch"
 "Stakeholder Management, User Stories, Product Roadmap, Agile"
-Agile
+"Agile"
 "Scrum, Agile"
 "Python, MLOps, TensorFlow, Cloud, Computer Vision"
 "Git, Java, REST APIs, Docker"
@@ -2350,7 +2350,7 @@ Agile
 "Python, Cloud"
 "Keras, Cloud"
 "Docker, Agile, System Design, REST APIs, Git"
-Git
+"Git"
 "Cloud, Keras, PyTorch"
 "NLP, Deep Learning, Machine Learning"
 "Tableau, Reporting, Data Cleaning, Power BI, SQL"
@@ -2358,7 +2358,7 @@ Git
 "Python, Cloud, MLOps"
 "Keras, MLOps, Cloud, PyTorch, Python, Computer Vision"
 "Product Roadmap, User Stories"
-Spring Boot
+"Spring Boot"
 "Pandas, SQL, Statistics, NLP"
 "SQL, Excel, Data Cleaning"
 "Product Roadmap, User Stories, Stakeholder Management"
@@ -2380,7 +2380,7 @@ Spring Boot
 "Agile, User Stories, Scrum"
 "Agile, REST APIs, Spring Boot"
 "Agile, Scrum, User Stories"
-User Stories
+"User Stories"
 "Machine Learning, Statistics, Deep Learning, SQL, Pandas, Python"
 "Excel, Data Cleaning, SQL, Tableau"
 "Product Roadmap, Scrum, User Stories, Stakeholder Management"
@@ -2388,7 +2388,7 @@ User Stories
 "Stakeholder Management, Product Roadmap, User Stories"
 "Excel, SQL, Reporting, Power BI, Tableau, Data Cleaning"
 "Product Roadmap, Stakeholder Management, Agile, User Stories"
-Pandas
+"Pandas"
 "Scrum, Agile, Stakeholder Management"
 "REST APIs, System Design, Java"
 "Pandas, Deep Learning, NLP, Statistics, SQL"
@@ -2411,7 +2411,7 @@ Pandas
 "Power BI, Tableau, Reporting"
 "Keras, Python, Computer Vision, TensorFlow, Cloud"
 "Excel, Tableau, SQL, Reporting"
-Computer Vision
+"Computer Vision"
 "Git, REST APIs, Agile, System Design, Java"
 "Data Cleaning, SQL, Tableau"
 "Machine Learning, SQL, Deep Learning, Pandas, NLP"
@@ -2441,7 +2441,7 @@ Computer Vision
 "Power BI, SQL, Tableau, Data Cleaning, Reporting, Excel"
 "PyTorch, TensorFlow, Keras, Python, Computer Vision"
 "TensorFlow, PyTorch, Cloud, Computer Vision, MLOps"
-Spring Boot
+"Spring Boot"
 "Statistics, NLP"
 "Cloud, TensorFlow, PyTorch, MLOps, Keras"
 "Power BI, Data Cleaning"
@@ -2468,7 +2468,7 @@ Spring Boot
 "Excel, SQL, Tableau, Power BI, Data Cleaning"
 "SQL, Python, Machine Learning"
 "Data Cleaning, Reporting, Power BI, Tableau, SQL, Excel"
-User Stories
+"User Stories"
 "Tableau, Power BI, Reporting, Excel"
 "Power BI, Data Cleaning"
 "Statistics, SQL, Python, Deep Learning, NLP, Pandas"
@@ -2479,7 +2479,7 @@ User Stories
 "Excel, SQL, Data Cleaning, Reporting, Tableau"
 "Scrum, Agile, User Stories, Stakeholder Management"
 "PyTorch, MLOps, TensorFlow"
-Tableau
+"Tableau"
 "Keras, PyTorch"
 "Deep Learning, Pandas, SQL"
 "Spring Boot, Java, REST APIs"
@@ -2509,18 +2509,18 @@ Tableau
 "Statistics, SQL"
 "Spring Boot, Agile, REST APIs, Java"
 "Git, System Design, Agile, REST APIs, Docker"
-Stakeholder Management
+"Stakeholder Management"
 "Computer Vision, Python, Keras"
 "TensorFlow, Keras, Cloud, MLOps"
 "SQL, Power BI, Tableau"
 "Pandas, Deep Learning, Statistics, NLP, Machine Learning"
-Java
+"Java"
 "Agile, Product Roadmap, Stakeholder Management, User Stories, Scrum"
 "Excel, Reporting, SQL, Data Cleaning, Power BI"
 "Machine Learning, Pandas, Statistics, NLP"
 "Power BI, Excel, Reporting, Data Cleaning, SQL"
 "Deep Learning, SQL"
-User Stories
+"User Stories"
 "PyTorch, Cloud, TensorFlow, Computer Vision"
 "NLP, Python, SQL, Statistics, Deep Learning, Pandas, Machine Learning"
 "Tableau, SQL, Power BI, Reporting, Data Cleaning"
@@ -2586,13 +2586,13 @@ User Stories
 "Stakeholder Management, User Stories, Product Roadmap, Agile"
 "Product Roadmap, Stakeholder Management, Scrum"
 "Power BI, SQL, Reporting, Excel"
-Power BI
+"Power BI"
 "Python, Statistics, Pandas"
 "Python, Statistics, Pandas, SQL, Machine Learning"
 "Spring Boot, Java, Agile, Git, System Design, Docker"
 "Agile, Scrum, Stakeholder Management"
 "Data Cleaning, SQL"
-Docker
+"Docker"
 "Product Roadmap, User Stories, Agile, Stakeholder Management, Scrum"
 "Scrum, Agile, User Stories, Product Roadmap, Stakeholder Management"
 "SQL, NLP, Pandas"
@@ -2633,7 +2633,7 @@ Docker
 "Python, Machine Learning, NLP, SQL, Deep Learning"
 "Java, Agile, System Design, Git"
 "Reporting, Excel, Power BI"
-Product Roadmap
+"Product Roadmap"
 "Agile, Scrum, User Stories, Stakeholder Management, Product Roadmap"
 "Pandas, Machine Learning, NLP, SQL"
 "User Stories, Scrum, Product Roadmap"
@@ -2648,7 +2648,7 @@ Product Roadmap
 "Excel, Data Cleaning, Power BI"
 "TensorFlow, PyTorch, Cloud, Python"
 "Python, Statistics, NLP"
-Agile
+"Agile"
 "NLP, Python, SQL"
 "Data Cleaning, Tableau, Power BI, Reporting"
 "Reporting, Tableau, Power BI"
@@ -2721,13 +2721,13 @@ Agile
 "SQL, Deep Learning, Machine Learning, Pandas"
 "SQL, Power BI, Excel, Data Cleaning, Reporting, Tableau"
 "Keras, MLOps, Python"
-Machine Learning
+"Machine Learning"
 "MLOps, Cloud, Python, PyTorch"
 "User Stories, Scrum"
 "REST APIs, Java, Git"
 "Java, System Design, Docker, REST APIs, Agile, Spring Boot"
 "Tableau, SQL, Power BI"
-Stakeholder Management
+"Stakeholder Management"
 "Product Roadmap, Agile, User Stories, Stakeholder Management"
 "Tableau, SQL, Reporting, Data Cleaning"
 "Product Roadmap, Agile, User Stories, Scrum, Stakeholder Management"
@@ -2750,7 +2750,7 @@ Stakeholder Management
 "Democrat, Cloud, Python, MLOps"
 "Docker, Agile, Java, REST APIs"
 "Agile, Scrum, Stakeholder Management"
-Scrum
+"Scrum"
 "Computer Vision, MLOps, PyTorch, Python"
 "Stakeholder Management, Product Roadmap, Scrum, User Stories, Agile"
 "Agile, Stakeholder Management, Product Roadmap"
@@ -2779,7 +2779,7 @@ Scrum
 "PyTorch, Keras, Computer Vision, Python"
 "System Design, Java, Spring Boot, Git, REST APIs"
 "Stakeholder Management, Product Roadmap, Scrum, User Stories, Agile"
-Python
+"Python"
 "REST APIs, Docker, Agile, Spring Boot, Java, System Design, Git"
 "Tableau, Data Cleaning, Power BI, Reporting"
 "Machine Learning, Statistics, Deep Learning, NLP, Pandas, SQL"
@@ -2796,7 +2796,7 @@ Python
 "Excel, SQL, Data Cleaning, Tableau"
 "Agile, Git"
 "Tableau, SQL, Power BI, Reporting"
-Java
+"Java"
 "Stakeholder Management, Scrum, Agile, User Stories"
 "TensorFlow, Cloud"
 "Spring Boot, System Design, Agile, Java, Git"
@@ -2807,7 +2807,7 @@ Java
 "Tableau, Reporting"
 "Keras, PyTorch"
 "Deep Learning, Statistics, SQL, Python, Pandas, NLP"
-NLP
+"NLP"
 "Spring Boot, REST APIs, Git, Java, System Design"
 "NLP, SQL, Statistics, Pandas, Machine Learning"
 "Excel, SQL, Reporting"
@@ -2850,10 +2850,10 @@ NLP
 "Deep Learning, Pandas"
 "System Design, Java, REST APIs, Git, Agile, Docker"
 "User Stories, Scrum, Stakeholder Management, Agile, Product Roadmap"
-Machine Learning
+"Machine Learning"
 "SQL, NLP"
 "Scrum, Product Roadmap"
-NLP
+"NLP"
 "REST APIs, System Design, Docker"
 "TensorFlow, Cloud, MLOps, PyTorch, Computer Vision"
 "Keras, TensorFlow"
@@ -2973,26 +2973,26 @@ NLP
 "Python, SQL, Machine Learning, Pandas, NLP"
 "Product Roadmap, Scrum, User Stories"
 "SQL, Excel, Reporting, Tableau"
-Deep Learning
+"Deep Learning"
 "Docker, Java, System Design"
 "Scrum, Agile, Product Roadmap, Stakeholder Management"
 "Keras, PyTorch, TensorFlow, MLOps, Cloud, Computer Vision"
 "Cloud, Python"
 "Keras, PyTorch"
 "Statistics, SQL"
-Statistics
+"Statistics"
 "Keras, TensorFlow, Computer Vision"
 "Pandas, Deep Learning, NLP, Python, SQL, Statistics, Machine Learning"
 "Product Roadmap, Agile, Scrum, Stakeholder Management, User Stories"
 "Stakeholder Management, Product Roadmap, Agile, Scrum"
 "PyTorch, Computer Vision, Python"
 "Git, Spring Boot, REST APIs, Java, System Design"
-Agile
+"Agile"
 "Python, Machine Learning, Deep Learning, NLP"
 "Python, Machine Learning"
 "Reporting, Tableau, Data Cleaning, SQL, Power BI"
 "NLP, Statistics, Pandas, Deep Learning, Python"
-Product Roadmap
+"Product Roadmap"
 "Statistics, Pandas, Deep Learning"
 "Tableau, Reporting, Excel, SQL, Data Cleaning, Power BI"
 "SQL, Reporting"
@@ -3035,7 +3035,7 @@ Product Roadmap
 "Pandas, Statistics, Machine Learning, Python"
 "Agile, Docker, System Design, REST APIs"
 "NLP, Python, Deep Learning, Machine Learning, SQL, Statistics"
-Scrum
+"Scrum"
 "Scrum, Agile, Product Roadmap, User Stories"
 "TensorFlow, Python, Keras, Cloud, MLOps"
 "NLP, Python, Machine Learning, Deep Learning, Statistics"
@@ -3063,7 +3063,7 @@ Scrum
 "Scrum, Stakeholder Management"
 "Scrum, Product Roadmap, Stakeholder Management"
 "Python, PyTorch, Keras, Cloud"
-Stakeholder Management
+"Stakeholder Management"
 "Docker, Agile, Git, Spring Boot, REST APIs"
 "Stakeholder Management, User Stories, Product Roadmap, Scrum, Agile"
 "User Stories, Agile"
@@ -3122,7 +3122,7 @@ Stakeholder Management
 "Reporting, Data Cleaning"
 "Java, Docker, System Design"
 "System Design, Spring Boot, Git, Agile, REST APIs, Docker"
-Computer Vision
+"Computer Vision"
 "Python, Machine Learning, NLP, SQL"
 "Reporting, Tableau"
 "Reporting, Tableau, Excel"
@@ -3142,7 +3142,7 @@ Computer Vision
 "Power BI, Excel, Data Cleaning, Tableau"
 "User Stories, Agile, Product Roadmap"
 "Scrum, User Stories, Agile"
-Product Roadmap
+"Product Roadmap"
 "REST APIs, Git, System Design, Mr, Agile, Java"
 "Git, System Design, Docker, Spring Boot, Java"
 "Product Roadmap, Agile, Stakeholder Management, Scrum"
@@ -3159,7 +3159,7 @@ Product Roadmap
 "Product Roadmap, Agile, Scrum, Stakeholder Management, User Stories"
 "Pandas, Machine Learning, SQL, Python"
 "Agile, System Design, REST APIs, Java, Docker"
-Computer Vision
+"Computer Vision"
 "REST APIs, Spring Boot, Docker, Git"
 "NLP, Statistics, Machine Learning, SQL"
 "TensorFlow, MLOps, PyTorch, Python, Keras"
@@ -3204,7 +3204,7 @@ Computer Vision
 "SQL, Pandas, NLP, Statistics, Machine Learning"
 "User Stories, Agile, Product Roadmap, Stakeholder Management"
 "System Design, REST APIs, Agile, Spring Boot, Git"
-Spring Boot
+"Spring Boot"
 "Docker, Agile, Spring Boot"
 "Excel, Data Cleaning"
 "Pandas, SQL"
@@ -3220,7 +3220,7 @@ Spring Boot
 "Cloud, Python, MLOps"
 "Python, Pandas, Statistics, Deep Learning, NLP"
 "Agile, Java, Git, REST APIs, Docker"
-MLOps
+"MLOps"
 "SQL, Power BI, Excel, Tableau, Data Cleaning"
 "Agile, System Design, Spring Boot, Git"
 "Machine Learning, Python"
@@ -3279,19 +3279,19 @@ MLOps
 "User Stories, Stakeholder Management, Agile, Product Roadmap, Scrum"
 "Machine Learning, Deep Learning, NLP, SQL"
 "User Stories, Scrum, Agile"
-User Stories
+"User Stories"
 "User Stories, Product Roadmap, Stakeholder Management, Scrum, Agile"
 "REST APIs, Java, Agile"
 "Python, Cloud, Keras, Computer Vision, MLOps, TensorFlow"
 "Deep Learning, SQL, Pandas, Machine Learning, Python"
 "Cloud, Computer Vision, TensorFlow, Python"
 "System Design, Java, Agile, Spring Boot, Docker"
-Spring Boot
+"Spring Boot"
 "Excel, SQL"
 "System Design, REST APIs, Spring Boot, Git"
 "System Design, Git, Java, Agile, REST APIs"
 "Java, Agile, Spring Boot"
-Product Roadmap
+"Product Roadmap"
 "Machine Learning, Pandas, Deep Learning, Python, Statistics"
 "Machine Learning, Deep Learning, Statistics"
 "System Design, Java, Agile"
@@ -3300,7 +3300,7 @@ Product Roadmap
 "Excel, Tableau, Power BI, SQL"
 "NLP, Deep Learning, Pandas, Machine Learning"
 "SQL, Machine Learning, NLP, Statistics, Pandas"
-MLOps
+"MLOps"
 "Statistics, Machine Learning, NLP, Deep Learning, SQL"
 "Spring Boot, Git, Docker, Agile"
 "Java, Spring Boot, System Design, Agile"
@@ -3311,7 +3311,7 @@ MLOps
 "System Design, Spring Boot"
 "SQL, Data Cleaning, Reporting"
 "Git, Agile, System Design"
-NLP
+"NLP"
 "Excel, Reporting, Tableau, Data Cleaning"
 "Deep Learning, Python, SQL, Machine Learning"
 "Scrum, User Stories, Stakeholder Management, Agile, Product Roadmap"
@@ -3324,10 +3324,10 @@ NLP
 "Python, Machine Learning, Pandas, NLP, SQL, Deep Learning"
 "Keras, Cloud"
 "Excel, Reporting"
-Spring Boot
+"Spring Boot"
 "Java, Git, Agile, Spring Boot"
 "Agile, User Stories, Stakeholder Management, Scrum, Product Roadmap"
-
+""
 "Power BI, Data Cleaning, Tableau, Excel, Reporting"
 "Scrum, Agile"
 "Data Cleaning, Power BI"
@@ -3358,7 +3358,7 @@ Spring Boot
 "Docker, Spring Boot"
 "System Design, Spring Boot, REST APIs, Agile"
 "Agile, User Stories, Scrum"
-Tableau
+"Tableau"
 "Agile, Git, Spring Boot"
 "User Stories, Stakeholder Management"
 "System Design, Docker"
@@ -3367,7 +3367,7 @@ Tableau
 "Deep Learning, Pandas, Statistics, Python"
 "TensorFlow, Python, Keras, Cloud, MLOps"
 "Excel, Data Cleaning, SQL, Tableau"
-Cloud
+"Cloud"
 "Excel, Power BI"
 "Python, NLP, Pandas"
 "MLOps, Computer Vision, TensorFlow"
@@ -3436,7 +3436,7 @@ Cloud
 "Data Cleaning, Power BI, SQL, Reporting, Excel"
 "System Design, Spring Boot, REST APIs, Docker, Java"
 "Product Roadmap, User Stories"
-Power BI
+"Power BI"
 "Data Cleaning, Power BI, Tableau, Excel, Reporting"
 "Reporting, Power BI, Data Cleaning, Excel, SQL"
 "Stakeholder Management, Agile, User Stories, Product Roadmap, Scrum"
@@ -3445,7 +3445,7 @@ Power BI
 "SQL, Tableau, Power BI, Data Cleaning"
 "Pandas, Statistics"
 "MLOps, Computer Vision, PyTorch, Python, TensorFlow"
-Pandas
+"Pandas"
 "Java, Spring Boot, Docker, REST APIs, Git"
 "SQL, Reporting, Tableau, Excel"
 "SQL, Deep Learning, Statistics, Python, Pandas"
@@ -3469,8 +3469,8 @@ Pandas
 "SQL, Python"
 "Docker, Agile, Java, REST APIs, Spring Boot, Git"
 "User Stories, Scrum, Stakeholder Management, Product Roadmap"
-Scrum
-SQL
+"Scrum"
+"SQL"
 "Stakeholder Management, User Stories, Agile, Product Roadmap, Scrum"
 "Keras, Cloud, Python"
 "MLOps, Python, TensorFlow, Cloud"
@@ -3481,7 +3481,7 @@ SQL
 "Statistics, Deep Learning, Machine Learning, Python, NLP, Pandas"
 "SQL, Deep Learning"
 "System Design, Git, Spring Boot, Docker"
-Machine Learning
+"Machine Learning"
 "SQL, Data Cleaning, Power BI, Excel, Reporting"
 "Tableau, Reporting, SQL, Power BI, Data Cleaning"
 "REST APIs, Docker, Git"
@@ -3497,7 +3497,7 @@ Machine Learning
 "Python, Computer Vision, Cloud"
 "Scrum, Agile, Product Roadmap"
 "Spring Boot, Git, Agile, REST APIs, System Design, Java"
-MLOps
+"MLOps"
 "Tableau, Excel, Power BI"
 "Stakeholder Management, Scrum, Agile"
 "Agile, REST APIs"
@@ -3515,7 +3515,7 @@ MLOps
 "SQL, Machine Learning, Statistics, Python, Deep Learning, Pandas"
 "Computer Vision, Keras, MLOps"
 "Machine Learning, Deep Learning, Python"
-
+""
 "User Stories, Stakeholder Management, Agile, Product Roadmap, Scrum"
 "Machine Learning, Pandas"
 "Stakeholder Management, Scrum"
@@ -3524,9 +3524,9 @@ MLOps
 "Machine Learning, SQL, Pandas, Statistics, Deep Learning, Python"
 "Python, MLOps, TensorFlow, Cloud, PyTorch"
 "Stakeholder Management, Scrum"
-Scrum
+"Scrum"
 "Pandas, SQL"
-Cloud
+"Cloud"
 "PyTorch, TensorFlow"
 "TensorFlow, MLOps, Keras, Python, Computer Vision, Cloud"
 "Statistics, Pandas, NLP, SQL"
@@ -3624,7 +3624,7 @@ Cloud
 "Deep Learning, SQL, Python, Machine Learning, NLP"
 "Machine Learning, Pandas, Statistics, Python"
 "Reporting, Power BI, Data Cleaning, Tableau, SQL"
-Data Cleaning
+"Data Cleaning"
 "Agile, Docker, Git, Java, System Design, REST APIs"
 "REST APIs, Git, System Design"
 "Deep Learning, NLP, Python, SQL"
@@ -3634,7 +3634,7 @@ Data Cleaning
 "Product Roadmap, Stakeholder Management"
 "Data Cleaning, Reporting"
 "TensorFlow, Cloud, Computer Vision, Keras, PyTorch, MLOps, TV"
-Spring Boot
+"Spring Boot"
 "Excel, Power BI, Reporting"
 "Python, PyTorch, Keras, MLOps"
 "Python, Computer Vision, TensorFlow"
@@ -3677,7 +3677,7 @@ Spring Boot
 "Product Roadmap, Agile, Scrum"
 "System Design, Docker"
 "Power BI, Reporting"
-Data Cleaning
+"Data Cleaning"
 "Power BI, Data Cleaning, Tableau"
 "SQL, NLP, Statistics"
 "SQL, Deep Learning, Statistics, Pandas, Python, Machine Learning, NLP"
@@ -3696,7 +3696,7 @@ Data Cleaning
 "MLOps, Computer Vision"
 "Cloud, Computer Vision, Keras, PyTorch, MLOps"
 "User Stories, Agile, Stakeholder Management, Product Roadmap"
-Spring Boot
+"Spring Boot"
 "Machine Learning, Deep Learning, Statistics, NLP"
 "Python, Statistics, SQL"
 "PyTorch, Cloud"
@@ -3705,7 +3705,7 @@ Spring Boot
 "User Stories, Scrum"
 "NLP, Pandas, Deep Learning, Statistics, Python"
 "SQL, Data Cleaning, Power BI, Tableau, Reporting"
-Git
+"Git"
 "NLP, SQL, Python"
 "User Stories, Stakeholder Management, Agile, Scrum"
 "SQL, NLP, Deep Learning, Pandas, Python, Machine Learning"
@@ -3756,20 +3756,20 @@ Git
 "TensorFlow, MLOps"
 "Agile, Git, REST APIs, Spring Boot, Docker"
 "Product Roadmap, Agile, Stakeholder Management"
-SQL
+"SQL"
 "Product Roadmap, Scrum, Agile, Stakeholder Management"
 "REST APIs, Docker, Java, Spring Boot"
 "Scrum, User Stories, Agile"
 "TensorFlow, Cloud, MLOps, PyTorch, Computer Vision"
 "Reporting, Tableau, Power BI, Data Cleaning"
-TensorFlow
+"TensorFlow"
 "Product Roadmap, User Stories"
 "Java, Docker, REST APIs, Agile"
 "PyTorch, Python, TensorFlow, Keras, Cloud, Computer Vision"
 "Data Cleaning, Tableau"
 "Tableau, Power BI"
 "System Design, Spring Boot, Git, REST APIs, Agile"
-Java
+"Java"
 "Reporting, Tableau, Data Cleaning"
 "Scrum, User Stories, Stakeholder Management, Agile"
 "Agile, REST APIs, System Design"
@@ -3808,14 +3808,14 @@ Java
 "Product Roadmap, Agile"
 "Agile, Stakeholder Management, Scrum, Product Roadmap, User Stories"
 "Deep Learning, Statistics, Python, TV, Pandas"
-Statistics
+"Statistics"
 "User Stories, Agile, Product Roadmap, Stakeholder Management, Scrum"
 "SQL, Excel, Data Cleaning, Power BI, Reporting"
 "Java, Git, REST APIs, System Design, Docker, Agile, Spring Boot"
 "Product Roadmap, Stakeholder Management"
 "System Design, Spring Boot, Docker, REST APIs, Agile, Java, Git"
 "Stakeholder Management, Product Roadmap"
-Stakeholder Management
+"Stakeholder Management"
 "Cloud, MLOps"
 "Product Roadmap, Agile, Scrum, Stakeholder Management, User Stories"
 "Python, TensorFlow, Cloud, Keras, MLOps, PyTorch"
@@ -3849,7 +3849,7 @@ Stakeholder Management
 "Spring Boot, Agile, Git, System Design, REST APIs, Docker"
 "Pandas, Statistics, Python, Machine Learning"
 "Git, Docker, System Design"
-Agile
+"Agile"
 "Stakeholder Management, User Stories, Product Roadmap, Scrum"
 "Product Roadmap, User Stories, Agile"
 "Docker, Git"
@@ -3857,7 +3857,7 @@ Agile
 "SQL, Deep Learning, Machine Learning, NLP, Pandas"
 "SQL, Excel, Power BI"
 "Keras, Python, TensorFlow"
-PyTorch
+"PyTorch"
 "SQL, Excel, Power BI, Reporting, Tableau"
 "SQL, Data Cleaning, Tableau, Excel, Reporting"
 "Java, Git, REST APIs, Spring Boot, Docker, Agile, System Design"
@@ -3959,14 +3959,14 @@ PyTorch
 "Cloud, Computer Vision, Keras"
 "Stakeholder Management, User Stories, Agile"
 "Stakeholder Management, Product Roadmap, Agile, User Stories, Scrum"
-Tableau
+"Tableau"
 "NLP, Statistics, Pandas, Python"
 "PyTorch, Keras, MLOps, Computer Vision"
 "Tableau, Reporting, Excel, Power BI"
 "Spring Boot, Docker, System Design, Agile"
 "Product Roadmap, User Stories, Agile, Scrum"
 "Python, NLP, Pandas, SQL, Machine Learning"
-Excel
+"Excel"
 "Excel, Power BI, Reporting, Data Cleaning, Tableau, SQL"
 "Reporting, Power BI, Data Cleaning, Tableau, Excel"
 "Machine Learning, Python, Statistics, Pandas, NLP, Deep Learning"
@@ -4044,12 +4044,12 @@ Excel
 "Deep Learning, Pandas"
 "Pandas, Deep Learning, Python, Machine Learning, Statistics"
 "Scrum, Stakeholder Management"
-
+""
 "TensorFlow, PyTorch, MLOps, Cloud, Keras"
 "Tableau, Excel, Power BI, Reporting"
 "Tableau, Power BI"
 "Python, Machine Learning, Pandas, Statistics, Mr, SQL"
-Stakeholder Management
+"Stakeholder Management"
 "Java, Git, Docker, Agile"
 "Computer Vision, Cloud, TensorFlow, Keras, Python"
 "Excel, Tableau, Reporting, SQL, Power BI"
@@ -4061,7 +4061,7 @@ Stakeholder Management
 "Cloud, Keras, TensorFlow, Python, MLOps, PyTorch"
 "Agile, Docker, REST APIs"
 "Agile, Stakeholder Management, Product Roadmap"
-Computer Vision
+"Computer Vision"
 "Deep Learning, Python, SQL, NLP, Machine Learning, Statistics"
 "Stakeholder Management, Agile, User Stories, Scrum, Product Roadmap"
 "SQL, Statistics, NLP, Deep Learning, Python"
@@ -4100,14 +4100,14 @@ Computer Vision
 "Computer Vision, Cloud, Python"
 "SQL, Statistics"
 "Python, PyTorch, Cloud, MLOps, Keras, TensorFlow"
-SQL
+"SQL"
 "Computer Vision, TensorFlow, Keras, PyTorch, Cloud"
 "Computer Vision, Keras, PyTorch, Python, MLOps"
 "TensorFlow, Python, Keras"
 "Java, Agile, Spring Boot"
 "Keras, Cloud, Computer Vision, MLOps, PyTorch, Python"
 "User Stories, Stakeholder Management"
-Tableau
+"Tableau"
 "Product Roadmap, Agile, Scrum"
 "Power BI, Excel, Reporting"
 "Statistics, NLP, Deep Learning, Python, Pandas"
@@ -4215,7 +4215,7 @@ Tableau
 "Keras, MLOps, Python, Cloud, Computer Vision, TensorFlow"
 "Data Cleaning, Tableau"
 "NLP, Pandas, SQL"
-Pandas
+"Pandas"
 "Git, Spring Boot, Agile, Docker, System Design, Java"
 "Python, NLP"
 "SQL, Machine Learning, Pandas"
@@ -4241,7 +4241,7 @@ Pandas
 "Statistics, SQL, NLP, Pandas, Machine Learning"
 "Stakeholder Management, Agile, Scrum"
 "Agile, Spring Boot, Git, Docker, Java, System Design"
-Excel
+"Excel"
 "Power BI, Tableau, Excel"
 "Deep Learning, Pandas, SQL, Python, NLP"
 "Tableau, Power BI, Excel, SQL"
@@ -4267,7 +4267,7 @@ Excel
 "Python, Keras, Cloud"
 "Agile, Spring Boot, Docker"
 "Machine Learning, Statistics"
-
+""
 "Reporting, Power BI, Tableau, Data Cleaning, SQL"
 "Computer Vision, Cloud, PyTorch, MLOps, Keras"
 "Excel, Data Cleaning, Power BI, SQL"
@@ -4336,7 +4336,7 @@ Excel
 "Pandas, Statistics, Machine Learning, NLP, SQL"
 "NLP, Deep Learning"
 "Data Cleaning, Excel, Tableau"
-Git
+"Git"
 "Scrum, Product Roadmap, Agile"
 "Product Roadmap, User Stories, Scrum"
 "Excel, SQL"
@@ -4374,12 +4374,12 @@ Git
 "Product Roadmap, Scrum"
 "SQL, Machine Learning, NLP, Pandas"
 "Tableau, Data Cleaning, Excel, Power BI, Reporting, SQL"
-
+""
 "Computer Vision, Cloud, MLOps"
 "Docker, REST APIs"
 "Git, REST APIs, Java, Agile, System Design, Docker"
 "Keras, PyTorch, TensorFlow, MLOps, Python, Computer Vision"
-Reporting
+"Reporting"
 "Product Roadmap, Stakeholder Management, Agile, User Stories"
 "SQL, Machine Learning, Pandas, NLP"
 "Agile, Product Roadmap"
@@ -4390,7 +4390,7 @@ Reporting
 "Excel, Power BI, SQL, Tableau"
 "Power BI, Excel, Data Cleaning, PM"
 "Tableau, Excel"
-Git
+"Git"
 "Spring Boot, Agile, Java"
 "Deep Learning, NLP, Machine Learning, Python, Statistics, Pandas, SQL"
 "Pandas, Python, Machine Learning, Deep Learning"
@@ -4409,14 +4409,14 @@ Git
 "Computer Vision, TensorFlow, Python"
 "Pandas, Machine Learning, Deep Learning, Python, SQL"
 "SQL, Deep Learning"
-Product Roadmap
+"Product Roadmap"
 "MLOps, TensorFlow, Python, Computer Vision"
 "NLP, Pandas"
 "Pandas, Python, NLP, SQL, Deep Learning"
 "NLP, Pandas"
 "Reporting, Data Cleaning, Excel"
 "User Stories, Scrum, Product Roadmap"
-User Stories
+"User Stories"
 "Excel, Tableau, SQL, Power BI, Reporting"
 "Stakeholder Management, Scrum, Agile, User Stories"
 "Pandas, NLP, SQL, Statistics"
@@ -4430,7 +4430,7 @@ User Stories
 "REST APIs, Docker"
 "Product Roadmap, Scrum, Agile"
 "Machine Learning, NLP, Pandas, SQL, Python"
-
+""
 "Deep Learning, Pandas, SQL, Statistics, NLP"
 "Scrum, Product Roadmap, Agile, User Stories, Stakeholder Management"
 "PM, System Design, Docker, Java, Agile, Spring Boot"
@@ -4454,7 +4454,7 @@ User Stories
 "Excel, Reporting, Power BI, Data Cleaning"
 "NLP, SQL, Deep Learning, Python, Statistics, Pandas"
 "Python, NLP, Deep Learning, SQL"
-Power BI
+"Power BI"
 "Cloud, Keras, Computer Vision, PyTorch, TensorFlow"
 "SQL, Reporting, Excel, Power BI"
 "Docker, REST APIs, Java, Git, Spring Boot"
@@ -4490,7 +4490,7 @@ Power BI
 "Reporting, Excel, Data Cleaning, Power BI"
 "SQL, Pandas, NLP, Machine Learning, Statistics"
 "Docker, Agile, REST APIs, Spring Boot"
-Reporting
+"Reporting"
 "PyTorch, TensorFlow, Computer Vision"
 "Agile, User Stories, Stakeholder Management, Scrum"
 "NLP, Pandas, Deep Learning"
@@ -4566,18 +4566,18 @@ Reporting
 "Pandas, SQL"
 "Reporting, SQL, Tableau"
 "System Design, Spring Boot, Git, REST APIs, Java"
-Excel
+"Excel"
 "NLP, Pandas, Machine Learning, Statistics"
 "User Stories, Product Roadmap, Agile"
 "Power BI, Data Cleaning, Tableau, Excel, SQL"
-Python
+"Python"
 "Product Roadmap, Scrum, User Stories, Stakeholder Management, Agile"
 "Java, Git, American, Agile, Docker, Spring Boot, REST APIs"
 "Scrum, Agile, User Stories, Product Roadmap"
 "Python, Pandas, SQL, Statistics, NLP, Deep Learning"
 "SQL, Machine Learning, Statistics, Python, NLP, Pandas"
 "TensorFlow, Computer Vision"
-Product Roadmap
+"Product Roadmap"
 "SQL, Python, Machine Learning, Pandas, Deep Learning"
 "Agile, Java, REST APIs, Git, Docker"
 "Product Roadmap, Scrum, User Stories, Agile"
@@ -4613,7 +4613,7 @@ Product Roadmap
 "Keras, Python, MLOps"
 "Tableau, Excel, Reporting"
 "Cloud, Python, PyTorch, MLOps"
-Reporting
+"Reporting"
 "Spring Boot, REST APIs, System Design, Git, Docker, Java"
 "Python, Statistics, NLP, Pandas"
 "Python, Pandas, SQL, Deep Learning, NLP, Statistics, Machine Learning"
@@ -4646,11 +4646,11 @@ Reporting
 "NLP, SQL"
 "Keras, Computer Vision, Cloud"
 "Git, System Design, Spring Boot"
-Deep Learning
+"Deep Learning"
 "Stakeholder Management, Scrum, Product Roadmap"
 "TensorFlow, Computer Vision, PyTorch, Cloud, MLOps"
 "Power BI, Data Cleaning, SQL, Reporting, Tableau, Excel"
-Power BI
+"Power BI"
 "PyTorch, MLOps, Computer Vision"
 "PyTorch, Cloud, TensorFlow, Python, MLOps"
 "Tableau, Excel, Power BI"
@@ -4661,7 +4661,7 @@ Power BI
 "SQL, Power BI, Excel"
 "Stakeholder Management, User Stories, Scrum, Product Roadmap, Agile"
 "Docker, System Design, Spring Boot, REST APIs, Agile"
-Reporting
+"Reporting"
 "Power BI, SQL, Data Cleaning, Tableau, Excel, Reporting"
 "Docker, Git, Spring Boot"
 "NLP, Statistics, Deep Learning, Machine Learning"
@@ -4684,7 +4684,7 @@ Reporting
 "Data Cleaning, Excel, Power BI"
 "Agile, Product Roadmap"
 "Agile, REST APIs, Spring Boot, Git, System Design"
-Scrum
+"Scrum"
 "Git, System Design, Spring Boot"
 "Keras, Computer Vision, Python"
 "Excel, Power BI, Data Cleaning, Tableau"
@@ -4705,7 +4705,7 @@ Scrum
 "SQL, Excel, Reporting"
 "MLOps, PyTorch, Computer Vision, Keras, Cloud, TensorFlow"
 "User Stories, Scrum, Product Roadmap, Agile"
-User Stories
+"User Stories"
 "User Stories, Scrum, Product Roadmap, Agile"
 "Excel, Reporting, Data Cleaning"
 "Agile, Product Roadmap, Stakeholder Management"
@@ -4745,13 +4745,13 @@ User Stories
 "SQL, Tableau, Data Cleaning"
 "Statistics, Pandas"
 "TensorFlow, MLOps, Computer Vision"
-Java
+"Java"
 "Java, Docker, Agile"
 "Scrum, Stakeholder Management, Agile"
 "TensorFlow, Keras, PyTorch"
 "SQL, Excel, Tableau, Data Cleaning, Power BI"
 "User Stories, Agile, Product Roadmap"
-Spring Boot
+"Spring Boot"
 "PyTorch, TensorFlow, MLOps"
 "Machine Learning, Python, Statistics, Pandas, Deep Learning"
 "TensorFlow, Python, Computer Vision, Cloud, MLOps"
@@ -4770,11 +4770,11 @@ Spring Boot
 "Data Cleaning, Reporting, Tableau"
 "System Design, Docker, Spring Boot, Git"
 "Keras, MLOps"
-Computer Vision
+"Computer Vision"
 "Deep Learning, SQL, Machine Learning, NLP"
 "Agile, REST APIs, Docker, Spring Boot"
 "Agile, Stakeholder Management"
-Agile
+"Agile"
 "Power BI, Tableau, Data Cleaning, SQL, Excel"
 "System Design, Spring Boot, REST APIs, Agile, Java"
 "PyTorch, Computer Vision, Python"
@@ -4795,7 +4795,7 @@ Agile
 "Git, Spring Boot, REST APIs, System Design, Docker"
 "Deep Learning, Python, SQL, Machine Learning"
 "Python, Deep Learning, SQL"
-MLOps
+"MLOps"
 "Python, SQL, Statistics, Pandas, NLP, Deep Learning"
 "Cloud, Computer Vision, Keras"
 "Java, Docker"
@@ -4818,7 +4818,7 @@ MLOps
 "Docker, Java, REST APIs"
 "TensorFlow, Cloud, Computer Vision"
 "TensorFlow, Keras, Computer Vision, MLOps, Python"
-MLOps
+"MLOps"
 "User Stories, Stakeholder Management, Product Roadmap, Scrum, Agile"
 "Excel, Reporting, SQL"
 "Scrum, User Stories, Product Roadmap, Stakeholder Management"
@@ -4836,7 +4836,7 @@ MLOps
 "REST APIs, System Design, Spring Boot, Docker"
 "Git, REST APIs, Docker, Java"
 "Keras, PyTorch, TensorFlow"
-Power BI
+"Power BI"
 "MLOps, TensorFlow, Cloud, Python"
 "Deep Learning, NLP"
 "Product Roadmap, Scrum"
@@ -4874,7 +4874,7 @@ Power BI
 "SQL, Reporting, Excel, Tableau, Power BI"
 "Agile, Scrum, Product Roadmap, User Stories, Stakeholder Management"
 "User Stories, Scrum, Product Roadmap"
-Java
+"Java"
 "System Design, Java"
 "Scrum, User Stories, Agile, Product Roadmap, Stakeholder Management"
 "Python, TensorFlow, Keras"
@@ -4911,7 +4911,7 @@ Java
 "Pandas, Statistics, NLP, Deep Learning, SQL"
 "Scrum, User Stories"
 "Reporting, Power BI"
-MLOps
+"MLOps"
 "Spring Boot, Java, System Design"
 "Docker, Java, Spring Boot, Agile, REST APIs"
 "Power BI, Data Cleaning, Excel"
@@ -4977,7 +4977,7 @@ MLOps
 "Python, Machine Learning, SQL, Statistics"
 "I, Java, System Design, Spring Boot, Agile"
 "Stakeholder Management, Agile, User Stories, Product Roadmap"
-Agile
+"Agile"
 "Git, Agile, REST APIs"
 "Agile, System Design, Java, Spring Boot"
 "System Design, Java, REST APIs, Git, Spring Boot"
@@ -4986,10 +4986,10 @@ Agile
 "Python, Keras, MLOps"
 "Excel, Power BI, Democrat, Tableau"
 "Python, Cloud, Computer Vision, PyTorch, Keras"
-User Stories
+"User Stories"
 "Python, NLP, Deep Learning"
 "Python, TensorFlow, Cloud"
-Power BI
+"Power BI"
 "MLOps, Cloud, TensorFlow"
 "PyTorch, Computer Vision, TensorFlow, MLOps"
 "TensorFlow, MLOps, Python, Cloud, PyTorch, Computer Vision"
@@ -5023,7 +5023,7 @@ Power BI
 "TensorFlow, PyTorch, Computer Vision, Python, Cloud"
 "Deep Learning, Machine Learning, SQL"
 "Reporting, Power BI, Tableau, Excel"
-Stakeholder Management
+"Stakeholder Management"
 "Python, TensorFlow, Keras, Computer Vision"
 "Power BI, Tableau, SQL, Reporting, Data Cleaning"
 "Keras, Python, TensorFlow, Cloud, Computer Vision"
@@ -5075,7 +5075,7 @@ Stakeholder Management
 "Computer Vision, PyTorch, Python"
 "MLOps, Keras, PyTorch, Python"
 "Tableau, SQL, Data Cleaning"
-System Design
+"System Design"
 "Deep Learning, Machine Learning, Statistics"
 "Tableau, SQL, Data Cleaning, Reporting"
 "Docker, Mr, System Design, Spring Boot, Git, Agile"
@@ -5088,18 +5088,18 @@ System Design
 "Stakeholder Management, Product Roadmap, Agile"
 "Pandas, SQL, Statistics, NLP"
 "Spring Boot, Java"
-Python
+"Python"
 "Excel, Power BI, Reporting, Tableau"
 "Spring Boot, System Design, REST APIs, Java, Docker, Agile, Git"
 "Java, REST APIs, Spring Boot"
 "Data Cleaning, Power BI, Tableau, SQL, Excel"
 "SQL, Statistics, Deep Learning"
-User Stories
+"User Stories"
 "Pandas, SQL"
 "Machine Learning, Deep Learning, Python, Statistics"
 "Stakeholder Management, Scrum"
 "Stakeholder Management, Scrum, Product Roadmap, User Stories, Agile"
-SQL
+"SQL"
 "PyTorch, Python"
 "Python, NLP, Machine Learning"
 "SQL, Power BI, Excel, Reporting"
@@ -5131,7 +5131,7 @@ SQL
 "Tableau, Excel"
 "Scrum, Stakeholder Management, Product Roadmap"
 "Java, Agile"
-Data Cleaning
+"Data Cleaning"
 "Stakeholder Management, User Stories, Scrum, Agile, Product Roadmap"
 "Git, Docker, REST APIs"
 "Tableau, Data Cleaning, Power BI"
@@ -5149,15 +5149,15 @@ Data Cleaning
 "Deep Learning, SQL, Statistics, NLP"
 "Product Roadmap, Stakeholder Management, Scrum"
 "SQL, Deep Learning, Machine Learning, Python, Pandas"
-Stakeholder Management
+"Stakeholder Management"
 "Scrum, Agile"
 "Reporting, Tableau, SQL, Power BI, Data Cleaning"
 "Deep Learning, Pandas"
 "Agile, Product Roadmap"
-Product Roadmap
+"Product Roadmap"
 "NLP, Pandas, Statistics, Deep Learning"
 "Git, Docker, Spring Boot"
-Statistics
+"Statistics"
 "Power BI, Tableau, Reporting, Data Cleaning, Excel, SQL"
 "Scrum, User Stories, Product Roadmap"
 "Stakeholder Management, Agile, Product Roadmap, Scrum, User Stories"
@@ -5175,7 +5175,7 @@ Statistics
 "Docker, System Design, Java, Spring Boot, REST APIs, Git"
 "Scrum, Agile"
 "PyTorch, Computer Vision, Python, MLOps"
-Keras
+"Keras"
 "Keras, TensorFlow, MLOps, Python, Cloud"
 "Keras, MLOps"
 "Excel, Tableau"
@@ -5213,10 +5213,10 @@ Keras
 "User Stories, Product Roadmap, Scrum"
 "Data Cleaning, Tableau, Reporting"
 "SQL, Tableau, Excel, Reporting, Data Cleaning, Power BI"
-Agile
+"Agile"
 "Product Roadmap, Stakeholder Management, Mrs, User Stories, Agile, Scrum"
 "Power BI, Data Cleaning, Tableau, Excel, SQL"
-Agile
+"Agile"
 "Cloud, Keras, PyTorch, TensorFlow"
 "Product Roadmap, User Stories, Agile"
 "REST APIs, System Design, Java, Agile, Spring Boot, Git, Docker"
@@ -5232,7 +5232,7 @@ Agile
 "Cloud, PyTorch, Keras, Python"
 "Tableau, SQL, Reporting, Data Cleaning, Power BI"
 "Scrum, Agile, Product Roadmap, User Stories, Stakeholder Management"
-Keras
+"Keras"
 "Python, Keras, TensorFlow, Computer Vision"
 "Computer Vision, Keras"
 "SQL, Reporting, Tableau, Data Cleaning"
@@ -5247,7 +5247,7 @@ Keras
 "Power BI, Reporting, SQL"
 "Data Cleaning, Excel, Power BI"
 "Product Roadmap, User Stories, Stakeholder Management, Scrum"
-Power BI
+"Power BI"
 "PyTorch, MLOps, Computer Vision, Keras, Cloud, TensorFlow"
 "System Design, REST APIs, Spring Boot, Java"
 "Product Roadmap, Agile, User Stories, Scrum, Stakeholder Management"
@@ -5264,13 +5264,13 @@ Power BI
 "Stakeholder Management, Agile, Product Roadmap, User Stories"
 "User Stories, Stakeholder Management, Agile, Product Roadmap, Scrum"
 "Git, Spring Boot, Docker, Agile"
-Python
+"Python"
 "Reporting, Tableau, Power BI, SQL, Data Cleaning, Excel"
-Stakeholder Management
+"Stakeholder Management"
 "Power BI, Reporting"
 "PyTorch, Computer Vision, MLOps"
 "Scrum, User Stories, Product Roadmap, Agile, Stakeholder Management"
-Tableau
+"Tableau"
 "Keras, PyTorch, Computer Vision, Cloud"
 "Reporting, Tableau, Data Cleaning, SQL"
 "MLOps, TensorFlow, Python, Keras"
@@ -5308,7 +5308,7 @@ Tableau
 "Docker, Java, System Design"
 "Scrum, Product Roadmap, Agile"
 "TensorFlow, Python, MLOps, Keras, Computer Vision, Cloud"
-MLOps
+"MLOps"
 "User Stories, Stakeholder Management, Scrum, Agile"
 "System Design, Docker, Git, Agile, Spring Boot"
 "NLP, Pandas, Statistics, SQL, Machine Learning, Python, Deep Learning"
@@ -5347,10 +5347,10 @@ MLOps
 "Cloud, Python, Computer Vision, TensorFlow"
 "TensorFlow, Computer Vision, MLOps, Keras"
 "TensorFlow, Computer Vision, MLOps, Keras"
-Computer Vision
+"Computer Vision"
 "Excel, Reporting, Data Cleaning"
 "SQL, Python, Machine Learning, Pandas, NLP"
-Tableau
+"Tableau"
 "NLP, Statistics, Deep Learning, SQL, Pandas"
 "Power BI, SQL, Reporting"
 "SQL, Tableau, Power BI, Excel, Reporting"
@@ -5361,8 +5361,8 @@ Tableau
 "Reporting, Power BI, SQL"
 "Deep Learning, NLP, Pandas"
 "Scrum, Product Roadmap, User Stories, Agile, Stakeholder Management"
-Tableau
-Excel
+"Tableau"
+"Excel"
 "Statistics, Machine Learning, Python, Pandas"
 "Keras, TensorFlow, PyTorch"
 "Keras, Python, TensorFlow, Computer Vision, Cloud"
@@ -5395,7 +5395,7 @@ Excel
 "Product Roadmap, Scrum, Stakeholder Management, Agile, User Stories"
 "Computer Vision, Python, Keras"
 "Spring Boot, Java, Git"
-Scrum
+"Scrum"
 "Tableau, SQL, Data Cleaning"
 "Product Roadmap, Scrum, Agile, Stakeholder Management, User Stories"
 "Git, Docker"
@@ -5409,7 +5409,7 @@ Scrum
 "Python, Machine Learning, Statistics, Pandas, Deep Learning, SQL"
 "Git, Java"
 "Docker, REST APIs, Java"
-Machine Learning
+"Machine Learning"
 "Power BI, Data Cleaning, Tableau, Excel, Reporting"
 "MLOps, Keras, Computer Vision"
 "Python, Keras, Cloud, Computer Vision, MLOps, TensorFlow, PyTorch"
@@ -5427,7 +5427,7 @@ Machine Learning
 "Scrum, User Stories, Agile"
 "Keras, Computer Vision"
 "PyTorch, Computer Vision, Keras, Python, MLOps"
-User Stories
+"User Stories"
 "Excel, Tableau, SQL"
 "MLOps, Computer Vision, Cloud"
 "TensorFlow, Keras, Cloud"
@@ -5454,13 +5454,13 @@ User Stories
 "Deep Learning, Machine Learning, NLP, Statistics"
 "Power BI, Data Cleaning, SQL"
 "PyTorch, Cloud, Computer Vision, Python, Keras, MLOps"
-Stakeholder Management
+"Stakeholder Management"
 "Docker, Java, System Design, REST APIs, Agile"
 "Cloud, TensorFlow, MLOps"
 "American, Docker, REST APIs, Java, Spring Boot"
 "Computer Vision, TensorFlow, Python, Keras, PyTorch, Cloud"
-
-Excel
+""
+"Excel"
 "Statistics, Deep Learning, Machine Learning, NLP"
 "Agile, Docker, Java, Git"
 "Computer Vision, Python, Keras, Cloud, PyTorch"
@@ -5476,7 +5476,7 @@ Excel
 "SQL, Python, Deep Learning, Statistics, Machine Learning"
 "MLOps, Computer Vision, Keras, TensorFlow"
 "Deep Learning, Python, NLP, SQL, Statistics"
-Cloud
+"Cloud"
 "Computer Vision, Keras, Python, Cloud, MLOps, TensorFlow"
 "Machine Learning, Pandas"
 "Power BI, Data Cleaning, SQL, Excel"
@@ -5494,7 +5494,7 @@ Cloud
 "Python, Cloud, Keras, PyTorch, Computer Vision, TensorFlow"
 "SQL, Machine Learning"
 "Tableau, Excel, Reporting, Data Cleaning, Power BI, SQL"
-Tableau
+"Tableau"
 "Python, TensorFlow"
 "Deep Learning, Machine Learning, Pandas, SQL"
 "Data Cleaning, Reporting"
@@ -5573,15 +5573,15 @@ Tableau
 "PyTorch, Keras, MLOps, TensorFlow, Python"
 "Reporting, Data Cleaning"
 "Republican, Scrum, User Stories"
-Agile
+"Agile"
 "NLP, Deep Learning, Machine Learning"
 "Spring Boot, Git, REST APIs"
 "Pandas, Statistics, NLP"
 "SQL, Reporting, Data Cleaning, Excel"
 "Docker, Agile, Spring Boot, Java, Git, REST APIs"
 "Python, SQL, Pandas"
-Spring Boot
-Deep Learning
+"Spring Boot"
+"Deep Learning"
 "Scrum, User Stories, Product Roadmap"
 "System Design, REST APIs, Git, Agile, Java"
 "Product Roadmap, Scrum"
@@ -5599,7 +5599,7 @@ Deep Learning
 "Excel, Data Cleaning, Power BI, Reporting, SQL"
 "Tableau, Excel, Data Cleaning, Reporting"
 "Agile, Scrum, User Stories, Product Roadmap, Stakeholder Management"
-Keras
+"Keras"
 "Reporting, Data Cleaning, Power BI, Excel"
 "Docker, System Design, Java"
 "Mr, Agile, REST APIs, Spring Boot, System Design"
@@ -5621,7 +5621,7 @@ Keras
 "Agile, Product Roadmap, Scrum, User Stories"
 "System Design, Git"
 "Spring Boot, REST APIs, Docker, Git, System Design"
-Statistics
+"Statistics"
 "Python, TensorFlow, Cloud, Computer Vision"
 "Agile, Stakeholder Management, User Stories, Product Roadmap"
 "Machine Learning, NLP, Deep Learning"
@@ -5633,7 +5633,7 @@ Statistics
 "SQL, Reporting, Excel, Data Cleaning, Power BI"
 "SQL, Reporting, Tableau, Power BI, Excel"
 "Product Roadmap, Scrum, User Stories"
-Pandas
+"Pandas"
 "Reporting, Data Cleaning"
 "NLP, SQL, Python, Machine Learning"
 "SQL, Reporting, Power BI, Tableau, Excel, Data Cleaning"
@@ -5643,7 +5643,7 @@ Pandas
 "Tableau, Power BI, Data Cleaning, Reporting"
 "TensorFlow, PyTorch"
 "Data Cleaning, Tableau"
-Machine Learning
+"Machine Learning"
 "Reporting, Data Cleaning, Power BI, SQL"
 "NLP, Statistics, Machine Learning"
 "Excel, Power BI"
@@ -5669,10 +5669,10 @@ Machine Learning
 "SQL, NLP, Statistics, Machine Learning, Python, Pandas"
 "Deep Learning, SQL, Python, Pandas, Machine Learning"
 "Java, Docker"
-Keras
+"Keras"
 "Agile, User Stories, Scrum, Product Roadmap, Stakeholder Management"
 "Statistics, NLP, Pandas, Python"
-NLP
+"NLP"
 "REST APIs, Git, System Design"
 "Data Cleaning, SQL, Excel, Reporting"
 "Excel, I, SQL"
@@ -5714,7 +5714,7 @@ NLP
 "Python, Keras, Cloud"
 "Product Roadmap, Stakeholder Management, Scrum, User Stories, Agile"
 "Scrum, Product Roadmap, User Stories, Agile, Stakeholder Management"
-Git
+"Git"
 "Data Cleaning, Excel, Tableau, Reporting, Power BI"
 "Excel, Reporting, Data Cleaning, Tableau, Power BI, SQL"
 "Cloud, TensorFlow"
@@ -5724,7 +5724,7 @@ Git
 "Cloud, Computer Vision, Keras"
 "Reporting, SQL, Power BI, Data Cleaning, Tableau"
 "Power BI, Reporting, SQL, Tableau"
-Cloud
+"Cloud"
 "TensorFlow, Cloud"
 "Power BI, Excel, Data Cleaning, Tableau, Reporting"
 "System Design, Java"
@@ -5763,16 +5763,16 @@ Cloud
 "Git, REST APIs, Agile"
 "Python, Deep Learning"
 "Python, TensorFlow, MLOps, Cloud, Keras"
-SQL
+"SQL"
 "Machine Learning, Deep Learning, SQL"
-User Stories
+"User Stories"
 "Power BI, SQL, Reporting, Data Cleaning"
-Product Roadmap
+"Product Roadmap"
 "Pandas, NLP, Machine Learning, Deep Learning"
 "Machine Learning, Pandas, Python, Statistics, NLP"
 "Python, NLP, Pandas"
 "Keras, Computer Vision, TensorFlow, Cloud, PyTorch"
-User Stories
+"User Stories"
 "Statistics, Pandas, Python"
 "Machine Learning, Deep Learning"
 "Python, NLP, Deep Learning, Machine Learning"
@@ -5781,7 +5781,7 @@ User Stories
 "Keras, TensorFlow, Cloud, PyTorch"
 "Power BI, SQL, Data Cleaning"
 "Python, TensorFlow, Cloud"
-Scrum
+"Scrum"
 "Reporting, Power BI"
 "Cloud, PyTorch, MLOps, Keras, Python, TensorFlow"
 "TensorFlow, Keras, Python, MLOps"
@@ -5798,7 +5798,7 @@ Scrum
 "User Stories, Scrum"
 "Java, REST APIs, System Design, Docker, Git, Spring Boot, Agile"
 "TensorFlow, Keras, Python, Computer Vision, MLOps"
-Product Roadmap
+"Product Roadmap"
 "Data Cleaning, SQL, Power BI, Reporting, Excel"
 "Stakeholder Management, User Stories"
 "Java, Docker, Agile, REST APIs, System Design"
@@ -5821,16 +5821,16 @@ Product Roadmap
 "Scrum, Agile, Product Roadmap"
 "Computer Vision, PyTorch, Cloud, MLOps, Keras, Python"
 "REST APIs, Git, Docker, Java, System Design, Spring Boot"
-SQL
+"SQL"
 "Cloud, Keras, Computer Vision, Python, MLOps, TensorFlow"
 "Python, Keras, PyTorch, Computer Vision, MLOps"
 "Python, Pandas, NLP"
 "Docker, Spring Boot, Agile, REST APIs, System Design"
 "Product Roadmap, User Stories, Scrum, Stakeholder Management"
 "Machine Learning, Pandas, Statistics, Deep Learning"
-SQL
+"SQL"
 "Python, Deep Learning"
-Stakeholder Management
+"Stakeholder Management"
 "Stakeholder Management, Scrum"
 "System Design, REST APIs, Spring Boot, Git"
 "Pandas, Statistics, NLP, Python, Machine Learning"
@@ -5847,7 +5847,7 @@ Stakeholder Management
 "User Stories, Stakeholder Management, Agile"
 "System Design, Docker, Java, Spring Boot, Git"
 "Reporting, Excel, SQL, Data Cleaning, Tableau, Power BI"
-Product Roadmap
+"Product Roadmap"
 "Agile, Stakeholder Management"
 "Computer Vision, MLOps, PyTorch, Cloud, Keras, TensorFlow"
 "Spring Boot, Docker, Git, REST APIs, System Design"
@@ -5863,7 +5863,7 @@ Product Roadmap
 "Scrum, User Stories, Stakeholder Management, Product Roadmap"
 "Stakeholder Management, Agile"
 "REST APIs, Java, System Design, Agile"
-SQL
+"SQL"
 "Docker, REST APIs, Git, Java, System Design, Spring Boot"
 "Python, NLP, SQL, Pandas"
 "Agile, Git, REST APIs, Java"
@@ -5881,19 +5881,19 @@ SQL
 "Python, Statistics, SQL"
 "Scrum, Mrs, Product Roadmap, Agile, User Stories"
 "NLP, SQL, Python, Statistics"
-Python
+"Python"
 "Java, REST APIs, System Design, Agile, Docker, Spring Boot"
 "SQL, Deep Learning"
 "Excel, Power BI, Reporting, Tableau, Data Cleaning, SQL"
 "Git, Java, Docker, System Design, Agile, Spring Boot"
 "Agile, System Design, Java, Git"
 "Stakeholder Management, Product Roadmap, User Stories"
-Cloud
+"Cloud"
 "Python, Machine Learning, NLP, Statistics"
 "Cloud, Python, Computer Vision, PyTorch, TensorFlow"
 "Scrum, Product Roadmap"
 "Java, Docker, REST APIs, System Design, Git"
-Python
+"Python"
 "Docker, Java"
 "Python, MLOps, PyTorch"
 "SQL, Excel, Data Cleaning, Tableau, Power BI, Reporting"
@@ -5911,12 +5911,12 @@ Python
 "Agile, System Design, Java, Docker"
 "TensorFlow, PyTorch, Computer Vision"
 "User Stories, Stakeholder Management, Scrum, Agile, Product Roadmap"
-Product Roadmap
+"Product Roadmap"
 "MLOps, Python"
 "MLOps, Python, Cloud, Computer Vision, TensorFlow"
 "Pandas, Python"
 "System Design, Git, Java"
-User Stories
+"User Stories"
 "Scrum, Agile, Product Roadmap"
 "System Design, Docker, Git, Spring Boot"
 "Computer Vision, TensorFlow, MLOps"
@@ -5929,7 +5929,7 @@ User Stories
 "Power BI, Data Cleaning, Excel, SQL, Tableau, Reporting"
 "MLOps, PyTorch, TensorFlow, Cloud, Keras, Computer Vision"
 "Spring Boot, REST APIs, Agile, System Design, Docker, Git"
-Python
+"Python"
 "System Design, REST APIs"
 "PyTorch, Computer Vision, Python, MLOps"
 "Machine Learning, Deep Learning, NLP, Pandas, SQL"
@@ -5953,7 +5953,7 @@ Python
 "Java, System Design, Agile"
 "Stakeholder Management, User Stories"
 "Keras, Computer Vision, Python, Cloud, TensorFlow, PyTorch"
-Java
+"Java"
 "Statistics, Pandas, NLP, SQL, Machine Learning, Deep Learning"
 "REST APIs, Java, Docker, Spring Boot, System Design"
 "Computer Vision, Python, Cloud, TensorFlow, PyTorch"
@@ -5976,7 +5976,7 @@ Java
 "Spring Boot, Java, REST APIs, Docker"
 "Git, Docker, REST APIs, System Design, Agile, Spring Boot"
 "REST APIs, System Design, Docker, Spring Boot, Git"
-NLP
+"NLP"
 "NLP, SQL, Deep Learning, Pandas, Machine Learning"
 "Agile, Docker, System Design, Java"
 "Statistics, SQL, Pandas"
@@ -6012,7 +6012,7 @@ NLP
 "Java, REST APIs, Git, System Design"
 "Reporting, Tableau, Excel, Data Cleaning, Power BI"
 "Power BI, Reporting, Excel, Data Cleaning, SQL"
-User Stories
+"User Stories"
 "SQL, Deep Learning"
 "Agile, Scrum, Product Roadmap, Stakeholder Management, User Stories"
 "PyTorch, MLOps, Keras, TensorFlow, Python, Cloud"
@@ -6032,15 +6032,15 @@ User Stories
 "Java, Docker, Spring Boot, Git"
 "Power BI, Tableau, Data Cleaning"
 "Pandas, NLP, Python, Machine Learning"
-Deep Learning
+"Deep Learning"
 "Stakeholder Management, Scrum, User Stories"
 "Java, Docker, REST APIs"
-SQL
+"SQL"
 "Tableau, SQL, Excel, Data Cleaning, Power BI, Reporting"
 "Pandas, SQL, Machine Learning, Python, Statistics"
 "Docker, Spring Boot, Java"
 "Machine Learning, Statistics, Pandas, Python, SQL, Deep Learning"
-Power BI
+"Power BI"
 "Git, Spring Boot, Agile, Docker, REST APIs"
 "Product Roadmap, Agile, User Stories, Scrum, Stakeholder Management"
 "Agile, Git, System Design, Spring Boot, Docker"
@@ -6048,7 +6048,7 @@ Power BI
 "Keras, TensorFlow, Python, Cloud"
 "Statistics, Machine Learning"
 "Git, REST APIs, System Design, Agile, Docker"
-Cloud
+"Cloud"
 "Agile, Scrum"
 "PyTorch, Python, Computer Vision, Cloud"
 "Tableau, Power BI, Excel, SQL, Reporting"
@@ -6081,12 +6081,12 @@ Cloud
 "Keras, MLOps, PyTorch, Python"
 "SQL, Power BI, Excel, Data Cleaning"
 "Scrum, User Stories"
-Reporting
+"Reporting"
 "User Stories, Scrum, Product Roadmap, Stakeholder Management, Agile"
 "Tableau, Power BI, SQL"
 "TensorFlow, PyTorch, MLOps, Keras"
 "Keras, Python, Computer Vision"
-Reporting
+"Reporting"
 "Docker, Spring Boot, REST APIs, Git, Agile, Java, System Design"
 "System Design, Git, Java, Agile"
 "Power BI, SQL, Excel, Data Cleaning"
@@ -6114,7 +6114,7 @@ Reporting
 "Agile, REST APIs, Spring Boot, System Design, Docker"
 "Tableau, Reporting"
 "REST APIs, Java"
-Keras
+"Keras"
 "Stakeholder Management, Product Roadmap, Scrum, User Stories, Agile"
 "Excel, Reporting"
 "Git, Docker, Java"
@@ -6129,7 +6129,7 @@ Keras
 "Pandas, SQL, Machine Learning, Python"
 "Excel, Power BI"
 "Spring Boot, Docker, REST APIs, System Design, Agile"
-
+""
 "System Design, Git, Spring Boot, REST APIs, Docker"
 "Agile, REST APIs, Java"
 "Cloud, MLOps, PyTorch, Keras"
@@ -6177,7 +6177,7 @@ Keras
 "Excel, Reporting, Tableau, Data Cleaning"
 "Cloud, Python, Computer Vision, PyTorch, TensorFlow, MLOps"
 "Excel, SQL, Data Cleaning, Tableau"
-System Design
+"System Design"
 "Stakeholder Management, Scrum"
 "System Design, Agile, REST APIs, Java"
 "MLOps, Python, Keras"
@@ -6188,7 +6188,7 @@ System Design
 "Excel, Reporting, Tableau, Power BI, Data Cleaning, SQL"
 "Tableau, SQL, Power BI, Reporting, Excel"
 "Computer Vision, Cloud, Python"
-User Stories
+"User Stories"
 "Tableau, Reporting"
 "MLOps, Python, Keras"
 "Python, TensorFlow, Computer Vision, Keras, PyTorch, MLOps, Cloud"
@@ -6205,7 +6205,7 @@ User Stories
 "Computer Vision, MLOps, Keras, Cloud"
 "Agile, Scrum"
 "System Design, Java, Docker"
-User Stories
+"User Stories"
 "SQL, Statistics, Deep Learning"
 "Excel, Power BI, Data Cleaning, SQL"
 "Python, MLOps, TensorFlow, Keras, Computer Vision"
@@ -6233,7 +6233,7 @@ User Stories
 "Tableau, Power BI, SQL"
 "TensorFlow, Computer Vision, Keras"
 "Power BI, Tableau, Excel"
-Computer Vision
+"Computer Vision"
 "Agile, Java, Spring Boot, System Design, Docker"
 "System Design, Agile, Git, Java"
 "User Stories, Stakeholder Management"
@@ -6314,7 +6314,7 @@ Computer Vision
 "MLOps, TensorFlow, Keras"
 "Power BI, Tableau"
 "Pandas, NLP, Python, Deep Learning, Machine Learning, Statistics"
-Scrum
+"Scrum"
 "Python, Machine Learning, Statistics, SQL"
 "Spring Boot, System Design, Docker, Agile"
 "SQL, Data Cleaning"
@@ -6330,7 +6330,7 @@ Scrum
 "Docker, Git, System Design, Java, REST APIs"
 "Reporting, Power BI, Excel"
 "Cloud, Keras, TensorFlow, Computer Vision, PyTorch, Python, MLOps"
-SQL
+"SQL"
 "Keras, Cloud"
 "Data Cleaning, Tableau, Reporting"
 "Keras, Python, PyTorch"
@@ -6339,7 +6339,7 @@ SQL
 "Docker, Agile, System Design, Spring Boot, Java"
 "Product Roadmap, User Stories"
 "Power BI, Reporting, Excel"
-Agile
+"Agile"
 "Data Cleaning, Excel, Tableau, SQL, Reporting"
 "Excel, Reporting, SQL, Power BI"
 "PyTorch, Computer Vision, TensorFlow, Python, Keras"
@@ -6420,7 +6420,7 @@ Agile
 "Power BI, SQL, Excel, Reporting, Data Cleaning"
 "Python, Computer Vision, MLOps, TensorFlow, Keras"
 "SQL, Power BI, Tableau, Reporting, Excel"
-Tableau
+"Tableau"
 "Pandas, NLP"
 "User Stories, Agile, Product Roadmap, Stakeholder Management, Scrum"
 "Python, NLP"
@@ -6471,7 +6471,7 @@ Tableau
 "Power BI, Reporting"
 "Machine Learning, Deep Learning, Pandas, SQL, Python, NLP"
 "Reporting, Data Cleaning, Power BI, SQL"
-Agile
+"Agile"
 "SQL, NLP, Statistics, Python, Pandas, Deep Learning"
 "Reporting, Excel, Power BI, Tableau"
 "Agile, Scrum"
@@ -6523,11 +6523,11 @@ Agile
 "Excel, Power BI"
 "Reporting, SQL, Data Cleaning, Excel, Power BI"
 "Statistics, NLP, Python, Deep Learning"
-PyTorch
+"PyTorch"
 "Git, Agile, REST APIs, Spring Boot, Docker"
 "Python, TensorFlow, Cloud, Computer Vision, MLOps"
 "Product Roadmap, Scrum, Stakeholder Management, Agile, User Stories"
-Spring Boot
+"Spring Boot"
 "REST APIs, Docker, System Design, Spring Boot"
 "Scrum, Stakeholder Management, User Stories, Product Roadmap, Agile"
 "Power BI, Excel"
@@ -6539,7 +6539,7 @@ Spring Boot
 "Cloud, PyTorch, TensorFlow, Python"
 "SQL, Pandas, Python, Deep Learning, Statistics"
 "SQL, Tableau, Excel, Data Cleaning, Reporting"
-User Stories
+"User Stories"
 "TensorFlow, MLOps, Python, PyTorch, Computer Vision"
 "Data Cleaning, SQL, Power BI, Reporting"
 "SQL, Data Cleaning, Reporting"
@@ -6556,8 +6556,8 @@ User Stories
 "Reporting, Tableau, SQL, Data Cleaning, Power BI, Excel"
 "Tableau, Excel, Data Cleaning, Power BI, SQL, Reporting"
 "TensorFlow, MLOps, Computer Vision, PyTorch, Keras"
-Computer Vision
-Pandas
+"Computer Vision"
+"Pandas"
 "Reporting, Tableau, Data Cleaning, Excel, SQL, Mrs"
 "MLOps, Computer Vision, TensorFlow, Python"
 "Tableau, Reporting"
@@ -6587,7 +6587,7 @@ Pandas
 "Python, MLOps, PyTorch"
 "Stakeholder Management, Scrum, Agile, Product Roadmap"
 "Java, Spring Boot, Git"
-Data Cleaning
+"Data Cleaning"
 "NLP, Python, Pandas, Machine Learning, Statistics"
 "REST APIs, Java, Spring Boot, Agile, Docker"
 "Computer Vision, Keras, PyTorch"
@@ -6656,7 +6656,7 @@ Data Cleaning
 "Stakeholder Management, Agile"
 "User Stories, Product Roadmap, Agile, Stakeholder Management, Scrum"
 "Machine Learning, Pandas, Python, NLP"
-REST APIs
+"REST APIs"
 "Spring Boot, Java, System Design, Agile, Git"
 "Tableau, SQL"
 "REST APIs, Spring Boot, Java, Agile, Docker, Git"
@@ -6676,7 +6676,7 @@ REST APIs
 "Excel, Power BI, Reporting, Tableau"
 "Agile, Stakeholder Management, Scrum, Product Roadmap, User Stories"
 "Stakeholder Management, Scrum, User Stories"
-Docker
+"Docker"
 "Machine Learning, Deep Learning, Python, Statistics"
 "Deep Learning, SQL, Statistics, NLP"
 "Excel, Power BI, Reporting, Data Cleaning, Tableau"
@@ -6687,18 +6687,18 @@ Docker
 "Keras, Computer Vision"
 "Tableau, Power BI, Data Cleaning, SQL, Excel, Reporting"
 "Product Roadmap, Stakeholder Management, User Stories, Agile, Scrum"
-Power BI
+"Power BI"
 "Docker, System Design, Spring Boot"
 "Data Cleaning, Tableau"
 "Pandas, Statistics, SQL, NLP, Machine Learning"
 "Agile, Git, REST APIs"
 "Excel, Reporting, SQL, Tableau"
 "Scrum, User Stories, Product Roadmap, Agile, Stakeholder Management"
-Data Cleaning
+"Data Cleaning"
 "Agile, Scrum, User Stories, Stakeholder Management, Product Roadmap"
 "REST APIs, Spring Boot"
 "Computer Vision, TensorFlow, Cloud, Keras"
-Agile
+"Agile"
 "Git, Spring Boot, Docker"
 "Excel, SQL, Reporting"
 "Agile, User Stories, Scrum, Product Roadmap"
@@ -6734,7 +6734,7 @@ Agile
 "User Stories, Stakeholder Management, Agile, Scrum, Product Roadmap"
 "Statistics, SQL"
 "MLOps, Cloud, Keras, TensorFlow, Python"
-Product Roadmap
+"Product Roadmap"
 "Machine Learning, Deep Learning, Statistics"
 "REST APIs, Git"
 "Spring Boot, Java, System Design"
@@ -6758,18 +6758,18 @@ Product Roadmap
 "Git, System Design"
 "Keras, Cloud"
 "NLP, Deep Learning, Pandas"
-SQL
+"SQL"
 "Machine Learning, Pandas, Python, SQL, Deep Learning, NLP"
 "TensorFlow, Cloud"
-Scrum
+"Scrum"
 "Keras, MLOps, Python"
 "REST APIs, Agile, Docker, System Design, Git, Java"
 "Excel, Reporting, Tableau, Power BI"
 "Machine Learning, Pandas, SQL"
-Excel
+"Excel"
 "Keras, PyTorch"
 "Tableau, Power BI, Data Cleaning, SQL"
-Agile
+"Agile"
 "Machine Learning, Deep Learning, SQL, Statistics"
 "Power BI, Reporting, Data Cleaning, Tableau, SQL, Excel"
 "Java, Git"
@@ -6814,7 +6814,7 @@ Agile
 "Keras, I, PyTorch, Computer Vision, TensorFlow"
 "Git, System Design, Docker, Java"
 "Power BI, SQL, Data Cleaning, Excel, Reporting, Tableau"
-Tableau
+"Tableau"
 "Cloud, PyTorch, MLOps, Python, Keras"
 "Excel, Power BI, Tableau"
 "Data Cleaning, Tableau, Power BI"
@@ -6847,7 +6847,7 @@ Tableau
 "Cloud, Computer Vision, Python, MLOps, TensorFlow"
 "Excel, Tableau, Data Cleaning"
 "SQL, Python, Machine Learning, Statistics"
-Excel
+"Excel"
 "Stakeholder Management, Agile, Scrum, User Stories, Product Roadmap"
 "TensorFlow, Keras, PyTorch"
 "SQL, Python, Pandas"
@@ -6896,7 +6896,7 @@ Excel
 "REST APIs, Agile, Docker, System Design, Java"
 "Java, REST APIs"
 "PyTorch, Keras, Python, Cloud, MLOps, Computer Vision"
-Tableau
+"Tableau"
 "Java, REST APIs"
 "Statistics, SQL, Pandas, Machine Learning"
 "Scrum, Product Roadmap"
@@ -6930,7 +6930,7 @@ Tableau
 "Git, Java, Spring Boot, Docker, System Design"
 "Agile, User Stories, Product Roadmap, Scrum"
 "PyTorch, Cloud, Keras"
-Scrum
+"Scrum"
 "Spring Boot, Agile, Java, REST APIs"
 "Spring Boot, Java, System Design"
 "User Stories, Stakeholder Management"
@@ -6957,7 +6957,7 @@ Scrum
 "Tableau, Power BI, SQL, Excel"
 "NLP, Deep Learning, SQL, Machine Learning"
 "Git, System Design, Docker, REST APIs"
-Python
+"Python"
 "Agile, Product Roadmap"
 "Scrum, Agile, Product Roadmap, User Stories"
 "Pandas, Machine Learning, Python"
@@ -6967,7 +6967,7 @@ Python
 "Tableau, Power BI, Data Cleaning, SQL"
 "Statistics, Deep Learning, NLP, SQL, Pandas"
 "Java, Agile, Git, System Design, REST APIs, Spring Boot"
-Git
+"Git"
 "Data Cleaning, Power BI, SQL, Excel, Tableau"
 "Stakeholder Management, Product Roadmap, Agile, Scrum"
 "Excel, Power BI"
@@ -7007,7 +7007,7 @@ Git
 "Computer Vision, Keras"
 "Cloud, PyTorch, MLOps, Python"
 "Power BI, Tableau, Data Cleaning, SQL, Excel"
-System Design
+"System Design"
 "Scrum, User Stories"
 "Machine Learning, Deep Learning, Python"
 "NLP, Pandas, Python, Machine Learning"
@@ -7047,7 +7047,7 @@ System Design
 "Scrum, Stakeholder Management, Agile"
 "Cloud, TensorFlow, Computer Vision, Python"
 "User Stories, Scrum, Agile"
-Statistics
+"Statistics"
 "SQL, Machine Learning, NLP"
 "Agile, Scrum, User Stories, Product Roadmap"
 "Product Roadmap, User Stories, Scrum, Agile, Stakeholder Management"
@@ -7103,10 +7103,10 @@ Statistics
 "Power BI, Reporting, Data Cleaning, SQL, Excel"
 "Excel, Reporting, Data Cleaning, SQL, Power BI"
 "Statistics, Deep Learning, Pandas, Machine Learning, SQL"
-Keras
+"Keras"
 "Computer Vision, Keras, TensorFlow, PyTorch"
 "PyTorch, Python, Keras, TensorFlow"
-Product Roadmap
+"Product Roadmap"
 "Deep Learning, Statistics, Pandas"
 "Machine Learning, Pandas, Python, SQL"
 "Keras, TensorFlow, Computer Vision"
@@ -7131,11 +7131,11 @@ Product Roadmap
 "Reporting, Tableau, Excel, SQL"
 "Cloud, MLOps, Computer Vision"
 "Scrum, Stakeholder Management, Product Roadmap, Agile"
-Stakeholder Management
+"Stakeholder Management"
 "Python, MLOps, Cloud, Keras, Computer Vision"
 "NLP, Machine Learning, SQL, Pandas"
 "Product Roadmap, Scrum, Agile, User Stories, Stakeholder Management"
-User Stories
+"User Stories"
 "Python, Keras, Computer Vision, PyTorch"
 "Cloud, PyTorch, Python, TensorFlow"
 "Statistics, Pandas, SQL, Python"
@@ -7170,8 +7170,8 @@ User Stories
 "Spring Boot, REST APIs, Agile"
 "Stakeholder Management, Agile, Scrum, Product Roadmap, User Stories"
 "Tableau, Power BI, SQL, Data Cleaning, Excel"
-Git
-Python
+"Git"
+"Python"
 "NLP, Python, Pandas, SQL, Statistics"
 "MLOps, Computer Vision, TensorFlow"
 "Java, System Design, Git, REST APIs, Spring Boot, Agile"
@@ -7180,7 +7180,7 @@ Python
 "Spring Boot, Java, System Design"
 "Cloud, Python, Computer Vision"
 "Excel, Data Cleaning, Power BI, SQL"
-Product Roadmap
+"Product Roadmap"
 "System Design, Agile"
 "Excel, Reporting, Data Cleaning, Tableau"
 "Stakeholder Management, Agile, Product Roadmap"
@@ -7227,7 +7227,7 @@ Product Roadmap
 "Machine Learning, Pandas, Python, SQL, Statistics"
 "Excel, Reporting, SQL, Data Cleaning"
 "Statistics, Deep Learning, Machine Learning, Python"
-Java
+"Java"
 "MLOps, Computer Vision, Cloud, TensorFlow, PyTorch, Keras"
 "Reporting, Tableau, Data Cleaning, SQL, Power BI"
 "Product Roadmap, Agile, Stakeholder Management"
@@ -7253,7 +7253,7 @@ Java
 "Agile, Spring Boot, Java, REST APIs"
 "Agile, Stakeholder Management, User Stories"
 "Agile, Product Roadmap, User Stories, Scrum"
-Computer Vision
+"Computer Vision"
 "Reporting, Data Cleaning, SQL, Power BI, Excel"
 "Stakeholder Management, Agile"
 "Agile, Stakeholder Management, User Stories, Scrum"
@@ -7270,7 +7270,7 @@ Computer Vision
 "Python, Machine Learning, NLP, Deep Learning, Statistics, SQL"
 "SQL, Statistics, NLP"
 "NLP, Machine Learning, Pandas, Python"
-Tableau
+"Tableau"
 "Agile, REST APIs, System Design, Java, Git, Docker"
 "Pandas, Deep Learning, NLP"
 "PyTorch, Cloud, MLOps, Python"
@@ -7278,7 +7278,7 @@ Tableau
 "NLP, Machine Learning, Python, Deep Learning"
 "Statistics, SQL, NLP, Python, Deep Learning"
 "MLOps, PyTorch, Python, Cloud, TensorFlow"
-Agile
+"Agile"
 "NLP, Deep Learning, SQL, Statistics"
 "Python, PM, PyTorch, MLOps"
 "PyTorch, TensorFlow, Python, Computer Vision, Keras"
@@ -7294,7 +7294,7 @@ Agile
 "Java, REST APIs, Spring Boot, Git"
 "PyTorch, Computer Vision"
 "Agile, Stakeholder Management, Scrum, User Stories"
-Agile
+"Agile"
 "PyTorch, Cloud, TensorFlow, Python, Computer Vision, MLOps"
 "Excel, Tableau, SQL"
 "Spring Boot, System Design, Docker, Java, REST APIs"
@@ -7320,7 +7320,7 @@ Agile
 "Product Roadmap, Scrum"
 "Stakeholder Management, Scrum"
 "Pandas, NLP, Statistics, Python, Machine Learning"
-Cloud
+"Cloud"
 "Machine Learning, Pandas"
 "Computer Vision, Cloud, MLOps, TensorFlow, Keras, PyTorch"
 "PyTorch, Computer Vision, Cloud, MLOps, Keras"
@@ -7346,7 +7346,7 @@ Cloud
 "Excel, Data Cleaning"
 "Java, Spring Boot, REST APIs"
 "System Design, Java, Agile, Docker"
-Docker
+"Docker"
 "Pandas, Deep Learning, NLP, Statistics, Python, Machine Learning"
 "Agile, Stakeholder Management, User Stories"
 "System Design, Agile, Git"
@@ -7354,19 +7354,19 @@ Docker
 "Python, Cloud, MLOps, Keras"
 "Pandas, Python"
 "Java, REST APIs, Spring Boot, Docker"
-MLOps
-Stakeholder Management
+"MLOps"
+"Stakeholder Management"
 "Power BI, Tableau, Excel, PM, SQL"
 "Scrum, Stakeholder Management, User Stories, Agile, Product Roadmap"
 "Data Cleaning, Power BI"
 "Python, Pandas, NLP, Machine Learning, Statistics, Deep Learning"
-Deep Learning
+"Deep Learning"
 "Reporting, Tableau, Power BI, Data Cleaning"
 "Power BI, Tableau, Data Cleaning, Reporting"
 "Data Cleaning, Tableau, Reporting"
 "SQL, Machine Learning, Python, Pandas, Deep Learning"
-Stakeholder Management
-Data Cleaning
+"Stakeholder Management"
+"Data Cleaning"
 "Keras, MLOps, Computer Vision, TensorFlow, PyTorch, Cloud"
 "Deep Learning, Statistics, Machine Learning"
 "Agile, User Stories, Stakeholder Management, Scrum"
@@ -7401,12 +7401,12 @@ Data Cleaning
 "User Stories, Product Roadmap, Agile"
 "REST APIs, Java, Spring Boot, System Design"
 "Python, Statistics"
-Product Roadmap
+"Product Roadmap"
 "Reporting, Excel, Data Cleaning, Tableau, Power BI"
 "SQL, NLP"
 "PyTorch, Python, TensorFlow, Cloud, Computer Vision"
 "Python, Computer Vision, Keras"
-Spring Boot
+"Spring Boot"
 "Machine Learning, Statistics, SQL, Deep Learning, NLP, Pandas, Python"
 "Stakeholder Management, Scrum, Product Roadmap, User Stories, Agile"
 "Reporting, Data Cleaning, Tableau, Power BI"
@@ -7417,7 +7417,7 @@ Spring Boot
 "Data Cleaning, Tableau, SQL, Excel, Reporting"
 "Pandas, NLP, Machine Learning, SQL"
 "Reporting, Data Cleaning"
-User Stories
+"User Stories"
 "User Stories, Agile, Scrum, Stakeholder Management"
 "TensorFlow, Keras, MLOps"
 "Java, Git, Docker, REST APIs"
@@ -7491,7 +7491,7 @@ User Stories
 "Deep Learning, Machine Learning, Statistics"
 "Spring Boot, REST APIs, Git, Docker, Agile, Java"
 "MLOps, PyTorch, Python"
-PyTorch
+"PyTorch"
 "Product Roadmap, Scrum, User Stories, Agile, Stakeholder Management"
 "NLP, SQL, Pandas, Machine Learning, Deep Learning"
 "Docker, Spring Boot, Agile"
@@ -7512,7 +7512,7 @@ PyTorch
 "Tableau, Excel"
 "Statistics, Pandas, Deep Learning"
 "Machine Learning, Statistics, Deep Learning"
-Stakeholder Management
+"Stakeholder Management"
 "Statistics, Python, SQL, Pandas, Machine Learning, NLP"
 "SQL, Reporting, Data Cleaning, Power BI"
 "User Stories, Stakeholder Management"
@@ -7564,7 +7564,7 @@ Stakeholder Management
 "User Stories, Scrum, Stakeholder Management, Agile, Product Roadmap"
 "Keras, MLOps, Python, TensorFlow, PyTorch"
 "REST APIs, Java, Spring Boot, Docker, Git"
-User Stories
+"User Stories"
 "Agile, Stakeholder Management"
 "REST APIs, Git, Spring Boot, System Design, Java"
 "Stakeholder Management, Scrum"
@@ -7600,7 +7600,7 @@ User Stories
 "Git, Agile, Spring Boot"
 "SQL, Excel, Tableau, Reporting, Data Cleaning"
 "Deep Learning, Statistics, Machine Learning"
-Data Cleaning
+"Data Cleaning"
 "Excel, Power BI"
 "Scrum, Agile, User Stories"
 "Keras, TensorFlow, Cloud, Computer Vision"
@@ -7668,7 +7668,7 @@ Data Cleaning
 "PyTorch, TensorFlow, Keras, Computer Vision, Cloud, MLOps"
 "Power BI, Tableau, SQL, Excel, Data Cleaning, Reporting"
 "Statistics, Deep Learning, Python, Machine Learning"
-
+""
 "Scrum, Agile, Stakeholder Management, Product Roadmap, User Stories"
 "Docker, Java, Spring Boot, Git"
 "SQL, Excel, Data Cleaning, Tableau"
@@ -7812,7 +7812,7 @@ Data Cleaning
 "TensorFlow, Cloud, MLOps, Keras, PyTorch"
 "Stakeholder Management, Agile, User Stories"
 "Deep Learning, Statistics, Machine Learning, NLP"
-Product Roadmap
+"Product Roadmap"
 "Python, MLOps, Keras, TensorFlow"
 "Docker, Git, Agile, System Design, REST APIs"
 "SQL, Data Cleaning, Power BI"
@@ -7821,7 +7821,7 @@ Product Roadmap
 "Power BI, Tableau, Reporting, Excel, SQL, Data Cleaning"
 "SQL, Statistics, Pandas, Machine Learning, Deep Learning"
 "SQL, Power BI"
-
+""
 "Power BI, Data Cleaning, Tableau, Reporting, SQL, Excel"
 "Computer Vision, Keras, Cloud, MLOps"
 "Computer Vision, Keras, MLOps, Python, Cloud"
@@ -7831,7 +7831,7 @@ Product Roadmap
 "User Stories, Product Roadmap, Agile"
 "Cloud, MLOps, PyTorch, TensorFlow, Python"
 "Python, Keras, Cloud"
-Power BI
+"Power BI"
 "REST APIs, System Design, Spring Boot, Git, Docker"
 "TensorFlow, Cloud"
 "SQL, NLP, Machine Learning"
@@ -7845,11 +7845,11 @@ Power BI
 "REST APIs, System Design, Git"
 "Agile, Scrum"
 "Stakeholder Management, User Stories, Product Roadmap"
-Power BI
+"Power BI"
 "Cloud, Computer Vision, MLOps, Keras, TensorFlow"
 "SQL, Power BI, Excel"
 "Product Roadmap, Scrum, Congress, Agile, User Stories, Stakeholder Management"
-SQL
+"SQL"
 "SQL, Excel"
 "Java, Docker, REST APIs, Agile, Git"
 "Power BI, Excel, Tableau, SQL, Reporting, Data Cleaning"
@@ -7870,7 +7870,7 @@ SQL
 "MLOps, PyTorch, Python"
 "Stakeholder Management, Product Roadmap"
 "SQL, Python, NLP, Statistics"
-Deep Learning
+"Deep Learning"
 "Agile, User Stories, Scrum"
 "PyTorch, MLOps, Keras, TensorFlow, Cloud"
 "Product Roadmap, Agile, User Stories, Stakeholder Management, Scrum"
@@ -7900,19 +7900,19 @@ Deep Learning
 "Stakeholder Management, User Stories, Agile"
 "Computer Vision, Cloud, Python, TensorFlow"
 "MLOps, PyTorch"
-Scrum
+"Scrum"
 "System Design, Java, REST APIs, Spring Boot"
 "Spring Boot, System Design, Agile, Java, REST APIs"
 "Agile, Product Roadmap, User Stories"
 "Agile, Stakeholder Management"
 "Statistics, Pandas, Machine Learning, Python, Deep Learning"
-Docker
+"Docker"
 "SQL, Python, Statistics, NLP, Machine Learning, Deep Learning"
 "SQL, Pandas, Python"
 "TensorFlow, MLOps, Cloud"
 "Docker, Agile, System Design, Java"
 "TensorFlow, Keras, PyTorch, Cloud"
-SQL
+"SQL"
 "Power BI, Reporting, Tableau, Data Cleaning, Excel"
 "PyTorch, Python, Computer Vision, TensorFlow, Keras, MLOps"
 "System Design, Spring Boot, Agile, Docker"
@@ -7993,7 +7993,7 @@ SQL
 "SQL, Data Cleaning, Power BI, Tableau"
 "Reporting, SQL, Power BI, Data Cleaning, Tableau"
 "Spring Boot, Agile, Java"
-Agile
+"Agile"
 "Java, Agile, System Design"
 "Data Cleaning, Reporting"
 "Java, Git, REST APIs"
@@ -8017,7 +8017,7 @@ Agile
 "SQL, Excel"
 "Product Roadmap, Agile, Scrum, Stakeholder Management, User Stories"
 "Statistics, Machine Learning"
-Keras
+"Keras"
 "Deep Learning, Pandas"
 "Reporting, Tableau"
 "Docker, Git, Java, Spring Boot, Agile"
@@ -8038,7 +8038,7 @@ Keras
 "Data Cleaning, Reporting, Excel"
 "Agile, Docker"
 "Agile, Product Roadmap, User Stories"
-System Design
+"System Design"
 "User Stories, Agile, Stakeholder Management, Scrum, Mrs, Product Roadmap"
 "Docker, Spring Boot, Agile, Git, REST APIs"
 "Spring Boot, Agile, Git, System Design, REST APIs, Java"
@@ -8146,7 +8146,7 @@ System Design
 "Python, NLP, Deep Learning, Pandas"
 "Pandas, Deep Learning, SQL"
 "Product Roadmap, Agile, Scrum"
-PyTorch
+"PyTorch"
 "Agile, User Stories, Stakeholder Management"
 "Statistics, NLP, Deep Learning, Python"
 "Stakeholder Management, User Stories, Scrum, Product Roadmap"
@@ -8189,7 +8189,7 @@ PyTorch
 "User Stories, Agile, Scrum, Product Roadmap"
 "Machine Learning, Pandas, NLP, SQL"
 "Agile, Stakeholder Management, Product Roadmap"
-User Stories
+"User Stories"
 "Computer Vision, PyTorch, Cloud, TensorFlow, MLOps"
 "Excel, Reporting, Tableau, Power BI"
 "Deep Learning, SQL"
@@ -8199,11 +8199,11 @@ User Stories
 "REST APIs, Java, Spring Boot, Agile, System Design"
 "Reporting, Excel"
 "System Design, REST APIs, Git"
-Agile
+"Agile"
 "Product Roadmap, Agile, Scrum, User Stories"
 "SQL, Data Cleaning, Tableau, Power BI, Reporting"
 "Reporting, SQL, Data Cleaning, Tableau, Power BI, Excel"
-SQL
+"SQL"
 "Deep Learning, NLP"
 "Data Cleaning, Reporting, SQL, Tableau, Power BI"
 "Tableau, SQL, Reporting, Power BI, Data Cleaning, Excel"
@@ -8216,7 +8216,7 @@ SQL
 "NLP, Pandas, SQL"
 "Stakeholder Management, User Stories, Scrum, Agile, Product Roadmap"
 "Excel, Data Cleaning, Power BI, Tableau, Reporting, SQL"
-Deep Learning
+"Deep Learning"
 "TensorFlow, Cloud, Keras, PyTorch"
 "Pandas, NLP, Deep Learning"
 "Python, Pandas, Statistics, NLP, SQL"
@@ -8224,7 +8224,7 @@ Deep Learning
 "User Stories, Scrum, Product Roadmap, Stakeholder Management, Agile"
 "Deep Learning, Machine Learning, Pandas, SQL"
 "Reporting, Power BI, Excel"
-Product Roadmap
+"Product Roadmap"
 "Deep Learning, Python, SQL"
 "Stakeholder Management, User Stories"
 "User Stories, Scrum"
@@ -8243,7 +8243,7 @@ Product Roadmap
 "Spring Boot, Docker, REST APIs, Agile, Git, Java"
 "Cloud, Computer Vision, PyTorch, Keras, MLOps, TensorFlow"
 "TensorFlow, Computer Vision, Keras, MLOps, Cloud"
-Docker
+"Docker"
 "Statistics, NLP, SQL"
 "Statistics, Deep Learning, NLP, SQL, Python"
 "Deep Learning, Machine Learning, Pandas, Python"
@@ -8251,7 +8251,7 @@ Docker
 "Git, Agile, REST APIs, Java, Spring Boot"
 "Machine Learning, NLP, Statistics"
 "Spring Boot, Java, Agile, System Design, Docker, REST APIs"
-Power BI
+"Power BI"
 "Python, PyTorch, Computer Vision, Cloud"
 "Docker, Agile, Java"
 "Keras, Cloud, Python, PyTorch"
@@ -8296,10 +8296,10 @@ Power BI
 "SQL, Deep Learning, Pandas, Statistics"
 "Agile, User Stories, Scrum, Product Roadmap, Stakeholder Management"
 "Python, Keras, Cloud, Computer Vision"
-Scrum
+"Scrum"
 "System Design, Agile, Spring Boot, Git"
 "Machine Learning, Democrat, NLP, Deep Learning"
-Stakeholder Management
+"Stakeholder Management"
 "Python, Machine Learning, Deep Learning, SQL"
 "Tableau, Data Cleaning, SQL, Power BI, Excel"
 "Agile, Stakeholder Management"
@@ -8310,7 +8310,7 @@ Stakeholder Management
 "Cloud, Keras, Computer Vision, MLOps"
 "Stakeholder Management, Agile, Scrum, User Stories"
 "System Design, Spring Boot, Docker, Git, REST APIs"
-Agile
+"Agile"
 "Python, Computer Vision, Keras, TensorFlow, PyTorch"
 "Tableau, Data Cleaning, Excel, Power BI, Reporting, SQL"
 "Power BI, Excel, Data Cleaning"
@@ -8351,13 +8351,13 @@ Agile
 "Keras, TensorFlow, PyTorch, Cloud, Python, Computer Vision, MLOps"
 "Deep Learning, NLP, Statistics, Machine Learning"
 "User Stories, Stakeholder Management, Product Roadmap, Agile"
-Reporting
+"Reporting"
 "Excel, SQL, Tableau, Power BI"
 "Data Cleaning, Reporting, SQL, Power BI"
 "Agile, Product Roadmap"
 "System Design, REST APIs, Spring Boot, Agile, Docker, Java"
 "Deep Learning, Python"
-Deep Learning
+"Deep Learning"
 "Docker, Agile, REST APIs"
 "Power BI, Data Cleaning, Tableau, Excel"
 "Product Roadmap, Stakeholder Management, Agile"
@@ -8376,7 +8376,7 @@ Deep Learning
 "Power BI, SQL"
 "Reporting, Excel, Tableau, Power BI, Data Cleaning"
 "SQL, Excel, Power BI"
-Agile
+"Agile"
 "Docker, REST APIs, Spring Boot"
 "Python, Pandas, SQL, Deep Learning, Statistics"
 "Machine Learning, SQL, Statistics"
@@ -8425,7 +8425,7 @@ Agile
 "Cloud, PyTorch, Python"
 "Reporting, Excel"
 "Agile, Product Roadmap, User Stories"
-Git
+"Git"
 "Reporting, SQL, Power BI"
 "Scrum, Agile, Stakeholder Management"
 "PyTorch, Python, Computer Vision"
@@ -8447,7 +8447,7 @@ Git
 "Data Cleaning, SQL, Excel, Reporting"
 "PyTorch, Computer Vision, Python, Cloud"
 "Agile, REST APIs, Docker, System Design"
-Python
+"Python"
 "Excel, Reporting"
 "User Stories, Product Roadmap, Stakeholder Management, Scrum, Agile"
 "Computer Vision, Keras, TensorFlow, Python"
@@ -8481,7 +8481,7 @@ Python
 "Excel, SQL, Tableau"
 "Machine Learning, Pandas, SQL, Deep Learning"
 "NLP, Deep Learning, Statistics"
-REST APIs
+"REST APIs"
 "Java, Agile, Docker, Git, REST APIs, System Design"
 "REST APIs, Git, Spring Boot"
 "Pandas, Machine Learning, SQL, Deep Learning"
@@ -8492,7 +8492,7 @@ REST APIs
 "Deep Learning, NLP, Python, Machine Learning"
 "Python, Cloud, TensorFlow, MLOps, Keras, PyTorch"
 "Tableau, Excel"
-Statistics
+"Statistics"
 "TensorFlow, Python, MLOps, PyTorch"
 "MLOps, Python, Computer Vision, TensorFlow, Keras"
 "MLOps, TensorFlow"
@@ -8510,11 +8510,11 @@ Statistics
 "TensorFlow, PyTorch, Cloud"
 "Agile, Stakeholder Management, Product Roadmap"
 "Excel, SQL"
-SQL
+"SQL"
 "PyTorch, Keras, MLOps, TensorFlow, Cloud"
 "PyTorch, Computer Vision, MLOps"
 "Deep Learning, Statistics, Machine Learning, Python, NLP, SQL"
-Excel
+"Excel"
 "Reporting, SQL, Power BI, Data Cleaning, Excel"
 "Stakeholder Management, Scrum, Product Roadmap, Agile"
 "Spring Boot, System Design, REST APIs, Java, Docker"
@@ -8540,9 +8540,9 @@ Excel
 "Agile, Stakeholder Management, Product Roadmap"
 "Python, SQL, Pandas, Machine Learning, Statistics"
 "Statistics, SQL, Machine Learning"
-Java
+"Java"
 "Pandas, NLP, Machine Learning"
-SQL
+"SQL"
 "Java, REST APIs, Spring Boot"
 "TensorFlow, Python, Keras, PyTorch, Computer Vision, Cloud, MLOps"
 "Product Roadmap, Stakeholder Management, User Stories, Agile"
@@ -8558,9 +8558,9 @@ SQL
 "TensorFlow, MLOps, Keras, Python, PyTorch"
 "NLP, Python, SQL"
 "Computer Vision, Cloud, Python"
-NLP
+"NLP"
 "Product Roadmap, User Stories, Scrum"
-Cloud
+"Cloud"
 "Python, SQL"
 "Java, REST APIs, System Design, Spring Boot, Git"
 "User Stories, Agile, Stakeholder Management, Product Roadmap"
@@ -8572,7 +8572,7 @@ Cloud
 "Computer Vision, PyTorch, MLOps, TensorFlow"
 "REST APIs, Spring Boot, Docker, Git"
 "SQL, Data Cleaning, Power BI, Tableau, Reporting"
-TensorFlow
+"TensorFlow"
 "SQL, Data Cleaning, Excel, Reporting"
 "Pandas, SQL, Deep Learning, Statistics, Machine Learning, Python"
 "Statistics, Deep Learning, NLP"
@@ -8580,7 +8580,7 @@ TensorFlow
 "Stakeholder Management, Agile, Product Roadmap, Scrum, User Stories"
 "Product Roadmap, User Stories, Scrum, Agile"
 "Java, Docker, REST APIs, Spring Boot, Agile"
-Keras
+"Keras"
 "MLOps, Cloud, TensorFlow, PyTorch, Keras"
 "Python, Statistics, NLP, SQL, Pandas, Machine Learning"
 "REST APIs, Docker, Agile, Java"
@@ -8594,7 +8594,7 @@ Keras
 "Agile, Stakeholder Management"
 "SQL, Deep Learning, Python, Statistics"
 "Docker, Git, Agile, Java"
-SQL
+"SQL"
 "Tableau, Data Cleaning"
 "Machine Learning, SQL, Python, Statistics, American, Deep Learning, Pandas"
 "Java, Docker, Git, REST APIs, Agile"
@@ -8603,8 +8603,8 @@ SQL
 "User Stories, Agile, Product Roadmap"
 "Python, PyTorch, MLOps, Keras"
 "Computer Vision, Python, Cloud, MLOps, Keras, TensorFlow"
-NLP
-Agile
+"NLP"
+"Agile"
 "Cloud, TensorFlow, Computer Vision, Keras"
 "PyTorch, Keras, Computer Vision, MLOps, Cloud"
 "Agile, Scrum, Product Roadmap, Stakeholder Management"
@@ -8633,9 +8633,9 @@ Agile
 "TensorFlow, MLOps, Computer Vision, PyTorch"
 "Stakeholder Management, Agile, User Stories, Product Roadmap, Scrum"
 "Pandas, SQL, NLP, Machine Learning"
-Power BI
+"Power BI"
 "TensorFlow, Cloud, Keras"
-Statistics
+"Statistics"
 "Docker, System Design, Agile, Java, Git"
 "Python, Mr, Machine Learning, Pandas, Deep Learning, SQL"
 "Statistics, Machine Learning, Pandas, Python"
@@ -8665,7 +8665,7 @@ Statistics
 "Statistics, NLP, Deep Learning, Pandas, Machine Learning"
 "Statistics, NLP, Python, Machine Learning"
 "Stakeholder Management, Scrum, Product Roadmap, Agile, User Stories"
-Product Roadmap
+"Product Roadmap"
 "Data Cleaning, Power BI, Tableau"
 "Reporting, Power BI, Excel, Data Cleaning"
 "Cloud, Keras"
@@ -8769,7 +8769,7 @@ Product Roadmap
 "Git, Spring Boot, System Design, Docker, Agile"
 "Power BI, Reporting, Excel"
 "SQL, Deep Learning, Machine Learning"
-User Stories
+"User Stories"
 "Cloud, Python, PyTorch, Computer Vision, TensorFlow, Keras, MLOps"
 "Stakeholder Management, Scrum, Product Roadmap"
 "Machine Learning, SQL, Statistics, Deep Learning"
@@ -8810,12 +8810,12 @@ User Stories
 "Java, REST APIs, Git, System Design"
 "Tableau, Data Cleaning, SQL, Power BI, Excel"
 "Docker, Git, System Design, REST APIs, Agile, Spring Boot"
-Agile
+"Agile"
 "Tableau, Reporting, SQL, Data Cleaning"
 "Product Roadmap, Agile"
 "Java, Agile, Docker, System Design"
 "REST APIs, Java, System Design, Spring Boot, Docker, Git"
-Stakeholder Management
+"Stakeholder Management"
 "System Design, Java"
 "Power BI, Reporting"
 "Stakeholder Management, Product Roadmap"
@@ -8909,7 +8909,7 @@ Stakeholder Management
 "Stakeholder Management, Scrum, Agile"
 "Git, Agile, Spring Boot, System Design, Docker, REST APIs"
 "Deep Learning, Pandas, SQL, NLP"
-PyTorch
+"PyTorch"
 "Scrum, User Stories, Product Roadmap, Agile"
 "SQL, Pandas, Statistics, Machine Learning, Deep Learning"
 "Stakeholder Management, Product Roadmap, Agile, Scrum"
@@ -8934,7 +8934,7 @@ PyTorch
 "Deep Learning, Pandas"
 "Agile, System Design, Spring Boot, REST APIs"
 "Tableau, Power BI"
-SQL
+"SQL"
 "NLP, Machine Learning"
 "Computer Vision, PyTorch, MLOps, Cloud"
 "Keras, MLOps, Python, TensorFlow"
@@ -9001,7 +9001,7 @@ SQL
 "Stakeholder Management, Scrum, Agile, Product Roadmap"
 "Keras, Computer Vision"
 "NLP, Machine Learning, Python, SQL"
-Scrum
+"Scrum"
 "MLOps, Python, Computer Vision, PyTorch, Cloud"
 "Spring Boot, Agile, Git"
 "PyTorch, Computer Vision"
@@ -9029,7 +9029,7 @@ Scrum
 "SQL, NLP"
 "SQL, Data Cleaning, Tableau, Power BI"
 "Reporting, Data Cleaning, Tableau, Power BI, SQL"
-TensorFlow
+"TensorFlow"
 "System Design, Agile, Docker, Git"
 "SQL, Statistics, Python, NLP"
 "TensorFlow, Cloud, Python, Keras"
@@ -9056,7 +9056,7 @@ TensorFlow
 "SQL, Excel, Reporting, Tableau"
 "Python, Computer Vision, Keras"
 "NLP, SQL, Pandas"
-SQL
+"SQL"
 "Agile, System Design"
 "Agile, Spring Boot, REST APIs, Docker"
 "Tableau, Reporting"
@@ -9096,7 +9096,7 @@ SQL
 "Git, Agile, Spring Boot"
 "Docker, Java, Agile, Spring Boot, System Design, REST APIs"
 "Agile, Product Roadmap, Stakeholder Management, User Stories, Scrum"
-Statistics
+"Statistics"
 "Reporting, SQL, Excel, Power BI"
 "Power BI, Reporting, Tableau, Data Cleaning"
 "PyTorch, TensorFlow, MLOps, Keras, Python"
@@ -9159,7 +9159,7 @@ Statistics
 "Agile, REST APIs, Docker"
 "PyTorch, TensorFlow, MLOps, Python, Computer Vision"
 "Deep Learning, Python, SQL"
-Python
+"Python"
 "Agile, Git, Docker, REST APIs, Spring Boot"
 "Product Roadmap, User Stories"
 "Keras, Python, Computer Vision, TensorFlow"
@@ -9210,7 +9210,7 @@ Python
 "Scrum, Stakeholder Management, Agile, User Stories"
 "Tableau, Reporting, Data Cleaning"
 "REST APIs, Spring Boot, Docker, Java, System Design"
-PyTorch
+"PyTorch"
 "Agile, Stakeholder Management, Product Roadmap"
 "Statistics, Machine Learning, SQL"
 "Reporting, Power BI, Tableau"
@@ -9233,7 +9233,7 @@ PyTorch
 "Data Cleaning, Excel"
 "Python, Computer Vision, Keras"
 "Python, Cloud, TensorFlow, MLOps, Keras"
-Stakeholder Management
+"Stakeholder Management"
 "Agile, Scrum, Stakeholder Management, Product Roadmap, User Stories"
 "Data Cleaning, Reporting, Tableau, Excel, Power BI"
 "MLOps, Python, PyTorch"
@@ -9276,12 +9276,12 @@ Stakeholder Management
 "Tableau, Power BI, Data Cleaning"
 "Git, Spring Boot, REST APIs"
 "Tableau, Excel, Power BI, Data Cleaning, SQL"
-Scrum
+"Scrum"
 "Agile, Product Roadmap, User Stories, Stakeholder Management, Scrum"
 "TensorFlow, Python, Cloud, MLOps, Keras, Computer Vision"
 "Keras, TensorFlow, Python, PyTorch, MLOps, Cloud"
 "TensorFlow, Keras, Computer Vision, MLOps, Python"
-SQL
+"SQL"
 "Stakeholder Management, Scrum, Agile, User Stories"
 "Power BI, SQL, Tableau, Reporting, Excel"
 "Machine Learning, NLP, Statistics, Deep Learning, Pandas"
@@ -9342,7 +9342,7 @@ SQL
 "Deep Learning, Pandas, SQL"
 "Agile, User Stories, Product Roadmap, Stakeholder Management, Scrum"
 "Statistics, Machine Learning"
-Computer Vision
+"Computer Vision"
 "Cloud, Keras, Computer Vision, Python, TensorFlow, PyTorch"
 "Reporting, Power BI, SQL, Data Cleaning, Excel"
 "Keras, Cloud, PyTorch, Python"
@@ -9357,7 +9357,7 @@ Computer Vision
 "Deep Learning, SQL, Statistics, Pandas, NLP"
 "Statistics, Pandas, Deep Learning, Python"
 "NLP, Python, Pandas, Statistics, SQL"
-REST APIs
+"REST APIs"
 "Agile, User Stories, Scrum"
 "MLOps, TensorFlow, Keras, PyTorch, Python"
 "NLP, Pandas"
@@ -9367,7 +9367,7 @@ REST APIs
 "PyTorch, Cloud, Computer Vision, Keras"
 "SQL, Data Cleaning, Excel, Reporting, Tableau"
 "SQL, Reporting, Tableau, Excel, Power BI"
-TensorFlow
+"TensorFlow"
 "Pandas, Machine Learning, NLP, Statistics"
 "User Stories, Agile, Product Roadmap, Stakeholder Management, Scrum"
 "TensorFlow, Cloud, Keras, Computer Vision"
@@ -9394,10 +9394,10 @@ TensorFlow
 "System Design, Spring Boot, Agile, REST APIs"
 "Keras, Python, PyTorch"
 "Java, Agile, REST APIs"
-Reporting
+"Reporting"
 "Reporting, Power BI, Tableau, Excel, Data Cleaning"
 "Scrum, Product Roadmap"
-Excel
+"Excel"
 "Power BI, Excel, Reporting, Tableau"
 "Agile, User Stories"
 "Product Roadmap, Stakeholder Management, Scrum, Agile"
@@ -9405,7 +9405,7 @@ Excel
 "Keras, TensorFlow, Python, MLOps, PyTorch, Cloud"
 "Excel, Power BI, Reporting"
 "SQL, Power BI, Reporting, Excel"
-Pandas
+"Pandas"
 "Tableau, SQL, Data Cleaning, Reporting"
 "Tableau, Excel, Power BI, Data Cleaning, SQL"
 "PyTorch, TensorFlow, Keras, Cloud"
@@ -9423,7 +9423,7 @@ Pandas
 "SQL, Machine Learning, NLP"
 "Tableau, Reporting, Data Cleaning, Power BI"
 "Stakeholder Management, User Stories, Product Roadmap"
-System Design
+"System Design"
 "NLP, SQL, Machine Learning, Statistics, Python"
 "Excel, Data Cleaning, Reporting"
 "Scrum, User Stories, Agile"
@@ -9435,7 +9435,7 @@ System Design
 "Agile, Stakeholder Management, Product Roadmap, Scrum, User Stories"
 "User Stories, Scrum, Stakeholder Management"
 "Reporting, Excel, Data Cleaning, Tableau"
-SQL
+"SQL"
 "Scrum, Stakeholder Management, Product Roadmap, Agile"
 "Tableau, Power BI, Data Cleaning"
 "Computer Vision, Python, Keras, MLOps"
@@ -9483,7 +9483,7 @@ SQL
 "Tableau, Excel, Data Cleaning"
 "Statistics, Machine Learning, Pandas, NLP, SQL"
 "System Design, REST APIs, Agile, Java, Docker"
-Product Roadmap
+"Product Roadmap"
 "Machine Learning, Python"
 "Statistics, Deep Learning, SQL, Machine Learning, Python, NLP"
 "Pandas, SQL, NLP"
@@ -9511,7 +9511,7 @@ Product Roadmap
 "Machine Learning, SQL, Deep Learning, NLP, Statistics"
 "Docker, Agile, Git, System Design"
 "System Design, Git"
-Statistics
+"Statistics"
 "Docker, Java, Git"
 "User Stories, Scrum"
 "Keras, TensorFlow, Cloud"
@@ -9527,7 +9527,7 @@ Statistics
 "SQL, NLP, Statistics, Machine Learning"
 "SQL, Deep Learning"
 "Python, Statistics, Deep Learning, Machine Learning, SQL"
-Stakeholder Management
+"Stakeholder Management"
 "Data Cleaning, Tableau"
 "Agile, Git, Java, REST APIs, Docker"
 "Product Roadmap, Scrum, User Stories, Stakeholder Management"
@@ -9564,11 +9564,11 @@ Stakeholder Management
 "Cloud, Keras, MLOps, PyTorch"
 "Java, Git, REST APIs, System Design, Spring Boot, Docker"
 "Stakeholder Management, Scrum, Agile"
-Python
+"Python"
 "Tableau, Data Cleaning"
 "Excel, Data Cleaning, Tableau"
 "Deep Learning, NLP, Pandas, Python"
-Git
+"Git"
 "NLP, Python, Machine Learning, Pandas, Statistics, Deep Learning"
 "User Stories, Scrum, Stakeholder Management, Product Roadmap, Agile"
 "Deep Learning, Pandas, SQL, Statistics"
@@ -9577,7 +9577,7 @@ Git
 "Product Roadmap, Stakeholder Management, User Stories"
 "TensorFlow, Cloud, Python, MLOps, PyTorch"
 "Power BI, Excel, SQL, Data Cleaning"
-Tableau
+"Tableau"
 "TensorFlow, Python, PyTorch"
 "Data Cleaning, Power BI"
 "User Stories, Agile"
@@ -9590,7 +9590,7 @@ Tableau
 "System Design, REST APIs, Spring Boot"
 "Docker, Spring Boot"
 "System Design, Docker"
-Keras
+"Keras"
 "Keras, Python"
 "Computer Vision, Python, TensorFlow, MLOps"
 "Reporting, Power BI"
@@ -9692,10 +9692,10 @@ Keras
 "SQL, Power BI, Tableau"
 "Product Roadmap, User Stories, Stakeholder Management"
 "Reporting, Power BI"
-Git
+"Git"
 "Reporting, Tableau, Excel, SQL, Power BI"
 "REST APIs, Agile, Docker"
-Stakeholder Management
+"Stakeholder Management"
 "Data Cleaning, Tableau, Excel, Reporting"
 "Agile, Java, REST APIs, Spring Boot"
 "System Design, Git, Spring Boot, Java, Agile"
@@ -9816,7 +9816,7 @@ Stakeholder Management
 "Spring Boot, Git, REST APIs"
 "Agile, REST APIs, Docker, Spring Boot, System Design, Java"
 "MLOps, PyTorch, Cloud, Computer Vision"
-Power BI
+"Power BI"
 "Scrum, Product Roadmap, User Stories, Stakeholder Management"
 "Scrum, User Stories, Agile, Stakeholder Management, Product Roadmap"
 "SQL, Power BI, Excel, Data Cleaning"
@@ -9830,11 +9830,11 @@ Power BI
 "Agile, REST APIs, System Design, Spring Boot, Java"
 "Git, Agile, Docker, System Design"
 "Docker, Spring Boot, Git"
-TensorFlow
+"TensorFlow"
 "Excel, Power BI"
 "Product Roadmap, Agile, User Stories"
 "SQL, Tableau"
-
+""
 "MLOps, Computer Vision, PyTorch, Python"
 "Agile, Stakeholder Management, Product Roadmap"
 "Agile, User Stories, Scrum, Stakeholder Management"
@@ -9842,7 +9842,7 @@ TensorFlow
 "SQL, Python, Statistics"
 "User Stories, Stakeholder Management, Product Roadmap, Scrum, Agile"
 "User Stories, Scrum"
-Docker
+"Docker"
 "REST APIs, Docker, Agile"
 "Tableau, Reporting"
 "SQL, Tableau"
@@ -9864,11 +9864,11 @@ Docker
 "Scrum, User Stories"
 "Computer Vision, Cloud, Keras, TensorFlow, Python"
 "Statistics, NLP, Deep Learning"
-Tableau
+"Tableau"
 "Keras, TensorFlow, Computer Vision, MLOps"
 "Tableau, SQL, Power BI"
 "User Stories, Scrum, Agile, Product Roadmap"
-Stakeholder Management
+"Stakeholder Management"
 "Agile, Product Roadmap, User Stories, Scrum, Stakeholder Management"
 "Product Roadmap, User Stories, Scrum, Agile, Stakeholder Management"
 "Reporting, Tableau"
@@ -9882,7 +9882,7 @@ Stakeholder Management
 "Deep Learning, SQL, Machine Learning, Pandas"
 "Data Cleaning, Power BI, Tableau"
 "SQL, Data Cleaning"
-Reporting
+"Reporting"
 "Docker, Agile, System Design, Spring Boot, REST APIs, Java"
 "Java, Git, System Design, Agile, REST APIs"
 "Agile, Docker, Spring Boot, REST APIs, Git"
@@ -9927,7 +9927,7 @@ Reporting
 "System Design, REST APIs, Docker, Spring Boot, Git"
 "Deep Learning, Python, Statistics, SQL, Machine Learning"
 "Data Cleaning, SQL, Reporting, Power BI, Excel"
-Tableau
+"Tableau"
 "Python, Cloud, TensorFlow"
 "NLP, Statistics, Python"
 "Scrum, User Stories, Agile"
@@ -9935,7 +9935,7 @@ Tableau
 "Keras, Cloud, Python"
 "Statistics, Machine Learning, Pandas, SQL"
 "Agile, Product Roadmap, User Stories"
-Scrum
+"Scrum"
 "User Stories, PM, Stakeholder Management, Scrum, Product Roadmap"
 "Python, SQL, Machine Learning, NLP, Deep Learning"
 "User Stories, Stakeholder Management"
@@ -9983,9 +9983,9 @@ Scrum
 "SQL, Data Cleaning, Tableau, Power BI, Excel"
 "SQL, Python, Deep Learning, Machine Learning, Pandas"
 "SQL, Power BI, Excel, Reporting, Data Cleaning, Tableau"
-Cloud
+"Cloud"
 "Data Cleaning, Power BI, Tableau, Reporting, Excel"
-System Design
+"System Design"
 "Cloud, Computer Vision"
 "SQL, Reporting"
 "Computer Vision, Keras"
@@ -9994,9 +9994,9 @@ System Design
 "REST APIs, Agile, Git, System Design"
 "System Design, REST APIs, Spring Boot, Git"
 "TensorFlow, Computer Vision, MLOps, Cloud, Python"
-Scrum
+"Scrum"
 "Product Roadmap, Stakeholder Management, User Stories"
 "Reporting, SQL"
-Agile
+"Agile"
 "Agile, User Stories, Stakeholder Management"
 "Machine Learning, Pandas, Python"
