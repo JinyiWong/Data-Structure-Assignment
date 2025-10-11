@@ -5,6 +5,7 @@
         "iostream": "cpp",
         "limits": "cpp",
         "istream": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "xstring": "cpp"
     }
 }
