@@ -470,6 +470,22 @@ void selectionSortResumes(Resume arr[], int n) {
     }
 }
 
+void selectionSortResumesByID(Resume arr[], int n) {
+    for (int i = 0; i < n - 1; ++i) {
+        int minIdx = i;
+        for (int j = i + 1; j < n; ++j) {
+            if (arr[j].id < arr[minIdx].id) {  // Sort by ID ascending
+                minIdx = j;
+            }
+        }
+        if (minIdx != i) {
+            Resume tmp = arr[i];
+            arr[i] = arr[minIdx];
+            arr[minIdx] = tmp;
+        }
+    }
+}
+
 void selectionSortCandidateScores(CandidateScore arr[], int n) {
     for (int i = 0; i < n - 1; ++i) {
         int maxIdx = i;
@@ -542,26 +558,73 @@ int binarySearchJobsExact(Job arr[], int n, const string &qSortKey, int outIdxs[
     return count;
 }
 
-// Binary search for resume by ID (assumes resumes are sorted by skillCount, not ID)
-// Falls back to linear search since resumes aren't sorted by ID
-int binarySearchResumeById(Resume arr[], int n, int targetId) {
-    // Since resumes are sorted by skill count, not ID, we use linear search
-    for (int i = 0; i < n; ++i) {
-        if (arr[i].id == targetId) return i;
-    }
-    return -1;
-}
-
-// For partial matches, we still need to scan all jobs (no binary search applicable)
-int scanJobsPartial(Job arr[], int n, const string &qNorm, int outIdxs[], int maxOut) {
+int binarySearchJobsPartial(Job arr[], int n, const string &qNorm, int outIdxs[], int maxOut) {
+    if (n == 0 || qNorm.empty()) return 0;
+    
+    string qLower = toLowerCopy(qNorm);
     int count = 0;
-    for (int i = 0; i < n && count < maxOut; ++i) {
-        string titleNorm = normalizeKey(arr[i].titleOriginal);
-        if (!qNorm.empty() && titleNorm.find(qNorm) != string::npos) {
-            outIdxs[count++] = i;
+
+    int left = 0, right = n - 1;
+    int startIdx = 0;
+    
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        string titleNorm = normalizeKey(arr[mid].titleOriginal);
+        
+        // Compare prefixes
+        int cmp = titleNorm.compare(0, qLower.length(), qLower);
+        
+        if (cmp < 0) {
+            left = mid + 1;
+        } else {
+            startIdx = mid;
+            right = mid - 1;
         }
     }
+
+    for (int i = startIdx; i < n && count < maxOut; ++i) {
+        string titleNorm = normalizeKey(arr[i].titleOriginal);
+        if (titleNorm.find(qLower) != string::npos) {
+            outIdxs[count++] = i;
+        }
+        // Early termination: if title starts with a letter much greater than query, stop
+        if (!titleNorm.empty() && !qLower.empty() && titleNorm[0] > qLower[qLower.length()-1] + 5) {
+            break;
+        }
+    }
+    
+    // Scan backward from startIdx
+    for (int i = startIdx - 1; i >= 0 && count < maxOut; --i) {
+        string titleNorm = normalizeKey(arr[i].titleOriginal);
+        if (titleNorm.find(qLower) != string::npos) {
+            outIdxs[count++] = i;
+        }
+        // Early termination
+        if (!titleNorm.empty() && !qLower.empty() && titleNorm[0] < qLower[0] - 5) {
+            break;
+        }
+    }
+    
     return count;
+}
+
+int binarySearchResumeById(Resume arr[], int n, int targetId) {
+    int left = 0;
+    int right = n - 1;
+    
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        
+        if (arr[mid].id == targetId) {
+            return mid;  // Found at index mid
+        } else if (arr[mid].id < targetId) {
+            left = mid + 1;  // Search right half
+        } else {
+            right = mid - 1;  // Search left half
+        }
+    }
+    
+    return -1;  // Not found
 }
 
 // ------------------- MATCH / SCORE -------------------
@@ -650,7 +713,7 @@ void searchByJobTitle(Job jobs[], int nJobs, Resume resumes[], int nResumes,
     
     // If no exact match, fall back to partial scan
     if (rcount == 0 && !qNorm.empty()) {
-        rcount = scanJobsPartial(jobs, nJobs, qNorm, resultsIdx, MAX_RESULTS);
+        rcount = binarySearchJobsPartial(jobs, nJobs, qNorm, resultsIdx, MAX_RESULTS);
     }
 
     cout << "Found " << rcount << " matching jobs.\n";
@@ -851,12 +914,15 @@ void searchBySkill(Job jobs[], int nJobs, Resume resumes[], int nResumes,
 }
 
 void searchByCandidateID(Job jobs[], int nJobs, Resume resumes[], int nResumes,
+                         Resume resumesByID[], // ADD THIS PARAMETER
                          int candId, const high_resolution_clock::time_point &globalStart, double globalMemStart) {
     auto stepStart = high_resolution_clock::now();
     double memStart = getMemoryUsageKB();
 
-    int ridx = binarySearchResumeById(resumes, nResumes, candId);
-    if (ridx == -1) {
+    // Use binary search on ID-sorted array
+    int ridxByID = binarySearchResumeById(resumesByID, nResumes, candId);
+    
+    if (ridxByID == -1) {
         cout << "Candidate ID " << candId << " not found.\n\n";
         auto stepEnd = high_resolution_clock::now();
         double memEnd = getMemoryUsageKB();
@@ -866,6 +932,15 @@ void searchByCandidateID(Job jobs[], int nJobs, Resume resumes[], int nResumes,
         printStepStatsSimple(stepMs, cumMs, stepMem, memEnd);
         cout << "\n";
         return;
+    }
+
+    // Find the same resume in the skill-sorted array (for accessing resumeSkillSets)
+    int ridx = -1;
+    for (int i = 0; i < nResumes; ++i) {
+        if (resumes[i].id == candId) {
+            ridx = i;
+            break;
+        }
     }
 
     CandidateScore *jmArr = globalJMArr;
@@ -936,6 +1011,27 @@ int main() {
     printStepStatsSimple(duration_cast<milliseconds>(e2 - s2).count(),
                          duration_cast<milliseconds>(e2 - globalStart).count(),
                          m2e - m2s, m2e);
+    cout << "\n";
+
+    cout << "[2b/6] Creating ID-sorted copy of resumes for binary search...\n";
+    auto s2b = high_resolution_clock::now();
+    double m2bs = getMemoryUsageKB();
+    
+    static Resume resumesByID[MAX_RESUMES];  // Separate copy sorted by ID
+    for (int i = 0; i < resumeCount; ++i) {
+        resumesByID[i] = resumes[i];
+    }
+    
+    if (resumeCount > 1) {
+        selectionSortResumesByID(resumesByID, resumeCount);
+    }
+    
+    auto e2b = high_resolution_clock::now();
+    double m2be = getMemoryUsageKB();
+    cout << "Created and sorted ID-indexed copy with " << resumeCount << " resumes.\n";
+    printStepStatsSimple(duration_cast<milliseconds>(e2b - s2b).count(),
+                         duration_cast<milliseconds>(e2b - globalStart).count(),
+                         m2be - m2bs, m2be);
     cout << "\n";
 
     // Build resume skill sets AND inverted index (fully manual)
@@ -1064,8 +1160,9 @@ int main() {
                 continue;
             }
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                        
-            searchByCandidateID(jobs, jobCount, resumes, resumeCount, cid, globalStart, globalMemStart);
+            
+            // Pass resumesByID array for binary search
+            searchByCandidateID(jobs, jobCount, resumes, resumeCount, resumesByID, cid, globalStart, globalMemStart);
         } else if (choice == 4) {
             cout << "Exiting program.\n";
             break;
