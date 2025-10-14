@@ -721,7 +721,7 @@ void searchByJobTitle(Job jobs[], int nJobs, Resume resumes[], int nResumes,
     if (rcount == 0) {
         cout << "No jobs found matching '" << queryRaw << "'.\n\n";
     } else {
-        const int TOPC = 1000;
+        const int TOPC = 50;
 
         // CRITICAL: Limit how many jobs we analyze to avoid timeout
         if (rcount > MAX_JOBS_TO_ANALYZE) {
