@@ -848,7 +848,7 @@ void searchBySkill(Job jobs[], int nJobs, Resume resumes[], int nResumes,
         return;
     }
 
-    cout << "Found " << resumesWithSkill->size << " resumes with this skill.\n";
+    cout << "Found " << resumesWithSkill->size << " resumes with skill '" << skillRaw << "'.\n";
     cout << "Matching with jobs...\n";
 
     for (int j = 0; j < nJobs && jcN < MAX_JOBS; ++j) {
@@ -862,22 +862,44 @@ void searchBySkill(Job jobs[], int nJobs, Resume resumes[], int nResumes,
         }
         if (!jobHas) continue;
 
-        int cnt = 0;
+        // Get ALL candidates for this job (not just those with the search skill)
+        IntArray candidateIndices;
+        candidateIndices.init();
+        getCandidateResumesForJob(jobs[j], candidateIndices);
+        
+        int totalMatched = 0;  // Count of ALL resumes that match this job
+        int withSearchSkill = 0;  // Count of resumes that have the search skill
         int bestId = 0;
         int bestScore = -1;
         
-        for (int ri = 0; ri < resumesWithSkill->size; ++ri) {
-            int r = resumesWithSkill->data[ri];
-            ++cnt;
+        // Score all candidates for this job
+        for (int ci = 0; ci < candidateIndices.size; ++ci) {
+            int r = candidateIndices.data[ci];
+            if (resumes[r].skillCount == 0) continue;
+            
             int sc = computeWeightedScoreWithSet(jobs[j], resumeSkillSets[r]);
-            if (sc > bestScore) { bestScore = sc; bestId = resumes[r].id; }
+            if (sc > 0) {
+                ++totalMatched;
+                
+                // Check if this resume has the search skill
+                if (resumeSkillSets[r].contains(skillNorm)) {
+                    ++withSearchSkill;
+                }
+                
+                if (sc > bestScore) { 
+                    bestScore = sc; 
+                    bestId = resumes[r].id; 
+                }
+            }
         }
 
         jcArr[jcN].jobIndex = j;
-        jcArr[jcN].count = cnt;
+        jcArr[jcN].count = totalMatched;  // Total matched resumes
         jcArr[jcN].bestCandidateId = bestId;
-        jcArr[jcN].bestCandidateScore = bestScore;
+        jcArr[jcN].bestCandidateScore = bestScore;  // Store the actual best score
         ++jcN;
+        
+        candidateIndices.destroy();
     }
 
     cout << "\nFound " << jcN << " jobs with this skill.\n";
@@ -893,9 +915,11 @@ void searchBySkill(Job jobs[], int nJobs, Resume resumes[], int nResumes,
         int shown = 0;
         for (int i = 0; i < jcN && shown < TOPJ; ++i, ++shown) {
             int jid = jcArr[i].jobIndex;
-            cout << shown + 1 << ". " << jobs[jid].titleOriginal << " | Total matched: " << jcArr[i].count;
+            cout << shown + 1 << ". " << jobs[jid].titleOriginal 
+                 << " | Total matched: " << jcArr[i].count;
             if (jcArr[i].bestCandidateScore > 0) {
-                cout << " | Best candidate: " << jcArr[i].bestCandidateId << " | Score: " << jcArr[i].bestCandidateScore;
+                cout << " | Best candidate: " << jcArr[i].bestCandidateId 
+                     << " | Score: " << jcArr[i].bestCandidateScore;
             } else {
                 cout << " | Best candidate: None";
             }

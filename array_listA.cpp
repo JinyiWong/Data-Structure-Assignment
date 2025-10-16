@@ -758,19 +758,35 @@ void searchBySkill(Job jobs[], int nJobs, Resume resumes[], int nResumes,
         }
         if (!jobHas) continue;
 
-        int cnt = 0;
+        // Count resumes with the searched skill that match this job
+        int cntWithSkill = 0;
         int bestId = 0;
         int bestScore = -1;
         
         for (int ri = 0; ri < resumesWithSkill->size; ++ri) {
             int r = resumesWithSkill->data[ri];
-            ++cnt;
+            ++cntWithSkill;
             int sc = computeWeightedScoreWithSet(jobs[j], resumeSkillSets[r]);
             if (sc > bestScore) { bestScore = sc; bestId = resumes[r].id; }
         }
 
+        // Count ALL resumes that match this job (using inverted index)
+        IntArray candidateIndices;
+        candidateIndices.init();
+        getCandidateResumesForJob(jobs[j], candidateIndices);
+        
+        int totalMatched = 0;
+        for (int ci = 0; ci < candidateIndices.size; ++ci) {
+            int r = candidateIndices.data[ci];
+            if (resumes[r].skillCount == 0) continue;
+            int sc = computeWeightedScoreWithSet(jobs[j], resumeSkillSets[r]);
+            if (sc > 0) ++totalMatched;
+        }
+        
+        candidateIndices.destroy();
+
         jcArr[jcN].jobIndex = j;
-        jcArr[jcN].count = cnt;
+        jcArr[jcN].count = totalMatched;  // Total matched resumes for the job
         jcArr[jcN].bestCandidateId = bestId;
         jcArr[jcN].bestCandidateScore = bestScore;
         ++jcN;
