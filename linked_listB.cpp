@@ -277,7 +277,6 @@ T* mergeLists(T* a,T* b,CMP cmp){
     return result;
 }
 
-// Split list into two halves using fast/slow pointer
 template<typename T>
 void splitList(T* source,T** front,T** back){
     if(!source){ *front = *back = nullptr; return; }
@@ -302,8 +301,6 @@ void mergeSortJobs(Job** headRef){
     mergeSortJobs(&b);
     *headRef = mergeLists<Job>(a,b,[](Job* x, Job* y){ return x->titleSortKey < y->titleSortKey; });
 }
-
-// Merge sort for Resumes (sort by skillCount descending)
 void mergeSortResumes(Resume** headRef){
     Resume* head = *headRef;
     if(!head || !head->next) return;
@@ -343,16 +340,13 @@ void mergeSortJobCounts(JobCount** headRef){
 // Note: to avoid breaking list elements we backup the tail node content.
 Resume* sentinelSearchResume(Resume* head,int target){
     if(!head) return nullptr;
-    // find tail
     Resume* tail = head;
     while(tail->next) tail = tail->next;
-    // if tail already has the target, we still need to check properly
-    Resume backup = *tail; // copy content
+    Resume backup = *tail; 
     tail->id = target;
     Resume* cur = head;
     while(cur->id != target) cur = cur->next;
     bool foundAtTail = (cur == tail);
-    // restore tail
     *tail = backup;
     if(foundAtTail) return nullptr;
     return cur;
@@ -366,27 +360,20 @@ Resume* sentinelSearchResume(Resume* head,int target){
 Job* sentinelSearchJobsExact(Job* head, const string &key) {
     if (!head) return nullptr;
 
-    // Step 1: find tail
     Job* tail = head;
     while (tail->next) tail = tail->next;
 
-    // Step 2: backup tail data safely
     string backupKey = tail->titleSortKey;
 
-    // Step 3: set sentinel
     tail->titleSortKey = key;
 
-    // Step 4: traverse until match
     Job* cur = head;
     Job* resultHead = nullptr;
     Job* resultTail = nullptr;
 
     while (cur) {
         if (cur->titleSortKey == key) {
-            // Stop if we reached the artificial sentinel (the real tail)
             if (cur == tail && backupKey != key) break;
-
-            // Found a real match → copy job
             Job* copy = new Job(cur->titleOriginal, cur->titleSortKey, cur->skillsOriginal);
             copy->skills = cur->skills;
             copy->next = nullptr;
@@ -397,8 +384,6 @@ Job* sentinelSearchJobsExact(Job* head, const string &key) {
         if (cur == tail) break;
         cur = cur->next;
     }
-
-    // Step 5: restore original tail key
     tail->titleSortKey = backupKey;
 
     return resultHead;
@@ -561,6 +546,18 @@ void searchBySkill(Job* jobHead, Resume* resumeHead, const string &skillRaw,
     string skillNorm = normalizeKey(skillRaw);
     JobCount* jobList = nullptr;
 
+    // Count how many resumes have this skill
+    int resumesWithSkill = 0;
+    for (Resume* r = resumeHead; r; r = r->next) {
+        for (SkillNode* s = r->skills; s; s = s->next) {
+            if (!skillNorm.empty() && s->skillNorm == skillNorm) {
+                resumesWithSkill++;
+                break;
+            }
+        }
+    }
+
+    // For each job that has the searched skill
     for (Job* j = jobHead; j; j = j->next) {
         bool jobHas = false;
         for (SkillNode* s = j->skills; s; s = s->next) {
@@ -571,15 +568,22 @@ void searchBySkill(Job* jobHead, Resume* resumeHead, const string &skillRaw,
         }
         if (!jobHas) continue;
 
+        // Count how many resumes match this job (based on all job skills)
         int cnt = 0;
         for (Resume* r = resumeHead; r; r = r->next) {
-            for (SkillNode* s = r->skills; s; s = s->next) {
-                if (!skillNorm.empty() && s->skillNorm == skillNorm) {
-                    cnt++;
-                    break;
+            bool matched = false;
+            for (SkillNode* js = j->skills; js; js = js->next) {
+                for (SkillNode* rs = r->skills; rs; rs = rs->next) {
+                    if (js->skillNorm == rs->skillNorm) {
+                        matched = true;
+                        break;
+                    }
                 }
+                if (matched) break;
             }
+            if (matched) cnt++;
         }
+
         JobCount* node = new JobCount(j, cnt);
         node->next = jobList;
         jobList = node;
@@ -589,6 +593,7 @@ void searchBySkill(Job* jobHead, Resume* resumeHead, const string &skillRaw,
 
     const int TOPJ = 1000;
     cout << "Top " << TOPJ << " jobs related to skill '" << skillRaw << "':\n";
+    cout << "Total matched resumes with the skill: " << resumesWithSkill << "\n\n";
 
     if (!jobList) {
         cout << "No jobs found with that skill.\n\n";
@@ -723,8 +728,8 @@ int main() {
     mergeSortJobs(&jobHead);
     auto e3 = high_resolution_clock::now();
     double m3e = getMemoryUsageKB();
-    cout << "Sorted jobs. Displaying first 10:\n";
-    printFirstNJobs(jobHead, 10);
+    cout << "Sorted jobs. Displaying first 1000:\n";
+    printFirstNJobs(jobHead, 1000);
     printStepStatsSimple(duration_cast<milliseconds>(e3 - s3).count(),
                          duration_cast<milliseconds>(e3 - globalStart).count(),
                          m3e - m3s, m3e);
@@ -736,8 +741,8 @@ int main() {
     mergeSortResumes(&resumeHead);
     auto e4 = high_resolution_clock::now();
     double m4e = getMemoryUsageKB();
-    cout << "Sorted resumes. Displaying first 10:\n";
-    printFirstNResumes(resumeHead, 10);
+    cout << "Sorted resumes. Displaying first 1000:\n";
+    printFirstNResumes(resumeHead, 1000);
     printStepStatsSimple(duration_cast<milliseconds>(e4 - s4).count(),
                          duration_cast<milliseconds>(e4 - globalStart).count(),
                          m4e - m4s, m4e);

@@ -173,42 +173,6 @@ string trim(const string &s) {
     return s.substr(a, b - a + 1);
 }
 
-bool extractQuotedField(const string &line, size_t &pos, string &outField) {
-    outField.clear();
-    size_t n = line.size();
-    while (pos < n && isspace((unsigned char)line[pos])) pos++;
-    if (pos >= n) return false;
-    if (line[pos] != '"') {
-        size_t comma = line.find(',', pos);
-        if (comma == string::npos) {
-            outField = trim(line.substr(pos));
-            pos = n;
-            return true;
-        } else {
-            outField = trim(line.substr(pos, comma - pos));
-            pos = comma + 1;
-            return true;
-        }
-    }
-    pos++;
-    while (pos < n) {
-        if (line[pos] == '"') {
-            if (pos + 1 < n && line[pos + 1] == '"') {
-                outField.push_back('"');
-                pos += 2;
-                continue;
-            } else {
-                pos++;
-                if (pos < n && line[pos] == ',') pos++;
-                break;
-            }
-        } else {
-            outField.push_back(line[pos++]);
-        }
-    }
-    return true;
-}
-
 SkillNode* buildSkillListFromCSV(const string &skillsLine) {
     SkillNode* head = nullptr;
     SkillNode* tail = nullptr;
@@ -286,82 +250,65 @@ void pushJobCount(JobCount*& head, Job* job, int count) {
 }
 
 // ----------------- Loaders -----------------
-int loadJobsFromCSV(Job*& head, const string &filename) {
-    ifstream fin(filename);
-    if (!fin.is_open()) {
-        cerr << "Error: cannot open job file '" << filename << "'\n";
-        return 0;
+bool extractQuotedField(const string &line, size_t &pos, string &out) {
+    out.clear();
+    size_t n=line.size();
+    while (pos<n && isspace((unsigned char)line[pos])) pos++;
+    if (pos>=n) return false;
+    if (line[pos]!='"'){
+        size_t comma=line.find(',',pos);
+        if (comma==string::npos){out=trim(line.substr(pos));pos=n;}
+        else{out=trim(line.substr(pos,comma-pos));pos=comma+1;}
+        return true;
     }
-    string line;
-    getline(fin, line);
-    int count = 0;
-    while (getline(fin, line)) {
-        if (trim(line).empty()) continue;
-        size_t pos = 0;
-        string field1, field2;
-        if (!extractQuotedField(line, pos, field1)) continue;
-        if (!extractQuotedField(line, pos, field2)) field2 = "";
-        string jobOrig = trim(field1);
-        string skillsOrig = trim(field2);
-        string sortKey = makeTitleSortKey(jobOrig);
-        Job* node = new Job(jobOrig, sortKey, skillsOrig);
-        node->skills = buildSkillListFromCSV(skillsOrig);
-        pushJob(head, node);
-        count++;
+    pos++;
+    while (pos<n){
+        if (line[pos]=='"'){
+            if (pos+1<n && line[pos+1]=='"'){out.push_back('"');pos+=2;}
+            else{pos++;if(pos<n && line[pos]==',')pos++;break;}
+        }else out.push_back(line[pos++]);
+    }
+    return true;
+}
+
+int loadJobsFromCSV(Job*& head,const string &fn){
+    ifstream fin(fn);if(!fin.is_open()){cerr<<"Error: cannot open job file '"<<fn<<"'\n";return 0;}
+    string line;getline(fin,line); // header
+    int count=0;
+    while(getline(fin,line)){
+        if(trim(line).empty()) continue;
+        size_t pos=0; string f1,f2;
+        if(!extractQuotedField(line,pos,f1)) continue;
+        extractQuotedField(line,pos,f2);
+        Job* j=new Job(trim(f1), makeTitleSortKey(f1), trim(f2));
+        j->skills = buildSkillListFromCSV(j->skillsOriginal);
+        j->next = head; head = j; count++;
     }
     fin.close();
     return count;
 }
 
-int loadResumesFromCSV(Resume*& head, const string &filename) {
-    ifstream fin(filename);
-    if (!fin.is_open()) {
-        cerr << "Error: cannot open resume file '" << filename << "'\n";
-        return 0;
-    }
-    string line;
-    int id = 1, count = 0, lineNum = 0;
-    
-    // Skip first line (header)
-    if (getline(fin, line)) {
-        lineNum++;
-        cout << "  [SKIPPED] Line " << lineNum << ": Header line\n";
-    }
-    
-    // Skip second line (empty header row)
-    if (getline(fin, line)) {
-        lineNum++;
-        cout << "  [SKIPPED] Line " << lineNum << ": Second header line\n";
-    }
-    
-    // Process all remaining lines as candidates (line 3+)
-    while (getline(fin, line)) {
-        lineNum++;
-        
-        string skillsOrig;
-        size_t pos = 0;
-        
-        // Extract the quoted field
-        extractQuotedField(line, pos, skillsOrig);
-        skillsOrig = trim(skillsOrig);
-        
-        // Create resume even if skills are empty
-        Resume* r = new Resume(id++);
-        r->skillsOriginal = skillsOrig;
-        r->skills = buildSkillListFromCSV(skillsOrig);
-        r->normKey = normalizeKey(skillsOrig);
+int loadResumesFromCSV(Resume*& head,const string &fn){
+    ifstream fin(fn);if(!fin.is_open()){cerr<<"Error: cannot open resume file '"<<fn<<"'\n";return 0;}
+    string line; int id=1, count=0;
+    // skip two header lines as in original
+    if(getline(fin,line)) { /* skipped */ }
+    if(getline(fin,line)) { /* skipped */ }
+    while(getline(fin,line)){
+        string skills; size_t pos=0;
+        extractQuotedField(line,pos,skills);
+        Resume* r=new Resume(id++);
+        r->skillsOriginal = skills;
+        r->skills = buildSkillListFromCSV(skills);
+        r->normKey = normalizeKey(skills);
         r->skillCount = countSkills(r->skills);
-        pushResume(head, r);
-        count++;
+        r->next = head; head = r; count++;
     }
     fin.close();
-    
     return count;
 }
-
 // ----------------- QuickSort for Jobs -----------------
 Job* getJobTail(Job* cur) { while (cur && cur->next) cur = cur->next; return cur; }
-
 Job* partitionJob(Job* head, Job* end, Job** newHead, Job** newEnd) {
     Job* pivot = end;
     Job* prev = nullptr, *cur = head, *tail = pivot;
@@ -383,7 +330,6 @@ Job* partitionJob(Job* head, Job* end, Job** newHead, Job** newEnd) {
     *newEnd = tail;
     return pivot;
 }
-
 Job* quickSortJobRecur(Job* head, Job* end) {
     if (!head || head == end) return head;
     Job *newHead = nullptr, *newEnd = nullptr;
@@ -407,7 +353,6 @@ void quickSortJobs(Job** headRef) {
 
 // ----------------- QuickSort for Resumes (by skill count, descending) -----------------
 Resume* getResumeTail(Resume* cur) { while (cur && cur->next) cur = cur->next; return cur; }
-
 Resume* partitionResume(Resume* head, Resume* end, Resume** newHead, Resume** newEnd) {
     Resume* pivot = end;
     Resume* prev = nullptr, *cur = head, *tail = pivot;
@@ -457,7 +402,6 @@ CandidateScore* getCandidateTail(CandidateScore* cur) {
     while (cur && cur->next) cur = cur->next;
     return cur;
 }
-
 CandidateScore* partitionCandidateScore(CandidateScore* head, CandidateScore* end, 
                                          CandidateScore** newHead, CandidateScore** newEnd) {
     CandidateScore* pivot = end;
@@ -755,6 +699,18 @@ void searchBySkill(Job* jobHead, Resume* resumeHead, const string &skillRaw,
     string skillNorm = normalizeKey(skillRaw);
     JobCount* jobList = nullptr;
 
+    // Count how many resumes have this searched skill
+    int resumesWithSkill = 0;
+    for (Resume* r = resumeHead; r; r = r->next) {
+        for (SkillNode* s = r->skills; s; s = s->next) {
+            if (!skillNorm.empty() && s->skillNorm == skillNorm) {
+                resumesWithSkill++;
+                break;
+            }
+        }
+    }
+
+    // For each job that contains the searched skill
     for (Job* j = jobHead; j; j = j->next) {
         bool jobHas = false;
         for (SkillNode* s = j->skills; s; s = s->next) {
@@ -764,31 +720,41 @@ void searchBySkill(Job* jobHead, Resume* resumeHead, const string &skillRaw,
             }
         }
         if (!jobHas) continue;
-        
+
+        // Count how many resumes match this job overall (by all job skills)
         int cnt = 0;
         for (Resume* r = resumeHead; r; r = r->next) {
-            for (SkillNode* s = r->skills; s; s = s->next) {
-                if (!skillNorm.empty() && s->skillNorm == skillNorm) { 
-                    cnt++; 
-                    break; 
+            bool matched = false;
+            for (SkillNode* js = j->skills; js; js = js->next) {
+                for (SkillNode* rs = r->skills; rs; rs = rs->next) {
+                    if (js->skillNorm == rs->skillNorm) {
+                        matched = true;
+                        break;
+                    }
                 }
+                if (matched) break;
             }
+            if (matched) cnt++;
         }
+
+        // Push into job list
         pushJobCount(jobList, j, cnt);
     }
 
+    // Sort jobs by total matched resumes
     quickSortJobCounts(&jobList);
 
-    const int TOPJ = 1000;  // Changed from 5 to 100
+    const int TOPJ = 1000;
     cout << "Top " << TOPJ << " jobs related to skill '" << skillRaw << "':\n";
-    
+    cout << "Total matched resumes with the skill: " << resumesWithSkill << "\n\n";
+
     if (!jobList) {
         cout << "No jobs found with that skill.\n\n";
     } else {
         int shown = 0;
         for (JobCount* jc = jobList; jc && shown < TOPJ; jc = jc->next, shown++) {
             Job* j = jc->jobPtr;
-            cout << shown+1 << ". " << j->titleOriginal << " | Total matched: " << jc->count;
+            cout << shown + 1 << ". " << j->titleOriginal << " | Total matched: " << jc->count;
             
             int bestId = 0, bestScore = -1;
             for (Resume* r = resumeHead; r; r = r->next) {
@@ -798,7 +764,7 @@ void searchBySkill(Job* jobHead, Resume* resumeHead, const string &skillRaw,
                     bestId = r->id; 
                 }
             }
-            
+
             if (bestScore > 0) {
                 cout << " | Best candidate: " << bestId << " | Score: " << bestScore;
             } else {
@@ -915,8 +881,8 @@ int main() {
     quickSortJobs(&jobHead);
     auto e3 = high_resolution_clock::now();
     double m3e = getMemoryUsageKB();
-    cout << "Sorted jobs. Displaying first 10:\n";
-    printFirstNJobs(jobHead, 10);
+    cout << "Sorted jobs. Displaying first 1000:\n";
+    printFirstNJobs(jobHead, 1000);
     printStepStatsSimple(duration_cast<milliseconds>(e3 - s3).count(),
                          duration_cast<milliseconds>(e3 - globalStart).count(),
                          m3e - m3s, m3e);
@@ -928,8 +894,8 @@ int main() {
     quickSortResumes(&resumeHead);
     auto e4 = high_resolution_clock::now();
     double m4e = getMemoryUsageKB();
-    cout << "Sorted resumes. Displaying first 10:\n";
-    printFirstNResumes(resumeHead, 10);
+    cout << "Sorted resumes. Displaying first 1000:\n";
+    printFirstNResumes(resumeHead, 1000);
     printStepStatsSimple(duration_cast<milliseconds>(e4 - s4).count(),
                          duration_cast<milliseconds>(e4 - globalStart).count(),
                          m4e - m4s, m4e);
