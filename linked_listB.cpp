@@ -19,7 +19,7 @@
 #elif defined(__APPLE__) && defined(__MACH__)
     #include <mach/mach.h>
     #include <sys/resource.h>
-#else
+#elif defined(__linux__)
     #include <unistd.h>
     #include <sys/resource.h>
 #endif
@@ -169,11 +169,28 @@ string makeTitleSortKey(const string &title) {
 // }
 
 double getMemoryUsageKB() {
-#if defined(__linux__)
+#if defined(_WIN32)
+    PROCESS_MEMORY_COUNTERS info;
+    if (GetProcessMemoryInfo(GetCurrentProcess(), &info, sizeof(info)))
+        return (double)info.WorkingSetSize / 1024.0;
+    return 0.0;
+
+#elif defined(__APPLE__) && defined(__MACH__)
+    struct mach_task_basic_info info;
+    mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
+    if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS)
+        return info.resident_size / 1024.0;
+
+    struct rusage usage;
+    if (getrusage(RUSAGE_SELF, &usage) == 0)
+        return usage.ru_maxrss / 1024.0;
+    return 0.0;
+
+#elif defined(__linux__)
     FILE* file = fopen("/proc/self/status", "r");
     if (file) {
         char line[128];
-        while (fgets(line, 128, file)) {
+        while (fgets(line, sizeof(line), file)) {
             if (strncmp(line, "VmRSS:", 6) == 0) {
                 long rss = 0;
                 sscanf(line + 6, "%ld", &rss);
@@ -183,27 +200,15 @@ double getMemoryUsageKB() {
         }
         fclose(file);
     }
-#elif defined(__APPLE__) && defined(__MACH__)
-    struct mach_task_basic_info info;
-    mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
-    if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS)
-        return info.resident_size / 1024.0;
-#elif defined(_WIN32)
-    PROCESS_MEMORY_COUNTERS info;
-    if (GetProcessMemoryInfo(GetCurrentProcess(), &info, sizeof(info)))
-        return (double)info.WorkingSetSize / 1024.0;
-#endif
 
     struct rusage usage;
-    if (getrusage(RUSAGE_SELF, &usage) == 0) {
-#if defined(__APPLE__) && defined(__MACH__)
-        return usage.ru_maxrss / 1024.0;
-#else
+    if (getrusage(RUSAGE_SELF, &usage) == 0)
         return (double)usage.ru_maxrss;
-#endif
-    }
-
     return 0.0;
+
+#else
+    return 0.0; // fallback for unknown systems
+#endif
 }
 
 void printStepStatsSimple(long long stepMs, long long cumMs, double stepMemKB, double totalMemKB) {
