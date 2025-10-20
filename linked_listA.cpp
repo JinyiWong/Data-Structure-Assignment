@@ -1,6 +1,22 @@
+// COMPILATION INSTRUCTIONS:
+// =========================
+// Windows (MinGW/GCC):
+//   g++ -std=c++17 linked_listA.cpp -o linked_listA -lpsapi
+// 
+// Windows (Clang):
+//   clang++ -std=c++17 linked_listA.cpp -o linked_listA -lpsapi
+//
+// Windows (MSVC):
+//   cl /EHsc /std:c++17 linked_listA.cpp psapi.lib
+//
+// macOS:
+//   clang++ -std=c++17 linked_listA.cpp -o linked_listA
+//
+// Linux:
+//   g++ -std=c++17 linked_listA.cpp -o linked_listA
+//
 // linked_listA.cpp
 // Complete implementation with Linear Search and QuickSort
-// Compile with: clang++ -std=c++17 linked_listA.cpp -o linked_listA
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -8,12 +24,21 @@
 #include <chrono>
 #include <cctype>
 #include <cmath>
-#include <unistd.h>
 #include <limits>
-#include <sys/resource.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
 
-#ifdef __APPLE__
-#include <mach/mach.h>
+#if defined(_WIN32)
+    #include <windows.h>
+    #include <psapi.h>
+    #pragma comment(lib, "psapi.lib")  // Auto-link for MSVC
+#elif defined(__APPLE__) && defined(__MACH__)
+    #include <mach/mach.h>
+    #include <sys/resource.h>
+#elif defined(__linux__)
+    #include <unistd.h>
+    #include <sys/resource.h>
 #endif
 
 using namespace std;
@@ -123,11 +148,29 @@ string makeTitleSortKey(const string &title) {
 }
 
 double getMemoryUsageKB() {
-#ifdef __linux__
+#if defined(_WIN32)
+    PROCESS_MEMORY_COUNTERS_EX pmc;
+    if (GetProcessMemoryInfo(GetCurrentProcess(), (PROCESS_MEMORY_COUNTERS*)&pmc, sizeof(pmc))) {
+        return (double)pmc.WorkingSetSize / 1024.0;
+    }
+    return 0.0;
+    
+#elif defined(__APPLE__) && defined(__MACH__)
+    struct mach_task_basic_info info;
+    mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
+    if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS)
+        return info.resident_size / 1024.0;
+
+    struct rusage usage;
+    if (getrusage(RUSAGE_SELF, &usage) == 0)
+        return usage.ru_maxrss / 1024.0;
+    return 0.0;
+
+#elif defined(__linux__)
     FILE* file = fopen("/proc/self/status", "r");
     if (file) {
         char line[128];
-        while (fgets(line, 128, file)) {
+        while (fgets(line, sizeof(line), file)) {
             if (strncmp(line, "VmRSS:", 6) == 0) {
                 long rss = 0;
                 sscanf(line + 6, "%ld", &rss);
@@ -137,33 +180,29 @@ double getMemoryUsageKB() {
         }
         fclose(file);
     }
-#elif defined(__APPLE__) && defined(__MACH__)
-    struct mach_task_basic_info info;
-    mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
-    if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS) {
-        return info.resident_size / 1024.0;
-    }
-#endif
-    
+
     struct rusage usage;
-    if (getrusage(RUSAGE_SELF, &usage) == 0) {
-#if defined(__APPLE__) && defined(__MACH__)
-        return usage.ru_maxrss / 1024.0;
-#else
+    if (getrusage(RUSAGE_SELF, &usage) == 0)
         return (double)usage.ru_maxrss;
-#endif
-    }
     return 0.0;
+
+#else
+    return 0.0; // fallback for unknown systems
+#endif
 }
 
 void printStepStatsSimple(long long stepMs, long long cumMs, double stepMemKB, double totalMemKB) {
     cout << "Step Time: " << stepMs << " ms | Cumulative Time: " << cumMs << " ms\n";
+    long long stepMemBytes = (long long)(stepMemKB * 1024);
+    long long totalMemBytes = (long long)(totalMemKB * 1024);
     
-    // Convert KB to bytes for display
-    long long stepBytes = (long long)(stepMemKB * 1024.0);
-    long long totalBytes = (long long)(totalMemKB * 1024.0);
-    
-    cout << "Step Memory Change: " << stepBytes << " bytes | Current Total Memory: " << totalBytes << " bytes\n";
+    // Handle potential negative or very small memory changes on Windows
+    if (stepMemBytes < 0) {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes (freed)";
+    } else {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes";
+    }
+    cout << " | Current Total Memory: " << totalMemBytes << " bytes\n";
 }
 
 string trim(const string &s) {
@@ -846,6 +885,12 @@ void searchByCandidateID(Job* jobHead, Resume* resumeHead, int candId,
 
 // ----------------- Main flow -----------------
 int main() {
+    // Set UTF-8 console output for Windows
+    #if defined(_WIN32)
+        SetConsoleOutputCP(CP_UTF8);
+        setvbuf(stdout, nullptr, _IOFBF, 1000);
+    #endif
+
     auto globalStart = high_resolution_clock::now();
     double globalMemStart = getMemoryUsageKB();
 

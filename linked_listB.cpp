@@ -1,6 +1,23 @@
 // linked_listB.cpp
 // Complete implementation with Sentinel Search and Merge Sort
-// Compile with: clang++ -std=c++17 linked_listB.cpp -o linked_listB
+// 
+// COMPILATION INSTRUCTIONS:
+// =========================
+// Windows (MinGW/GCC):
+//   g++ -std=c++17 linked_listB.cpp -o linked_listB -lpsapi
+// 
+// Windows (Clang):
+//   clang++ -std=c++17 linked_listB.cpp -o linked_listB -lpsapi
+//
+// Windows (MSVC):
+//   cl /EHsc /std:c++17 linked_listB.cpp psapi.lib
+//
+// macOS:
+//   clang++ -std=c++17 linked_listB.cpp -o linked_listB
+//
+// Linux:
+//   g++ -std=c++17 linked_listB.cpp -o linked_listB
+//
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -16,6 +33,7 @@
 #if defined(_WIN32)
     #include <windows.h>
     #include <psapi.h>
+    #pragma comment(lib, "psapi.lib")  // Auto-link for MSVC
 #elif defined(__APPLE__) && defined(__MACH__)
     #include <mach/mach.h>
     #include <sys/resource.h>
@@ -136,45 +154,14 @@ string makeTitleSortKey(const string &title) {
 }
 
 // ----------------- Memory Tracking -----------------
-// double getMemoryUsageKB() {
-// #ifdef __linux__
-//     FILE* file = fopen("/proc/self/status", "r");
-//     if (file) {
-//         char line[128];
-//         while (fgets(line, 128, file)) {
-//             if (strncmp(line, "VmRSS:", 6) == 0) {
-//                 long rss = 0;
-//                 sscanf(line + 6, "%ld", &rss);
-//                 fclose(file);
-//                 return (double)rss;
-//             }
-//         }
-//         fclose(file);
-//     }
-// #elif defined(__APPLE__) && defined(__MACH__)
-//     struct mach_task_basic_info info;
-//     mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
-//     if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS)
-//         return info.resident_size / 1024.0;
-// #endif
-//     struct rusage usage;
-//     if (getrusage(RUSAGE_SELF, &usage) == 0) {
-// #if defined(__APPLE__) && defined(__MACH__)
-//         return usage.ru_maxrss / 1024.0;
-// #else
-//         return (double)usage.ru_maxrss;
-// #endif
-//     }
-//     return 0.0;
-// }
-
 double getMemoryUsageKB() {
 #if defined(_WIN32)
-    PROCESS_MEMORY_COUNTERS info;
-    if (GetProcessMemoryInfo(GetCurrentProcess(), &info, sizeof(info)))
-        return (double)info.WorkingSetSize / 1024.0;
+    PROCESS_MEMORY_COUNTERS_EX pmc;
+    if (GetProcessMemoryInfo(GetCurrentProcess(), (PROCESS_MEMORY_COUNTERS*)&pmc, sizeof(pmc))) {
+        return (double)pmc.WorkingSetSize / 1024.0;
+    }
     return 0.0;
-
+    
 #elif defined(__APPLE__) && defined(__MACH__)
     struct mach_task_basic_info info;
     mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
@@ -213,8 +200,16 @@ double getMemoryUsageKB() {
 
 void printStepStatsSimple(long long stepMs, long long cumMs, double stepMemKB, double totalMemKB) {
     cout << "Step Time: " << stepMs << " ms | Cumulative Time: " << cumMs << " ms\n";
-    cout << "Step Memory Change: " << (long long)(stepMemKB * 1024) << " bytes | Current Total Memory: "
-         << (long long)(totalMemKB * 1024) << " bytes\n";
+    long long stepMemBytes = (long long)(stepMemKB * 1024);
+    long long totalMemBytes = (long long)(totalMemKB * 1024);
+    
+    // Handle potential negative or very small memory changes on Windows
+    if (stepMemBytes < 0) {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes (freed)";
+    } else {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes";
+    }
+    cout << " | Current Total Memory: " << totalMemBytes << " bytes\n";
 }
 
 // ----------------- Build Skill List -----------------
@@ -726,7 +721,7 @@ void searchByCandidateID(Job* jobHead, Resume* resumeHead, int candId,
         int shown = 0;
         for (CandidateScore* jm = jobMatches; jm && shown < TOPJ; jm = jm->next, shown++) {
             Job* j = jm->jobPtr;
-            cout << shown+1 << ". " << j->titleOriginal << " — Score: " << jm->score << "\n";
+            cout << shown+1 << ". " << j->titleOriginal << " - Score: " << jm->score << "\n";
         }
         cout << "\n";
     }
@@ -744,6 +739,12 @@ void searchByCandidateID(Job* jobHead, Resume* resumeHead, int candId,
 
 // ----------------- Main flow -----------------
 int main() {
+    // Set UTF-8 console output for Windows
+    #if defined(_WIN32)
+        SetConsoleOutputCP(CP_UTF8);
+        setvbuf(stdout, nullptr, _IOFBF, 1000);
+    #endif
+    
     auto globalStart = high_resolution_clock::now();
     double globalMemStart = getMemoryUsageKB();
 
