@@ -156,11 +156,12 @@ string makeTitleSortKey(const string &title) {
 // ----------------- Memory Tracking -----------------
 double getMemoryUsageKB() {
 #if defined(_WIN32)
-    PROCESS_MEMORY_COUNTERS info;
-    if (GetProcessMemoryInfo(GetCurrentProcess(), &info, sizeof(info)))
-        return (double)info.WorkingSetSize / 1024.0;
+    PROCESS_MEMORY_COUNTERS_EX pmc;
+    if (GetProcessMemoryInfo(GetCurrentProcess(), (PROCESS_MEMORY_COUNTERS*)&pmc, sizeof(pmc))) {
+        return (double)pmc.WorkingSetSize / 1024.0;
+    }
     return 0.0;
-
+    
 #elif defined(__APPLE__) && defined(__MACH__)
     struct mach_task_basic_info info;
     mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
