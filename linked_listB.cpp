@@ -8,12 +8,20 @@
 #include <chrono>
 #include <cctype>
 #include <cmath>
-#include <unistd.h>
 #include <limits>
-#include <sys/resource.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
 
-#ifdef __APPLE__
-#include <mach/mach.h>
+#if defined(_WIN32)
+    #include <windows.h>
+    #include <psapi.h>
+#elif defined(__APPLE__) && defined(__MACH__)
+    #include <mach/mach.h>
+    #include <sys/resource.h>
+#else
+    #include <unistd.h>
+    #include <sys/resource.h>
 #endif
 
 using namespace std;
@@ -128,8 +136,40 @@ string makeTitleSortKey(const string &title) {
 }
 
 // ----------------- Memory Tracking -----------------
+// double getMemoryUsageKB() {
+// #ifdef __linux__
+//     FILE* file = fopen("/proc/self/status", "r");
+//     if (file) {
+//         char line[128];
+//         while (fgets(line, 128, file)) {
+//             if (strncmp(line, "VmRSS:", 6) == 0) {
+//                 long rss = 0;
+//                 sscanf(line + 6, "%ld", &rss);
+//                 fclose(file);
+//                 return (double)rss;
+//             }
+//         }
+//         fclose(file);
+//     }
+// #elif defined(__APPLE__) && defined(__MACH__)
+//     struct mach_task_basic_info info;
+//     mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
+//     if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS)
+//         return info.resident_size / 1024.0;
+// #endif
+//     struct rusage usage;
+//     if (getrusage(RUSAGE_SELF, &usage) == 0) {
+// #if defined(__APPLE__) && defined(__MACH__)
+//         return usage.ru_maxrss / 1024.0;
+// #else
+//         return (double)usage.ru_maxrss;
+// #endif
+//     }
+//     return 0.0;
+// }
+
 double getMemoryUsageKB() {
-#ifdef __linux__
+#if defined(__linux__)
     FILE* file = fopen("/proc/self/status", "r");
     if (file) {
         char line[128];
@@ -148,7 +188,12 @@ double getMemoryUsageKB() {
     mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
     if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS)
         return info.resident_size / 1024.0;
+#elif defined(_WIN32)
+    PROCESS_MEMORY_COUNTERS info;
+    if (GetProcessMemoryInfo(GetCurrentProcess(), &info, sizeof(info)))
+        return (double)info.WorkingSetSize / 1024.0;
 #endif
+
     struct rusage usage;
     if (getrusage(RUSAGE_SELF, &usage) == 0) {
 #if defined(__APPLE__) && defined(__MACH__)
@@ -157,6 +202,7 @@ double getMemoryUsageKB() {
         return (double)usage.ru_maxrss;
 #endif
     }
+
     return 0.0;
 }
 
