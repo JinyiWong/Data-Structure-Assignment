@@ -4,7 +4,7 @@
 // COMPILATION INSTRUCTIONS:
 // =========================
 // Windows (MinGW/GCC):
-//   g++ -std=c++17 linked_listC.cpp -o linked_listC -lpsapi
+//   g++ -std=c++17 linked_listB.cpp -o linked_listB -lpsapi
 // 
 // Windows (Clang):
 //   clang++ -std=c++17 linked_listB.cpp -o linked_listB -lpsapi
@@ -199,8 +199,16 @@ double getMemoryUsageKB() {
 
 void printStepStatsSimple(long long stepMs, long long cumMs, double stepMemKB, double totalMemKB) {
     cout << "Step Time: " << stepMs << " ms | Cumulative Time: " << cumMs << " ms\n";
-    cout << "Step Memory Change: " << (long long)(stepMemKB * 1024) << " bytes | Current Total Memory: "
-         << (long long)(totalMemKB * 1024) << " bytes\n";
+    long long stepMemBytes = (long long)(stepMemKB * 1024);
+    long long totalMemBytes = (long long)(totalMemKB * 1024);
+    
+    // Handle potential negative or very small memory changes on Windows
+    if (stepMemBytes < 0) {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes (freed)";
+    } else {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes";
+    }
+    cout << " | Current Total Memory: " << totalMemBytes << " bytes\n";
 }
 
 // ----------------- Build Skill List -----------------
@@ -712,7 +720,7 @@ void searchByCandidateID(Job* jobHead, Resume* resumeHead, int candId,
         int shown = 0;
         for (CandidateScore* jm = jobMatches; jm && shown < TOPJ; jm = jm->next, shown++) {
             Job* j = jm->jobPtr;
-            cout << shown+1 << ". " << j->titleOriginal << " — Score: " << jm->score << "\n";
+            cout << shown+1 << ". " << j->titleOriginal << " - Score: " << jm->score << "\n";
         }
         cout << "\n";
     }
@@ -730,6 +738,12 @@ void searchByCandidateID(Job* jobHead, Resume* resumeHead, int candId,
 
 // ----------------- Main flow -----------------
 int main() {
+    // Set UTF-8 console output for Windows
+    #if defined(_WIN32)
+        SetConsoleOutputCP(CP_UTF8);
+        setvbuf(stdout, nullptr, _IOFBF, 1000);
+    #endif
+    
     auto globalStart = high_resolution_clock::now();
     double globalMemStart = getMemoryUsageKB();
 
