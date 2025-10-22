@@ -1,4 +1,21 @@
 // array_listA.cpp (linear search, quick sort)
+// COMPILATION INSTRUCTIONS:
+// =========================
+// Windows (MinGW/GCC):
+//   g++ -std=c++17 array_listA.cpp -o array_listA -lpsapi
+// 
+// Windows (Clang):
+//   clang++ -std=c++17 array_listA.cpp -o array_listA -lpsapi
+//
+// Windows (MSVC):
+//   cl /EHsc /std:c++17 array_listA.cpp psapi.lib
+//
+// macOS:
+//   clang++ -std=c++17 array_listA.cpp -o array_listA
+//
+// Linux:
+//   g++ -std=c++17 array_listA.cpp -o array_listA
+//
 #define NOMINMAX
 #include <windows.h>
 #include <psapi.h>
@@ -11,6 +28,18 @@
 #include <cmath>
 #include <limits>
 #include <sstream>
+
+#if defined(_WIN32)
+    #include <windows.h>
+    #include <psapi.h>
+    #pragma comment(lib, "psapi.lib")  // Auto-link for MSVC
+#elif defined(__APPLE__) && defined(__MACH__)
+    #include <mach/mach.h>
+    #include <sys/resource.h>
+#elif defined(__linux__)
+    #include <unistd.h>
+    #include <sys/resource.h>
+#endif
 
 using namespace std;
 using namespace std::chrono;
@@ -310,9 +339,16 @@ double getMemoryUsageKB() {
 
 void printStepStatsSimple(long long stepMs, long long cumMs, double stepMemKB, double totalMemKB) {
     cout << "Step Time: " << stepMs << " ms | Cumulative Time: " << cumMs << " ms\n";
-    long long stepBytes = (long long)(stepMemKB * 1024.0);
-    long long totalBytes = (long long)(totalMemKB * 1024.0);
-    cout << "Step Memory Change: " << stepBytes << " bytes | Current Total Memory: " << totalBytes << " bytes\n";
+    long long stepMemBytes = (long long)(stepMemKB * 1024);
+    long long totalMemBytes = (long long)(totalMemKB * 1024);
+    
+    // Handle potential negative or very small memory changes on Windows
+    if (stepMemBytes < 0) {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes (freed)";
+    } else {
+        cout << "Step Memory Change: " << stepMemBytes << " bytes";
+    }
+    cout << " | Current Total Memory: " << totalMemBytes << " bytes\n";
 }
 
 // ------------------- CSV FIELD EXTRACTION -------------------
